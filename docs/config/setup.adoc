@@ -21,15 +21,15 @@ endif::withRemarks[]
 // additional markers might be configured here!
 :include_configuration: tags=**;{language}{remarks};!*
 
-:curriculum-short: MODULKUERZEL
+:curriculum-short: EMBEDDED
 
 ifeval::["{language}" == "DE"]
-:curriculum-name: MODULNAME IN VOLLER LAENGE
+:curriculum-name: Sicherheitskritische Eingebettete Systeme
 :curriculum-header-title: iSAQB-Curriculum für Advanced Level: {curriculum-short}
 endif::[]
 
 ifeval::["{language}" == "EN"]
-:curriculum-name: FULL NAME OF MODULE
+:curriculum-name: Safety-relevant Embedded Systems
 :curriculum-header-title: iSAQB curriculum for Advanced Level: {curriculum-short}
 endif::[]
 
