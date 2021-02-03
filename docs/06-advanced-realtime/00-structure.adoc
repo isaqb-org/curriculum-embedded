@@ -1,14 +1,19 @@
-// header file for curriculum section 4: Lerneinheit 4
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 // tag::DE[]
-== Viertes Modul, das ist sein Titel
 // end::DE[]
 
 // tag::EN[]
-== Fourth Module, This is its Title
+== Advanced topics in real-time architectural design
 // end::EN[]
+
+****
+
+Not sure whether the split into chapter "real time and concurrency" and
+"advanced topics in real-time architectural design" really makes sense
+
+****
 
 include::01-duration-terms.adoc[{include_configuration}]
 

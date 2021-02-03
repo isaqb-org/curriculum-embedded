@@ -1,0 +1,93 @@
+=== {learning-goals}
+
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+[[LG-2-1]]
+==== LG 2-1: Modelling software architectures for embedded systems
+
+Participants can:
+
+* Describe the basic concepts, strengths and weaknesses of different approaches to modelling software architectures for embedded systems (e.g. UML, graphical and textual domain-specific languages, e.g. AADL, ROOM)
+
+* Select a suitable modelling approach based on the requirements and boundary
+conditions of a project
+
+Participants understand:
+
+* The use of profiles allows UML to be adapted for modelling embedded systems
+(e.g. MARTE)
+
+Participants know:
+
+* Examples of modelling tools
+
+
+[[LG-2-2]]
+==== LG 2-2: Implementing software architectures for embedded systems
+
+Participants can:
+
+Explain the basic concepts, strengths and weaknesses of different approaches to
+implementing software architectures for embedded systems:
+
+* Code generation from state models (e.g. Matlab stateflow)
+
+* Code generation from dataflow models (e.g. Matlab Simulink)
+
+* Generating code frames and interfaces (e.g. AUTOSAR interfaces)
+
+* Generating infrastructure code
+
+* Code generation from graphical or textual domain-specific languages, e.g. ROOM
+
+* Manual implementation
+
+Explain how different approaches to implementation can be combined
+
+Select a suitable approach to implementation based on the requirements and
+boundary conditions of a project
+
+Participants understand:
+
+* When selecting an approach to modelling or implementing software architectures
+for embedded systems, normative requirements must often be taken into
+consideration (e.g. code generators used in safety-related systems, tool
+certification).
+
+* With embedded systems, limited system resources are often an import impact
+factor for the implementation (e.g. potentially increased resource requirements
+when code is generated rather than manually implemented).
+
+Participants know:
+
+* Examples of tools for code generation for embedded systems
+
+
+
+[[LG-2-3]]
+==== LG 2-3: Design Patterns for Embedded Systems
+
+****
+
+Not sure whether this makes sense. Most patterns are specific to
+aspects like real-time, availability - no idea which patterns I would
+describe here. Standard structure, OO principles is foundation level stuff.
+
+****
+
+Participants can:
+
+* Review the benefits of using Design patterns in software development (e.g. Know the standard structure of any design pattern, Explain the object oriented Principles)
+
+* Explain the need for Design patterns in embedded systems
+
+* Examples of Real-time design pattern (e.g. Mutual exclusion)
+
+Participants know:
+
+* How to use Embedded Design patterns in embedded system architecture.
+
+
+// end::EN[]

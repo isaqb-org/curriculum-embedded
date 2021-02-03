@@ -29,7 +29,7 @@ ifeval::["{language}" == "DE"]
 endif::[]
 
 ifeval::["{language}" == "EN"]
-:curriculum-name: Safety-relevant Embedded Systems
+:curriculum-name: Safety-critical Embedded Systems
 :curriculum-header-title: iSAQB curriculum for Advanced Level: {curriculum-short}
 endif::[]
 

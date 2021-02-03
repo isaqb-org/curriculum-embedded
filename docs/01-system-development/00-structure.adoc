@@ -1,14 +1,12 @@
-// header file for curriculum section 1: ERSTE LERNEINHEIT
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
 
 // tag::DE[]
-== Dies ist der Titel des ersten Moduls
 // end::DE[]
 
 // tag::EN[]
-== This is the First Module's Title
+== System development for embedded systems
 // end::EN[]
 
 

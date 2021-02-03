@@ -1,4 +1,3 @@
-// header file for curriculum section "References"
 // (c) iSAQB e.V. (https://isaqb.org)
 // ===============================================
 
@@ -6,50 +5,97 @@
 == {references}
 
 // tag::DE[]
-Dieser Abschnitt enthält Quellenangaben, die ganz oder teilweise im Curriculum referenziert werden.
 // end::DE[]
 
 // tag::EN[]
 This section contains references that are cited in the curriculum.
 // end::EN[]
 
-// tag::REMARK[]
-[NOTE]
-====
-Aufbau eines Eintrags-Ankers:
-```
-- [[[label,Text der erscheint]]]
-```
-ACHTUNG: Die Labels dürfen nur Buchstaben beinhalten, keine Zahlen oder Sonderzeichen
 
-= = =
+**A**
 
-Structure of an anchor:
-```
-- [[[label,text that will be shown]]]
-```
-ATTENTION: labels have to be non-numeric.
-====
-// end::REMARK[]
+- [[[anastasopoulos, Anastasopoulos+ 2000]]]
+Anastasopoulos, M/Gacek, C: Implementing Product Line Variabilities, IESE Report 089.00/E, Fraunhofer IESE
+
+- [[[andreas, Andreas+2008]]]
+Andreas, J et al: Embedded Software, Elsevier, 2008
 
 **B**
 
-- [[[bachmann,Bachmann et al. 2000]]] Bachmann, F., L. Bass, et al.: Software Architecture Documentation in Practice. Software Engineering Institute, CMU/SEI-2000-SR-004.
-- [[[bass,Bass et al. 2003]]] Bass, L., Clements, P. und Kazman, R. (2003): Software Architecture in Practice. Addison-Wesley, Reading, Mass
+- [[[boeckle, Böckle+2004]]]
+Böckle, G/Knauber, P/Pohl, K/Schmid, K: Software-Produktlinien – Methoden, Einführung und Praxis, dpunkt.verlag
+
+- [[[boercsoek, Börcsök 2011]]]
+Börcsök, J: Funktionale Sicherheit, VDE Verlag
 
 **C**
 
-- [[[clements,Clements et al. 2003]]] Clements, P., F. Bachmann, L. Bass, D. Garlan, J. Ivers et al.: Documenting Software Architectures – Views and Beyond. Addison Wesley, 2003.
+- [[[clements, Clements+2002]]]
+Clements, P/Northrop, L: Software Product Lines – Practices and Patterns, Addison Wesley
 
 **H**
 
-- [[[hargis,Hargis 2004]]] Hargis, Gretchen et al.: Quality Technical Information: A Handbook for Writers and Editors. Prentice Hall, IBM Press, 2004.
+- [[[hanmer, Hanmer 2007]]]
+Hanmer, R: Patterns for Fault Tolerant Software, Wiley
 
-**K**
+- [[[hruschka, Hruschka+2002]]]
+Hruschka, P/Rupp, C: Agile Softwareentwicklung für Embedded Real-Time Systems mit der UML, Hanser
 
-- [[[kruchten,Kruchten 1995]]] Kruchten, P.: Architectural Blueprints – The 4-1 View Model of Architecture. IEEE Software November 1995; 12(6), p. 42-50.
+**L**
+
+- [[[kang, Kang+1990]]]
+Kang, KC et al: Feature Oriented Domain Analysis (FODA) Feasibility Study, Technical Report CMU/SEI-90-TR-21
+
+**I**
+
+- [[[iec61508, IEC 61608]]]
+Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems, 2010
+
+- [[[iso26262, ISO 26262]]]
+Road Vehicles - Functional safety, 2011
+
+**L**
+
+- [[[liggesmeyer, Liggesmeyer+2005]]]
+Liggesmeyer, P/Rombach, D (ed): Software Engineering eingebetteter Systeme, Elsevier
+
+- [[[linden, Linden+2007]]]
+van der Linden, FJ, Schmid, K/Rommes, E: Software Product Lines in Action, Springer
+
+- [[[liu, Liu 2000]]]
+Liu, JWS: Real Time Systems, Prentice Hall
+
+**N**
+
+- [[[nasa, NASA 2004]]]
+NASA Software Safety Guidebook, NASA-GB-8719.13
+
+- [[[norton, Norton+1997]]]
+Norton, S/Dipasquale, M: Threadtime, Prentice Hall
+
+**R**
+
+- [[[rupp, Rupp+2012]]]
+Rupp, C et al: UML 2 glasklar, Hanser
 
 **S**
 
-- [[[starke,Starke 2011]]] Starke, G. (2011): Effektive Software-Architekturen - Ein praktischer Leitfaden. 5. Auflage 2011, Carl Hanser Verlag, München.
+- [[[samek, Samek 2008]]]
+Samek, M: Practical Statecharts in C/C++, Butterworth Heinemann
 
+- [[[selic, Selic+1994]]]
+Selic, B et al: Real-Time Object-Oriented Modeling, Wiley
+
+- [[[simon, Simon 1999]]]
+Simon, D: An Embedded Software Primer, Addison Wesley
+
+- [[[smith, Smith+2011]]]
+Smith, D/Simpson, K: Safety Critical Systems Handbook, Butterworth Heinemann
+
+- [[[stallings, Stallings 2014]]]
+Stallings, W: Operating Systems: Internals and Design Principles, Prentice Hall
+
+**W**
+
+- [[[wolf, Wolf 2007]]]
+Wolf, W: High Performance Embedded Computing, Morgan Kaufmann

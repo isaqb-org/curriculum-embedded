@@ -1,4 +1,4 @@
-= Template for https://isaqb.org[iSAQB] Advanced Level Curricula
+= iSAQB Advanced Level curriculum for *EMBEDDED: Safety-critical Embedded Systems*
 
 :toc:
 :toc-placement!:
@@ -22,7 +22,7 @@ image:https://img.shields.io/github/issues-closed/isaqb-org/curriculum-embedded.
 This is <<copyrighted,copyrighted work>>.
 
 == Content
-This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
+This repository contains the iSAQB Advanced Level curriculum for *EMBEDDED - Safety-critial Embedded Systems* in AsciiDoc.
 
 toc::[]
 
@@ -218,7 +218,7 @@ It was forked from https://github.com/isaqb-org/curriculum-template,
 so the contributors of that project basically contributed to this one, too.
 
 
-[[copyrighted]]
+[[copyrighted]]em
 == Licensing and Copyright
 
 include::LICENSE.adoc[]

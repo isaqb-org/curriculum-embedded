@@ -1,0 +1,14 @@
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: 90 min | Practice time: 30 min
+|===
+
+=== Terms and Principles
+
+Variants, feature models, FODA, product lines
+
+
+// end::EN[]

@@ -1,0 +1,42 @@
+=== {learning-goals}
+
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+
+[[LG-1-1]]
+==== LG 1-1: Influence of system development processes
+
+* Know the basic structure of system development processes
+
+* Understand that domain-specific norms, standards and legal requirements have a
+significant impact on system development processes
+
+* Understand how software, hardware and system development are integrated in system
+development processes, and how they interact with each other
+
+* Know examples of system development processes, relevant norms and standards,
+e.g. IEC 61508, ISO 330xx
+
+
+[[LG-1-2]]
+==== LG 1-2: Fundamentals of system architecture
+
+* Describe the contents of a system architecture
+
+* Explain the differences and correlations between functional architecture and technical system architecture
+
+* Specify hardware/software interfaces
+
+* Examples of modelling notations for system architectures, e.g. SysML
+
+* Examples of tools for the system architecture
+
+
+****
+TODO: Include distributed systems topic here. Shortly relate to multicore system
+networks. -> beneficial for safety and real-time chapter
+****
+
+// end::EN[]

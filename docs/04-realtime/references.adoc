@@ -1,0 +1,14 @@
+=== {references}
+
+// tag::EN[]
+// end::EN[]
+
+<<liggesmeyer>>, <<liu>>, <<norton>>, <<simon>>, <<stallings>>, <<wolf>>
+
+****
+TODO:
+
+Real-Time UML / Bruce Powell Douglass
+Embedded Systems – Analysis and modeling with SysML, UML and AADL / Fabrice Kordon
+Model-Based Engineering with AADL: An Introduction to the SAE Architecture Analysis & Design Language
+****

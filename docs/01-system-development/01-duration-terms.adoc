@@ -1,0 +1,14 @@
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: 90 min | Practice time: 30 min
+|===
+
+=== Terms and Principles 
+
+System architecture, functional architecture, system development, software
+development, hardware development, hardware/software interface
+
+// end::EN[]

@@ -1,0 +1,6 @@
+=== {references}
+
+// tag::EN[]
+// end::EN[]
+
+<<boercsoek>>, <<hanmer>>, <<iec61508>>, <<iso26262>>, <<liggesmeyer>>, <<nasa>>, <<smith>>

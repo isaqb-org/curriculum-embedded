@@ -9,15 +9,11 @@ The terminology used in the iSAQB curricula can be found as a (freely available)
 
 == Development versions
 
-The Advanced Level Template Curriculum is currently maintained and published in both English (EN) and German (DE).
+The Advanced Level Template Curriculum is currently maintained and published in English (EN).
 Maintainers and volunteer reviewers collaborate on GitHub to improve the curriculum.
 
 |===
 | Version | HTML | PDF
-
-| German
-| link:{curriculumFileName}-de.html[HTML]
-| link:{curriculumFileName}-de.pdf[PDF]
 
 | English
 | link:{curriculumFileName}-en.html[HTML]

@@ -1,0 +1,17 @@
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+|===
+| Duration: 390 min | Practice time: 150 min
+|===
+
+=== Terms and Principles
+
+Dependability, safety, availability, reliability, fault tolerance, security,
+fault, error, failure, hazard analysis, safety integrity level (SIL), safety
+concept, functional architecture, technical architecture, HW/SW fault tolerance,
+fail safe vs fail operational
+
+// end::EN[]
+

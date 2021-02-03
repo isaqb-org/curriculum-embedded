@@ -1,0 +1,40 @@
+=== {learning-goals}
+
+
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+[[LG-5-1]]
+==== LG 5-1: Understand foundations of variant management
+
+Participants can:
+
+* Model variability, e.g. using FODA (feature-oriented domain analysis)
+
+* Describe different mechanisms for implementing variability as well as their strengths and weaknesses:
+
+** Aggregation/delegation
+
+** Inheritance
+
+** Parameterisation
+
+** Selecting alternative building blocks
+
+** Conditional compilation
+
+** Aspect-oriented programming
+
+** Generation
+
+* Select mechanisms for implementing variability for a concrete system and reasonably justify their decision
+
+Participants understand:
+
+* Mechanisms for implementing variability take effect at different times, e.g. compile time vs run time.
+
+Participants know:
+
+* Tools for variant management
+// end::EN[]

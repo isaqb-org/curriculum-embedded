@@ -1,0 +1,131 @@
+=== {learning-goals}
+
+// tag::DE[]
+// end::DE[]
+
+// tag::EN[]
+[[LG-3-1]]
+==== LG 3-1: Understanding the basic terms and concepts of dependable and safety related systems
+
+Understand the following terms and how they are related to each other:
+dependability, safety, availability, reliability, fault tolerance, security,
+fault, error, failure, fail stop, fail operational
+
+[[LG-3-2]]
+==== LG 3-2: Understanding the approach to developing a safety related system
+
+Understand the fundamental approach to developing a safety related system:
+
+* Performing a hazard and risk analysis
+
+* Defining and allocating safety requirements
+
+* Realizing safety requirements on system, hardware and software level
+
+* Analyzing the system, e.g. with FMEA and FTA
+
+Understand that functional safety must be considered on system level, and
+impacts system architecture, software architecture, and hardware architecture
+
+Understand that the development of safety related system is subject to norms
+and regulations, such as IEC 61508 or domain specific norms
+
+Know the typical scope of safety norms and regulations
+
+
+[[LG-3-3]]
+==== LG 3-3: Understanding the safety classification of requirements and building blocks
+
+Understand the process:
+
+* Based on the risk analysis, risks are classified regarding their severity
+(e.g. a Safety Integrity Level in IEC 61508)
+
+* The classification of a risk is propagated to safety goals and/or safety
+requirements that are defined to control the risk, and further propagated to
+derived safety requirements and to the building blocks to which a safety
+requirement is allocated
+
+* The safety classification of a building block can also be propagated to
+another building block that has no safety classification from an allocated
+safety requirement, but which can interfere with the building block with the
+safety classification (e.g. via shared memory or timing)
+
+* Under certain circumstances, a system can be decomposed in such a way that the
+results of a decomposition have a lower safety classification than the original
+element. This is only possible if freedom of interference is guaranteed for
+building blocks that result from the decomposition
+
+* The details of safety classification and decomposition are subject to specific
+norms and standards
+
+
+[[LG-3-4]]
+==== LG 3-4: Understand the tight relationship between system, software and hardware development for dependable and safety related systems
+
+For implementing safety measures, hardware and software are closely intertwined,
+e.g. software plays a critical role in diagnosing hardware failures, and
+hardware plays a critical role in ensuring freedom of interference between
+software units
+
+
+[[LG-3-5]]
+==== LG 3-5: Understand the approaches to developing fault tolerant systems
+
+* Fault prevention is concerned with reducing the number of faults that are
+present in a system, e.g. via design methodologies, reviews, etc.
+
+* It is not possible to completely prevent the introduction of faults, therefore
+a fault tolerant system needs to be able to handle unanticipated errors
+
+* A fault tolerant system needs to detect errors, and then perform error
+recovery or error mitigation to prevent these errors from resulting in a system
+failure
+
+
+[[LG-3-6]]
+==== LG 3-6: Can apply architectural patterns and techniques for fault tolerant and safety-related systems
+
+* Can select and apply architectural patterns and techniques such as Redundancy,
+Diverse Software, Recovery Blocks, Correcting Audits, Escalation, [Fault
+Observer], [Maintenance Interface], Software Update, Units of Mitigation,
+Software- and Hardware-based memory protection techniques
+
+
+[[LG-3-7]]
+==== LG 3-7: Can apply approaches to fault prevention
+
+* Suitable processes and methods for design, implementation, verification, and
+testing are crucial to prevent faults in the system
+
+* In a safety-related system, norms and standards give recommendations for
+processes and methods
+
+
+[[LG-3-8]]
+==== LG 3-8: Can apply patterns for error recovery
+
+* Can select and apply general patterns and techniques such as Checksum,
+Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
+Plausibility Checks, Control Flow Monitoring
+
+* Can select and apply detection patterns that are used with redundancy such as
+Voting, Lockstep
+
+* Understand the importance of timely error detection 
+
+
+[[LG-3-9]]
+==== LG 3-9: Can apply patterns for detecting errors and failures
+
+* Can select and apply patterns for error recovery such as Data Reset, Error
+Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation, Restart,
+Return to Reference Point, Rollback, Roll Forward
+
+[[LG-3-10]]
+==== LG 3-10: Can apply patterns for error mitigation
+
+* Can select and apply patterns for error mitigation such as Error Correcting Codes and Marked Data
+
+
+// end::EN[]
