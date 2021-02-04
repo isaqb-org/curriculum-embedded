@@ -64,30 +64,4 @@ Participants know:
 
 * Examples of tools for code generation for embedded systems
 
-
-
-[[LG-2-3]]
-==== LG 2-3: Design Patterns for Embedded Systems
-
-****
-
-Not sure whether this makes sense. Most patterns are specific to
-aspects like real-time, availability - no idea which patterns I would
-describe here. Standard structure, OO principles is foundation level stuff.
-
-****
-
-Participants can:
-
-* Review the benefits of using Design patterns in software development (e.g. Know the standard structure of any design pattern, Explain the object oriented Principles)
-
-* Explain the need for Design patterns in embedded systems
-
-* Examples of Real-time design pattern (e.g. Mutual exclusion)
-
-Participants know:
-
-* How to use Embedded Design patterns in embedded system architecture.
-
-
 // end::EN[]

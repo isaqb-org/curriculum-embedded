@@ -8,7 +8,6 @@
 
 === Terms and Principles
 
-Software architecture, UML, domain-specific languages, code generation, Design
-patterns for embedded systems 
+Software architecture, UML, domain-specific languages, code generation
 
 // end::EN[]
