@@ -2,13 +2,3 @@
 
 // tag::EN[]
 // end::EN[]
-
-****
-TO DO
-
-[Liggesmeyer+2005]
-[Liu 2000]
-[Stallings 2003]
-[Wolf 2007]
-[AUTOSAR Timing Extension 2015]
-****

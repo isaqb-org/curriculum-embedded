@@ -3,4 +3,4 @@
 // tag::EN[]
 // end::EN[]
 
-<<anastasopoulos>>, <<boeckle>>, <<clements>>, <<linden>>
+<<anastasopoulos>>, <<clements>>, <<kang>>

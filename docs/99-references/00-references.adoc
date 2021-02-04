@@ -14,90 +14,98 @@ This section contains references that are cited in the curriculum.
 
 **A**
 
-- [[[anastasopoulos, Anastasopoulos+ 2000]]]
-Anastasopoulos, M/Gacek, C: Implementing Product Line Variabilities, IESE Report 089.00/E, Fraunhofer IESE
+- [[[anastasopoulos, Anastasopoulos+ 2001]]]
+Michalis Anastasopoulos, Cristina Gacek: Implementing Product Line Variabilities, in: ACM SIGSOFT Software Engineering Notes, May 2001
 
-- [[[andreas, Andrews+2008]]]
+- [[[andrews, Andrews+2008]]]
 Jason Andrews, Kamal Hyder, Bob Perrin, Colin Walls, Rick Gentile, Keith E. Curtis, David J. Katz, Jack Ganssle, Jean J. Labrosse, Robert Oshana: Embedded Software, Elsevier, 2008
-
-Jason Andrews, Kamal Hyder, Bob Perrin, Colin Walls, Rick Gentile, Keith E. Curtis, David J. Katz, Jack Ganssle, Jean J. Labrosse, Robert Oshana: 
 
 **B**
 
-- [[[boeckle, Böckle+2004]]]
-Böckle, G/Knauber, P/Pohl, K/Schmid, K: Software-Produktlinien – Methoden, Einführung und Praxis, dpunkt.verlag
+- [[[baruah, Baruah+2015]]]
+Sanjoy K. Baruah, Marko Bertogna, Giorgio C. Buttazzo: Multiprocessor Scheduling for Real-Time Systems, Springer 2015
 
-- [[[boercsoek, Börcsök 2011]]]
-Börcsök, J: Funktionale Sicherheit, VDE Verlag
 
 **C**
 
 - [[[clements, Clements+2002]]]
-Clements, P/Northrop, L: Software Product Lines – Practices and Patterns, Addison Wesley
+Paul Clements, Linda M. Northrop: Software product lines - practices and patterns, Addison Wesley 2002
+
+**D**
+
+- [[[douglass-rtuml, Douglass 2014]]]
+Bruce Powel Douglass: Real Time UML Workshop for Embedded Systems, Newnes 2014
+
+- [[[douglass, Douglass 2015]]]
+Bruce Powel Douglass: Agile Systems Engineering, Morgan Kaufman 2015
+
+**F**
+
+- [[[feiler, Feiler+ 2012]]]
+Peter H. Feiler, David P. Gluch: Model-Based Engineering with AADL, Addison-Wesley 2012
 
 **H**
 
 - [[[hanmer, Hanmer 2007]]]
-Hanmer, R: Patterns for Fault Tolerant Software, Wiley
+Robert Hanmer: Patterns for Fault Tolerant Software, Wiley 2007
 
-- [[[hruschka, Hruschka+2002]]]
-Hruschka, P/Rupp, C: Agile Softwareentwicklung für Embedded Real-Time Systems mit der UML, Hanser
+
+**K**
+
+- [[[koopman, Koopman 2021]]]
+Philip Koopman: Better Embedded System Software, Independently published 2021 
+
+- [[[kopetz, Kopetz 2011]]]
+Hermann Kopetz: Real-Time Systems - Design Principles for Distributed Embedded Applications, Springer 2011
+
+- [[[kordon, Kordon 2013]]]
+Fabrice Kordon (Editor): Embedded Systems - Analysis and Modeling with SysML, UML and AADL, Wiley 2013
+
+
 
 **L**
 
 - [[[kang, Kang+1990]]]
-Kang, KC et al: Feature Oriented Domain Analysis (FODA) Feasibility Study, Technical Report CMU/SEI-90-TR-21
+Kyo C. Kang, Sholom G. Cohen, James A. Hess, William E. Novak, A. Spencer Peterson: Feature-Oriented Domain Analysis (FODA) Feasibility Study, Technical Report CMU/SEI-90-TR-021, Software Engineering Institute, Carnegie Mellon University, 1990
 
 **I**
 
-- [[[iec61508, IEC 61608]]]
-Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems, 2010
+- [[[iec61508, IEC 61508]]]
+IEC 61508:2010 Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems, 
+The International Electrotechnical Commission 2010
 
-- [[[iso26262, ISO 26262]]]
-Road Vehicles - Functional safety, 2011
+- [[[iso26262, ISO 26262:2018]]]
+ISO 26262-1:2018 Road vehicles — Functional safety, International Organization for Standardization, 2018
 
 **L**
 
-- [[[liggesmeyer, Liggesmeyer+2005]]]
-Liggesmeyer, P/Rombach, D (ed): Software Engineering eingebetteter Systeme, Elsevier
-
-- [[[linden, Linden+2007]]]
-van der Linden, FJ, Schmid, K/Rommes, E: Software Product Lines in Action, Springer
-
 - [[[liu, Liu 2000]]]
-Liu, JWS: Real Time Systems, Prentice Hall
+Jane W.-S. Liu: Real-time systems. Prentice Hall 2000
 
 **N**
 
 - [[[nasa, NASA 2004]]]
-NASA Software Safety Guidebook, NASA-GB-8719.13
-
-- [[[norton, Norton+1997]]]
-Norton, S/Dipasquale, M: Threadtime, Prentice Hall
-
-**R**
-
-- [[[rupp, Rupp+2012]]]
-Rupp, C et al: UML 2 glasklar, Hanser
+NASA Software Safety Guidebook, NASA-GB-8719.13, 2004
 
 **S**
 
 - [[[samek, Samek 2008]]]
-Samek, M: Practical Statecharts in C/C++, Butterworth Heinemann
+Miro Samek: Practical Statecharts in C/C++, CRC Press 2008
 
-- [[[selic, Selic+1994]]]
-Selic, B et al: Real-Time Object-Oriented Modeling, Wiley
+- [[[selic-room, Selic+1994]]]
+Bran Selic, Garth Gullekson, Paul T. Ward: Real-Time Object-Oriented Modeling, Wiley 1994
 
-- [[[simon, Simon 1999]]]
-Simon, D: An Embedded Software Primer, Addison Wesley
+- [[[selic-marte, Selic+2014]]]
+Bran Selic, Sébastien Gérard: Modeling and Analysis of Real-Time and Embedded Systems with UML and MARTE, Morgan Kaufman 2013
 
-- [[[smith, Smith+2011]]]
-Smith, D/Simpson, K: Safety Critical Systems Handbook, Butterworth Heinemann
+- [[[smith, Smith+2016]]]
+David Smith, Kenneth Simpson: Safety Critical Systems Handbook, Butterworth Heinemann 2016
 
 - [[[stallings, Stallings 2014]]]
 Stallings, W: Operating Systems: Internals and Design Principles, Prentice Hall
 
 **W**
 
-- [[[wolf, Wolf 2007]]]
-Wolf, W: High Performance Embedded Computing, Morgan Kaufmann
+- [[[weilkiens, Weilkiens 2008]]]
+Tim Weilkiens: Systems Engineering with SysML/UML: Modeling, Analysis, Design, Morgan Kaufman 2008
+

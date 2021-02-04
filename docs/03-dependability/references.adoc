@@ -3,4 +3,4 @@
 // tag::EN[]
 // end::EN[]
 
-<<boercsoek>>, <<hanmer>>, <<iec61508>>, <<iso26262>>, <<liggesmeyer>>, <<nasa>>, <<smith>>
+<<hanmer>>, <<nasa>>, <<smith>>, <<iec61508>>, <<iso26262>>

@@ -3,4 +3,4 @@
 // tag::EN[]
 // end::EN[]
 
-<<hruschka>>, <<liggesmeyer>>, <<rupp>>, <<samek>>, <<selic>>, <<wolf>>
+<<koopman>>, <<weilkiens>>, <<andrews>>, <<samek>>, <<selic-room>>, <<selic-marte>>, <<feiler>>, <<kordon>>
