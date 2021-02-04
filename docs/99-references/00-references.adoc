@@ -17,8 +17,10 @@ This section contains references that are cited in the curriculum.
 - [[[anastasopoulos, Anastasopoulos+ 2000]]]
 Anastasopoulos, M/Gacek, C: Implementing Product Line Variabilities, IESE Report 089.00/E, Fraunhofer IESE
 
-- [[[andreas, Andreas+2008]]]
-Andreas, J et al: Embedded Software, Elsevier, 2008
+- [[[andreas, Andrews+2008]]]
+Jason Andrews, Kamal Hyder, Bob Perrin, Colin Walls, Rick Gentile, Keith E. Curtis, David J. Katz, Jack Ganssle, Jean J. Labrosse, Robert Oshana: Embedded Software, Elsevier, 2008
+
+Jason Andrews, Kamal Hyder, Bob Perrin, Colin Walls, Rick Gentile, Keith E. Curtis, David J. Katz, Jack Ganssle, Jean J. Labrosse, Robert Oshana: 
 
 **B**
 
