@@ -10,8 +10,7 @@
 
 ****
 
-Not sure whether the split into chapter "real time and concurrency" and
-"advanced topics in real-time architectural design" really makes sense
+Merge the content of this chapter into chapter 1 (system development) and chapter 4 (real time)
 
 ****
 
