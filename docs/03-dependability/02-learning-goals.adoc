@@ -95,12 +95,21 @@ memory regions (i.e., address spaces) and control flows (i.e., threads)
 [[LG-3-6]]
 ==== LG 3-6: Can apply architectural patterns and techniques for fault tolerant and safety-related systems
 
-* Can select and apply architectural patterns and techniques such as Redundancy,
-Diverse Software, Recovery Blocks, Correcting Audits, Escalation, [Fault
-Observer], [Maintenance Interface], Software Update, Units of Mitigation,
-Software- and Hardware-based memory protection techniques
+* Can distinguish between structural, functional, informational and temporal redundancy
 
-* Can decide, which error-reaction pattern is suitable for the system
+* Can select and apply architectural patterns and techniques and know advantages, disadvantages and limitations of these patterns
+
+* Are familiar with examples of patterns, such as Triple-Modular Redundancy, Duo-Duplex Redundancy, N-Version Programming, Recovery Blocks, Correcting Audits, Escalation, [Fault Observer], [Maintenance Interface], Software Update, Units of Mitigation, Software- and Hardware-based memory protection techniques, Centralized vs. Distributed Voting, Process-Level Redundancy, Ground State, Cold/Warm/Hot Standby
+
+* Can determine the increase in reliability gained by introducing redundancy and are aware of the importance of replicate reliability
+
+* Know that even after introducing redundancy single-points of failure may remain and can name techniques for hardening these, such as control-flow protection
+
+* Know sources of common-mode failures and can explain the meaning of the term
+
+* Are familiar with techniques for testing hardened systems, such as fault injection.
+
+* Can decide which error-reaction pattern is suitable for the system
 
 [[LG-3-7]]
 ==== LG 3-7: Can apply approaches to fault prevention
