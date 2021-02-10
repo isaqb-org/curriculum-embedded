@@ -65,7 +65,7 @@ software units
 
 
 [[LG-3-5]]
-==== LG 3-5: Understand the approaches to developing fault tolerant systems
+==== LG 3-5: Understand approaches to developing fault tolerant systems
 
 * Fault prevention is concerned with reducing the number of faults that are
 present in a system, e.g. via design methodologies, reviews, etc.
