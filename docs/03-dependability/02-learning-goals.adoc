@@ -74,8 +74,8 @@ present in a system, e.g. via design methodologies, reviews, etc.
 a fault tolerant system needs to be able to handle unanticipated errors
 
 * A fault-tolerant system needs to detect errors, and then perform error
-recovery or error mitigation to prevent these errors from resulting in a system
-failure
+recovery or error mitigation to prevent error propagation, which may lead to
+system failure
 
 * After error detection, there are several ways to react to the error. Reaction
 patterns are fail-stop, fail-operational, fail-silent and fail-consistent behavior 
