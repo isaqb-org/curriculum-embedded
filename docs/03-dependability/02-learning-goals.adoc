@@ -9,28 +9,30 @@
 
 Understand the following terms and how they are related to each other:
 dependability, safety, availability, reliability, fault tolerance, security,
-fault, error, failure, fail stop, fail operational
+fault, error, failure, fail stop, fail operational, freedom from interference, spatial interference, temporal interference, communication interference
+
 
 [[LG-3-2]]
-==== LG 3-2: Understanding the approach to developing a safety related system
+==== LG 3-2: Understanding the design methodology for safety related systems
 
-Understand the fundamental approach to developing a safety related system:
+Understand the fundamental approach to develop a safety related system:
 
 * Performing a hazard and risk analysis
+
+* Deciding on a risk treatment (mitigate, eliminate, transfer or accept)
 
 * Defining and allocating safety requirements
 
 * Realizing safety requirements on system, hardware and software level
 
-* Analyzing the system, e.g. with FMEA and FTA
+* Analyzing the system's residual risk, e.g. with FMEA and FTA, to verify that an acceptable level of risk has been achieved
 
-Understand that functional safety must be considered on system level, and
+Understand that functional safety must be considered on the system level, and
 impacts system architecture, software architecture, and hardware architecture
 
-Understand that the development of safety related system is subject to norms
-and regulations, such as IEC 61508 or domain specific norms
+Understand the influence of standards in the development of safety related systems
 
-Know the typical scope of safety norms and regulations
+Understand the difference in approach to safety releated system development of differents standards such as the IEC 61508, ISO 26262, ISO 13485 and other domain specific safety standards
 
 
 [[LG-3-3]]
@@ -46,18 +48,11 @@ requirements that are defined to control the risk, and further propagated to
 derived safety requirements and to the building blocks to which a safety
 requirement is allocated
 
-* The safety classification of a building block can also be propagated to
-another building block that has no safety classification from an allocated
-safety requirement, but which can interfere with the building block with the
-safety classification (e.g. via shared memory or timing)
+* Coupling between building blocks can lead to a propagation of the associated risk between the building blocks
 
-* Under certain circumstances, a system can be decomposed in such a way that the
-results of a decomposition have a lower safety classification than the original
-element. This is only possible if freedom of interference is guaranteed for
-building blocks that result from the decomposition
+* By decomposing a building block its associated risk can be distributed and encapsulated over multiple building blocks. This leads to a lower risk classification for the indiviual building blocks. To do so, freedom from interference must to be assured between them
 
-* The details of safety classification and decomposition are subject to specific
-norms and standards
+* The details of safety classification and decomposition are subject to specific norms and standards
 
 
 [[LG-3-4]]
