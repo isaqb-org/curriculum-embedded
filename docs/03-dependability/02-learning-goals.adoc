@@ -78,10 +78,24 @@ present in a system, e.g. via design methodologies, reviews, etc.
 * It is not possible to completely prevent the introduction of faults, therefore
 a fault tolerant system needs to be able to handle unanticipated errors
 
-* A fault tolerant system needs to detect errors, and then perform error
+* A fault-tolerant system needs to detect errors, and then perform error
 recovery or error mitigation to prevent these errors from resulting in a system
 failure
 
+* After error detection, there are several ways to react to the error. Reaction
+patterns are fail-stop, fail-operational, fail-silent and fail-consistent behavior 
+
+* Redundancy techniques can help to build fault-tolerant systems. Homogeneous
+and heterogeneous techniques exist. Denpending on the types of errors to handle,
+a suitable redundancy technique or a combinatin of techniques has to be selected
+
+* Redundancy is applied to an architectural buildung block. Therefore, the sphere
+of redundancy, that is, the code under protection, has to be aligned with the definition
+of architectural building block. Strong cohesion and loose coupling principles have to
+be taken into consideration for that
+
+* The sphere of redundancy is also assigend to an isolation zone with respect to
+memory regions (i.e., address spaces) and control flows (i.e., threads)
 
 [[LG-3-6]]
 ==== LG 3-6: Can apply architectural patterns and techniques for fault tolerant and safety-related systems
@@ -91,6 +105,7 @@ Diverse Software, Recovery Blocks, Correcting Audits, Escalation, [Fault
 Observer], [Maintenance Interface], Software Update, Units of Mitigation,
 Software- and Hardware-based memory protection techniques
 
+* Can decide, which error-reaction pattern is suitable for the system
 
 [[LG-3-7]]
 ==== LG 3-7: Can apply approaches to fault prevention
