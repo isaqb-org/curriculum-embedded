@@ -23,61 +23,46 @@ data evaluation, actuator control
 * When implementing hard real-time requirements, a defined maximum deadline must
 be given for each action.
 
+* Understand that real-time architectural design should be performed early on in the project
+
+* Know that real-time architectural design also may also encompass choosing and configuring an
+operating system, which poses a technological impact factor
 
 [[LG-4-2]]
 ==== LG 4-2: Being able to apply a systematic approach to real-time system design
+
 
 Apply the fundamental approach to real-time architectural design:
 
 * Specify and/or identify external real-time constraints
 
-* Decompose the system behavior into jobs (e.g. identify the needed jobs for
-each software module )
+* Choose one of the fundamental approaches to create a real-time architecture (time-triggered vs. event-triggered approaches)
 
-* Specify the properties of each job, such as priority, period, WCET
+* Create the task-architecture view of the system architecture
 
-* Decide on a technical solution approach, such as multiple operating system
-tasks, cyclic executive, interrupts, or any combination of these
+* Implement the real-time architectural design
 
-* Allocate jobs to the elements of the technical solution
+* Verify the real-time architectural design
 
-* Simulate and/or verify the real-time architectural design to ensure that the
-external real-time constraints can be met
+* Determine resource usage (e.g., CPU load, memory usage) of the implementation
 
-* Refine the real-time architectural design  (e.g. refine Tasks priorities)
-
-* Provide an estimate of the overall cpu load
-
-* Perform shared resources analysis (e.g. shared variables analysis and
-protection using critical sections, which could be protected by semaphores or
-disable/enable interrupts)
-
-* Optimize critical sections (e.g. by assigning the functions of modules, which
-share the same software resources, in the same RTOS task whenever possible)
-
-* Evaluate Real-Time and Multitasking Software Designs (either by design reviews
-or using scheduling simulation and verification tools)
-
-* Consider possible  real-time architectural evolution in the future
-
-Real-time architectural design also encompasses choosing and configuring an
-operating system
-
-Real-time architectural design should be performed early on in the project
+* Respect verification- and resource-usage-analyses results by improving and refining 
+the real-time architectural design to support the iterative-incremental development approach
 
 Participants know:
 
-* Examples of real-time architectural design containing some modules and their
-assignation to RTOS tasks
+* The integration of real-time-systems design within the development cycle (e.g., V-Model)
+
 
 
 [[LG-4-3]]
 ==== LG 4-3: Being able to specify and model real-time requirements
 
+* Identify and specify external real-time constraints
+
 * Know different approaches to the specification and modelling of real-time requirements (e.g. specifying real-time requirements in standard UML models, using the MARTE profile, or using domain specific approaches such as TIMMO-2-USE, or AUTOSAR Timing Extensions)
 
 * Are able to select and apply an approach for specifying the real-time requirements of a specific system
-
 
 [[LG-4-4]]
 ==== LG 4-4: Understanding time triggered vs. event triggered approaches to real-time architectural design
@@ -86,6 +71,21 @@ assignation to RTOS tasks
 
 * Understand the tradeoffs of time-triggered vs. event-triggered approaches
 regarding determinism and flexibility
+
+[[LG-4-Z]]
+==== LG 4-3: Being able to create the real-time architectural design
+
+Participants are able to define a task architecture and design the implementation of the real-time system
+
+* Decompose the system behavior into jobs (e.g. identify the needed jobs for
+each software module)
+
+* Specify the properties of each job, such as priority, period, WCET
+
+* Decide on a technical solution approach, such as multiple operating-system
+tasks, the use of schedule tables,  cyclic executive, interrupts, or any combination of these
+
+* Allocate jobs to the elements of the technical solution
 
 
 [[LG-4-5]]
@@ -154,6 +154,9 @@ be avoided
 * Explain priority inversion and show solution methods (priority ceiling,
 priority inheritance)
 
+* Optimize critical sections (e.g. by assigning the functions of modules, which
+share the same software resources, in the same RTOS task whenever possible)
+
 
 [[LG-4-7]]
 ==== LG 4-7: Understanding the impact of the operating system on real-time characteristics
@@ -165,6 +168,9 @@ systems serve different purposes.
 
 * Know a minimum of two examples of real-time operating systems including their
 characteristics (e.g. QNX, eCos, OSEK OS, uC/OS-II, ...)
+
+* Refine the real-time architectural design in the context of the selected operating system (e.g., refine 
+tasks priorities and assigning program elements to task entities)
 
 
 [[LG-4-8]]
@@ -182,10 +188,33 @@ requirements of jobs
 [[LG-4-9]]
 ==== LG 4-9: Understanding approaches to real-time analysis
 
-Worst-case execution time:
+Evaluate the real-time and multitasking design (either by design reviews
+and design analyses (e.g. schedulability analysis) or/and using scheduling simulation and verification tools)
+
+Schedulability analysis:
+
+* Understanding measurement, simulation and analytical methods as approaches to
+real-time analysis to ensure that real-time constraints can be met
+
+* Understand that the schedulability of a set of tasks cannot be shown in a
+dependable way by individual measurements
+
+* Understand that analytical methods such as rate monotonic analysis (RMA) and
+deadline monotonic analysis allow for a dependable schedulability analysis
+
+* Can apply rate-monotonic analysis (calculate the CPU load of each job and for
+the overall system)
+
+* Understand the limitations of analytical approaches regarding complex
+real-time systems, due to dependencies between jobs
+
+* Understand simulation as an approach for complex real-time systems
+
+
+Worst-case-execution-time (WCET) analysis:
 
 * Determining the maximum execution time of a job is crucial for real-time
-analysis (worst case execution time / WCET).
+analysis (i.e., determination of the WCET).
 
 dependable estimation of the maximum execution time (impact of caches,
 * In complex processor architectures, measuring the runtime will not allow for a
@@ -198,25 +227,18 @@ limit for the execution time of a job
 limited complexity. Also, there are limits regarding the tightness of the safe
 upper limit.
 
-Schedulability analysis:
+* Provide an estimate of the overall CPU load to support schedulability analyses such
+as rate-monotonic analysis
 
-* Understanding measurement, simulation and analytical methods as approaches to
-real-time analysis
+Additional analyses supporting the correctness of the real-time system with respect to data
+integrity in the face of concurrency, WCET, schedulability and changeability
 
-* Understand that the schedulability of a set of tasks cannot be shown in a
-dependable way by individual measurements
+* Perform shared resources analysis (e.g. shared variables analysis and
+protection using critical sections, which could be protected by semaphores or
+disable/enable interrupts)
 
-* Understand that analytical methods such as rate monotonic analysis (RMA) and
-deadline monotonic analysis allow for a dependable schedulability analysis
-
-* Can apply rate monotonic analysis (calculate the CPU load of each job and for
-the overall system)
-
-* Understand the limitations of analytical approaches regarding complex
-real-time systems, due to dependencies between jobs
-
-* Understand simulation as an approach for complex real-time systems
-
+* Consider possible real-time architectural evolution in the future (e.g., adding
+additional functions and assigning them to new tasks)
 
 [[LG-4-10]]
 ==== LG 4-10: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
