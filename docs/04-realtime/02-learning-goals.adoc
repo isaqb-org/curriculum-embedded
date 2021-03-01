@@ -86,16 +86,26 @@ Participants know:
 ==== LG 4-Z: Being able to create the real-time architectural design
 
 Participants are able to define a task architecture and design the implementation of the real-time system
+*
+* Specify and/or identify external real-time constraints:  physical events and their properties (periodic, non-periodic, period, inter-arrival time, arrival jitter) and relative deadlines associated with each event
 
-* Decompose the system behavior into jobs (e.g. identify the needed jobs for
-each software module)
+* Identify tasks, sub-tasks and their properties (periodic, aperiodic, sporadic, order of precedence, relative deadlines, jitter)
 
-* Specify the properties of each job, such as priority, period, WCET
+* Identify shared resources required by tasks and sub-tasks and their properties
 
-* Decide on a technical solution approach, such as multiple operating-system
-tasks, the use of schedule tables,  cyclic executive, interrupts, or any combination of these
+* Identify logical events triggered by the sub-tasks
 
-* Allocate jobs to the elements of the technical solution
+* Map tasks and sub-tasks to jobs
+
+* Decide on a technical solution approach, such as multiple operating system tasks, time-triggered system, cyclic executive, interrupts, or any combination of these, choose and configure an appropriate RTOS
+
+* Choose an appropriate approach for scheduling (preemptive/non-preemptive, task-level 'fixed', job-level or free priorities), migration (offline/online, task-level, job-level, free) and shared-resource control (NPCS, PIP, [PCP], SRP, [MPCP], MSRP)
+
+* Identify jobs with similar real-time properties and allocate these to the same elements of the technical solution (processors, operating-system tasks, processes, threads, real-time servers)
+
+* Simulate and/or verify the real-time architectural design to ensure that the external real-time constraints can be met (schedule simulation, schedule analysis, schedulability analysis, rate-monotonic analysis)
+
+* Refine the real-time architectural design  (e.g. introduce additional precedence constraints, refine task/job priorities, reallocate tasks/jobs)
 
 
 [[LG-4-5]]
