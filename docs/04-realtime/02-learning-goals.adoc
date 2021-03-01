@@ -98,8 +98,9 @@ tasks, the use of schedule tables,  cyclic executive, interrupts, or any combina
 [[LG-4-5]]
 ==== LG 4-5: Being able to select adequate technical solutions to concurrency
 
-Can describe the technical solutions cyclic executive, multitasking and
-interrupts, and name their strengths and weaknesses
+Can describe the technical solutions for the time-triggered and event-triggered approach (i.e. cyclic executive, event-triggered multitasking supported by an RTOS), and name their strengths and weaknesses
+
+* Can describe the strengths and weaknesses of using interrupts in a real-time-application implementation
 
 * Know criteria for selecting between different technical solutions
 
@@ -115,21 +116,27 @@ Cyclic schedules and frame-based scheduling:
 
 * Analyze the real-time characteristics of a solution based on cyclic executive
 
-Cyclic executive:
+* Can describe how different solution methods can be combined (e.g. cyclic executive and interrupt handlers)
 
-* Describe the benefits and drawbacks of cyclic executive
+* Can design cyclic schedules for simple real-time problems
 
-* Analyze the real-time characteristics of a solution based on cyclic executive
+* Can name algorithmic approaches for solving cyclic scheduling problems (e.g. list scheduling, branch and bound, genetic algorithms)
 
-Multitasking:
+RTOS-Based Event-Triggered Approach:
 
 * Describe the difference between static and dynamic scheduling methods
 
-* Define preemptive and non-preemptive scheduling methods
+* Can describe the advantages and disadvantages of using preemption
 
-* Describe priority-based scheduling
+* Can describe the advantages and disadvantages of task-, job-level and free priorities and migration
 
-* Understand rate monotonic scheduling and deadline monotonic scheduling
+* Can describe advantages and disadvantages of partitioned, clustered and global scheduling
+
+* Understand rate-monotonic, deadline-monotonic and earliest-deadline first scheduling
+
+* Can explain the term optimality wrt. scheduling algorithms and know under what circumstances RM and EDF are optimal
+
+* Can describe mechanisms for handling aperiodic events (e.g. the POSIX sporadic server)
 
 * Name the strengths and weaknesses of the different scheduling methods (static
 vs dynamic, preemptive vs non-preemptive)
@@ -137,15 +144,16 @@ vs dynamic, preemptive vs non-preemptive)
 * Select an appropriate scheduling method according to the real-time
 requirements and define the tasks and their characteristics Interrupts:
 
-Interrupts:
+* Can describe important timing properties of RTOSes and hardware (i.e. interrupt latency, scheduling latency, dispatch latency)
 
-* Name the strengths and weaknesses of using interrupts on application level
+Applicatio-Level Interrupt Handling:
+
+* Name the strengths and weaknesses of using interrupts on the application level
 
 * Define a concept for using interrupts on application level: prioritizing
 interrupts, rules for blocking interrupts, using the prologue/epilogue model
 
-* Understand that the concepts for using interrupts on application level will
-generally depend on the processor architecture (e.g. number of priorities).
+* Understand that the concepts for using interrupts on application level will generally depend on the processor architecture (e.g. number of priorities) and the RTOS (availability of prologue/epilogue mechanism).
 
 
 [[LG-4-6]]
