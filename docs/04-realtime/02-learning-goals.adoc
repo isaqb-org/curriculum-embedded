@@ -10,6 +10,8 @@
 * The real-time requirements of embedded systems are the result of their
 interaction with the environment
 
+* Explain the difference between hard, firm and soft real-time requirements and the consequences of the distinction
+
 * Explain the difference between timeliness and speed
 
 * Understand that generally all actions along the event chain from the occurrence of a relevant event
