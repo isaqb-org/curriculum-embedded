@@ -56,6 +56,7 @@ Participants know:
 
 * The integration of real-time-systems design within the development cycle (e.g., V-Model)
 
+* Real-time is a cross-cutting concern, i.e. it must be taken into account throughout the lifetime of the system (requirements elicitation, systems architecture, hardware architecture, software architecture, software implementation, test and verification, deployment).
 
 [[LG-4-3]]
 ==== LG 4-3: Being able to specify and model real-time requirements
