@@ -77,6 +77,8 @@ Participants know:
 * Understand different approaches to scheduling (online vs. offline, static vs. dynamic)
 
 
+* Understand that decision for a paradigm is often made early on, has a profound, cross-cutting impact on the architecture as well  as the implementation, and is hard to change after the fact
+
 [[LG-4-Z]]
 ==== LG 4-Z: Being able to create the real-time architectural design
 
