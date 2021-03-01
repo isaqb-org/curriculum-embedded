@@ -224,6 +224,8 @@ deadline-monotonic, least-laxity-first, earliest-deadline-first)
 * Understand the limitations of analytical approaches regarding complex
 real-time systems, due to dependencies between jobs
 
+* Understand approaches for including blocking time due to shared resources in schedulability analysis
+
 * Understand simulation as an approach for complex real-time systems
 
 Worst-case-execution-time (WCET) determination:
@@ -231,13 +233,20 @@ Worst-case-execution-time (WCET) determination:
 * Determining the maximum execution time of a job is crucial for real-time
 analysis (i.e., determination of the WCET)
 
-* Understand that the precision of WCET analysis is influenced by the complexity of the hardware 
-and software (impact of caches, pipelines, shortest vs. longest program path, ...)
-
-* Understand that there are limits to the tightness of the safe upper WCET limit
+* Understand that the precision and accuracy of WCET analysis is limited and is influenced by the complexity of the hardware and software (impact of caches, pipelines, shortest vs. longest program path, ...)
 
 * Provide an estimate of the overall CPU load to support schedulability analyses such
 as rate-monotonic analysis
+
+* Can explain the difference between Worst-Case Execution Time (WCET) and Worst Observed Execution Time (WOET)
+
+* Can explain advantages, disadvantages and limitations of static, dynamic analysis and hybrid approaches
+
+* Can explain why some mechanisms provided by programming languages pose difficulties for WCET analysis (e.g. heap-based memory management, garbage collection, dynamic dispatch)
+
+* Can explain the difference between sound and unsound analysis
+
+* Know examples of tools for static, dynamic and hybrid analysis (e.g. Absint aiT, TimeWeaver, TimingProfiler)
 
 Additional analyses supporting the correctness of the real-time system with respect to data
 integrity in the face of concurrency, WCET, schedulability and changeability
