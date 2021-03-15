@@ -10,8 +10,6 @@
 * The real-time requirements of embedded systems are the result of their
 interaction with the environment
 
-* Explain the difference between hard, firm and soft real-time requirements and the consequences of the distinction
-
 * Explain the difference between timeliness and speed
 
 * Understand that generally all actions along the event chain from the occurrence of a relevant event
@@ -77,41 +75,29 @@ Participants know:
 
 * Understand approaches to handling non-periodic events (interrupt-driven execution, background execution, slack-stealing, periodic, deferred or sporadic server)
 
-* Understand different approaches to scheduling (online vs. offline, static vs. dynamic)
-
+* Understand different approaches to scheduling (online vs. offline, static vs. dynamic) and migration  (offline/online, task-level, job-level, free)
 
 * Understand that decision for a paradigm is often made early on, has a profound, cross-cutting impact on the architecture as well  as the implementation, and is hard to change after the fact
+
 
 [[LG-4-Z]]
 ==== LG 4-Z: Being able to create the real-time architectural design
 
 Participants are able to define a task architecture and design the implementation of the real-time system
-*
-* Specify and/or identify external real-time constraints:  physical events and their properties (periodic, non-periodic, period, inter-arrival time, arrival jitter) and relative deadlines associated with each event
 
-* Identify tasks, sub-tasks and their properties (periodic, aperiodic, sporadic, order of precedence, relative deadlines, jitter)
+* Identify logical tasks and their properties
 
-* Identify shared resources required by tasks and sub-tasks and their properties
+* Identify shared resources required by logcial tasks and their properties
 
-* Identify logical events triggered by the sub-tasks
+* Map logical tasks to jobs
 
-* Map tasks and sub-tasks to jobs
-
-* Decide on a technical solution approach, such as multiple operating system tasks, time-triggered system, cyclic executive, interrupts, or any combination of these, choose and configure an appropriate RTOS
-
-* Choose an appropriate approach for scheduling (preemptive/non-preemptive, task-level 'fixed', job-level or free priorities), migration (offline/online, task-level, job-level, free) and shared-resource control (NPCS, PIP, [PCP], SRP, [MPCP], MSRP)
-
-* Identify jobs with similar real-time properties and allocate these to the same elements of the technical solution (processors, operating-system tasks, processes, threads, real-time servers)
-
-* Simulate and/or verify the real-time architectural design to ensure that the external real-time constraints can be met (schedule simulation, schedule analysis, schedulability analysis, rate-monotonic analysis)
-
-* Refine the real-time architectural design  (e.g. introduce additional precedence constraints, refine task/job priorities, reallocate tasks/jobs)
+* Identify jobs with similar properties and allocate these to the same elements of the technical solution
 
 
 [[LG-4-5]]
 ==== LG 4-5: Being able to select adequate technical solutions to concurrency
 
-Can describe the technical solutions for the time-triggered and event-triggered approach (i.e. cyclic executive, event-triggered multitasking supported by an RTOS), and name their strengths and weaknesses
+Can describe the technical solutions cyclic executive, multitasking and interrupts
 
 * Can describe the strengths and weaknesses of using interrupts in a real-time-application implementation
 
