@@ -1,4 +1,0 @@
-=== {references}
-
-// tag::EN[]
-// end::EN[]

@@ -6,9 +6,9 @@
 | Duration: 90 min | Practice time: 30 min
 |===
 
-=== Terms and Principles 
+=== Terms and Principles
 
-System architecture, functional architecture, system development, software
-development, hardware development, hardware/software interface
+System architecture, functional architecture, technical system architecture,
+event chain, system development, software development, hardware development
 
 // end::EN[]

@@ -59,7 +59,4 @@ include::04-realtime/00-structure.adoc[{include_configuration}]
 include::05-adaptability/00-structure.adoc[{include_configuration}]
 
 <<<
-include::06-advanced-realtime/00-structure.adoc[{include_configuration}]
-
-<<<
 include::99-references/00-references.adoc[{include_configuration}]
