@@ -52,7 +52,7 @@ functional architectures:
   flows
 
 * Define event chains based on the functional architecture. An event chain
-  traces the end to end behavior from an external triggering event to the
+  traces the end-to-end behavior from an external triggering event to the
   desired system reaction through the involved function blocks, events and
   information flows.
 
