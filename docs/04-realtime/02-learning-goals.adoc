@@ -30,7 +30,6 @@ be given for each action.
 * Know that real-time architectural design also may also encompass choosing and configuring an
 operating system, which poses a technological impact factor
 
-
 [[LG-4-2]]
 ==== LG 4-2: Being able to apply a systematic approach to real-time system design
 
@@ -54,6 +53,7 @@ Participants know:
 
 * The integration of real-time-systems design within the development cycle (e.g., V-Model)
 
+* Real-time is a cross-cutting concern, i.e. it must be taken into account throughout the lifetime of the system (requirements elicitation, systems architecture, hardware architecture, software architecture, software implementation, test and verification, deployment).
 
 [[LG-4-3]]
 ==== LG 4-3: Being able to specify and model real-time requirements
@@ -74,7 +74,11 @@ Participants know:
 
 * Understand approaches to handling non-periodic events (interrupt-driven execution, background execution, slack-stealing, periodic, deferred or sporadic server)
 
-* Understand different approaches to scheduling (online vs. offline, static vs. dynamic)
+* Understand different approaches to scheduling (online vs. offline, static vs. dynamic) and migration  (offline/online, task-level, job-level, free)
+
+* Can describe advantages and disadvantages of partitioned, clustered and global scheduling
+
+* Understand that decision for a paradigm is often made early on, has a profound, cross-cutting impact on the architecture as well  as the implementation, and is hard to change after the fact
 
 
 [[LG-4-Z]]
@@ -82,22 +86,23 @@ Participants know:
 
 Participants are able to define a task architecture and design the implementation of the real-time system
 
-* Decompose the system behavior into jobs (e.g. identify the needed jobs for
-each software module)
+* Identify logical tasks and their properties
 
-* Specify the properties of each job, such as priority, period, WCET
+* Identify shared resources required by logcial tasks and their properties
 
-* Decide on a technical solution approach, such as multiple operating-system
-tasks, the use of schedule tables,  cyclic executive, interrupts, or any combination of these
+* Map logical tasks to jobs
 
-* Allocate jobs to the elements of the technical solution
+* Identify jobs with similar properties and allocate these to the same elements of the technical solution
+
+* Can describe important timing properties of RTOSes and hardware (i.e. interrupt latency, scheduling latency, dispatch latency)
 
 
 [[LG-4-5]]
 ==== LG 4-5: Being able to select adequate technical solutions to concurrency
 
-Can describe the technical solutions cyclic executive, multitasking and
-interrupts, and name their strengths and weaknesses
+Can describe the technical solutions cyclic executive, multitasking and interrupts
+
+* Can describe the strengths and weaknesses of using interrupts in a real-time-application implementation
 
 * Know criteria for selecting between different technical solutions
 
@@ -113,21 +118,17 @@ Cyclic schedules and frame-based scheduling:
 
 * Analyze the real-time characteristics of a solution based on cyclic executive
 
-Cyclic executive:
+* Can describe how different solution methods can be combined (e.g. cyclic executive and interrupt handlers)
 
-* Describe the benefits and drawbacks of cyclic executive
+* Can design cyclic schedules for simple real-time problems
 
-* Analyze the real-time characteristics of a solution based on cyclic executive
-
-Multitasking:
+RTOS-Based Event-Triggered Approach:
 
 * Describe the difference between static and dynamic scheduling methods
 
-* Define preemptive and non-preemptive scheduling methods
+* Can describe the advantages and disadvantages of using preemption
 
-* Describe priority-based scheduling
-
-* Understand rate monotonic scheduling and deadline monotonic scheduling
+* Understand rate-monotonic, deadline-monotonic and earliest-deadline first scheduling
 
 * Name the strengths and weaknesses of the different scheduling methods (static
 vs dynamic, preemptive vs non-preemptive)
@@ -135,21 +136,20 @@ vs dynamic, preemptive vs non-preemptive)
 * Select an appropriate scheduling method according to the real-time
 requirements and define the tasks and their characteristics Interrupts:
 
-Interrupts:
+Application-Level Interrupt Handling:
 
-* Name the strengths and weaknesses of using interrupts on application level
+* Name the strengths and weaknesses of using interrupts at the application level
 
-* Define a concept for using interrupts on application level: prioritizing
+* Define a concept for using interrupts at the application level: prioritizing
 interrupts, rules for blocking interrupts, using the prologue/epilogue model
 
-* Understand that the concepts for using interrupts on application level will
-generally depend on the processor architecture (e.g. number of priorities).
+* Understand that the concepts for using interrupts at the application level will generally depend on the processor architecture (e.g. number of priorities) and the RTOS (support for prologue/epilogue mechanism).
 
 
 [[LG-4-6]]
 ==== LG 4-6: Being able to prevent problems caused by concurrent access to shared resources
 
-* Name potential problems caused by concurrent access to shared resources
+* Name potential problems caused by concurrent access to shared resources (e.g. blocking time)
 
 * Understand that whether problems due to concurrent access can actually occur
 depends strongly on the chosen technical solution to concurrency (e.g.
@@ -167,7 +167,6 @@ be avoided
 
 * Explain priority inversion and show solution methods (priority ceiling,
 priority inheritance)
-
 
 [[LG-4-7]]
 ==== LG 4-7: Understanding the impact of the operating system on real-time characteristics
@@ -211,7 +210,7 @@ experiences, measurements, simulation, mathematical methods, static analysis)
 real-time analysis gain confidence if the real-time constraints can be met
 
 * Understand that the schedulability of a set of tasks cannot be shown in a
-dependable way by individual measurements
+dependable way by individual measurements (e.g. blocking time)
 
 * Know different approaches to schedulability analysis (rate-monotonic,
 deadline-monotonic, least-laxity-first, earliest-deadline-first)
@@ -229,10 +228,9 @@ Worst-case-execution-time (WCET) determination:
 * Determining the maximum execution time of a job is crucial for real-time
 analysis (i.e., determination of the WCET)
 
-* Understand that the precision of WCET analysis is influenced by the complexity of the hardware 
-and software (impact of caches, pipelines, shortest vs. longest program path, ...)
+* Understand that the precision and accuracy of WCET analysis is limited and is influenced by the complexity of the hardware and software (impact of caches, pipelines, shortest vs. longest program path, memory management, dynamic dispatch, ...)
 
-* Understand that there are limits to the tightness of the safe upper WCET limit
+* Can explain advantages, disadvantages and limitations of static, dynamic analysis and hybrid approaches
 
 * Provide an estimate of the overall CPU load to support schedulability analyses such
 as rate-monotonic analysis
@@ -244,8 +242,9 @@ integrity in the face of concurrency, WCET, schedulability and changeability
 protection using critical sections, which could be protected by semaphores or
 disable/enable interrupts) and understand that shared resources also influence execution times.
 
-* Consider the impact factor of later additions to the task system and the effects on scheduling 
+* Consider the impact factor of later additions to the task system and the effects on scheduling
 and WCET (e.g., adding additional functions and assigning them to new tasks)
+
 
 [[LG-4-10]]
 ==== LG 4-10: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
