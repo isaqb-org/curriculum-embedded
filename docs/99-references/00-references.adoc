@@ -53,7 +53,7 @@ Robert Hanmer: Patterns for Fault Tolerant Software, Wiley 2007
 **K**
 
 - [[[koopman, Koopman 2021]]]
-Philip Koopman: Better Embedded System Software, Independently published 2021 
+Philip Koopman: Better Embedded System Software, Independently published 2021
 
 - [[[kopetz, Kopetz 2011]]]
 Hermann Kopetz: Real-Time Systems - Design Principles for Distributed Embedded Applications, Springer 2011
@@ -71,7 +71,7 @@ Kyo C. Kang, Sholom G. Cohen, James A. Hess, William E. Novak, A. Spencer Peters
 **I**
 
 - [[[iec61508, IEC 61508]]]
-IEC 61508:2010 Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems, 
+IEC 61508:2010 Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems,
 The International Electrotechnical Commission 2010
 
 - [[[iso26262, ISO 26262:2018]]]
@@ -109,3 +109,6 @@ Stallings, W: Operating Systems: Internals and Design Principles, Prentice Hall
 - [[[weilkiens, Weilkiens 2008]]]
 Tim Weilkiens: Systems Engineering with SysML/UML: Modeling, Analysis, Design, Morgan Kaufman 2008
 
+- [[[weilkiens-mbsa, Weilkiens+2015]]]
+Tim Weilkiens, Jesko G. Lamm, Stephan Roth, Markus Walker: Model-Based System
+Architecture, Wiley 2015
