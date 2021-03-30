@@ -6,37 +6,124 @@
 // tag::EN[]
 
 [[LG-1-1]]
-==== LG 1-1: Influence of system development processes
+==== LG 1-1: Understand the systematic approach to systems development
 
-* Know the basic structure of system development processes
+* Participants understand the cross-cutting nature of aspects like time
+  behavior, dependability and safety with regards to system-, software- and
+  hardware-develoment, and the necessity to address these with an integrated
+  systems development approach.
 
-* Understand that domain-specific norms, standards and legal requirements have a
-significant impact on system development processes
+* Participants understand that systems development follows an iterative approach
+  that includes both top-down activities like working with models, estimations
+  and simulations, and bottom-up activities like tests and measurements on real
+  systems to validate the estimations and simulations.
 
-* Understand how software, hardware and system development are integrated in system
-development processes, and how they interact with each other
+* Participants understand that modeling and model-based analysis enable the
+  evaluation of different architectures in a cost-efficient way. Model-based
+  approaches therefore enable a more thorough exploration of the design space.
 
-* Know examples of system development processes, relevant norms and standards,
-e.g. IEC 61508, ISO 330xx
+* Participants understand the costs and benefits of developing and maintaining
+  multiple architectural abstraction levels, such as functional and technical
+  system architectures: A functional architecture enables reasoning about a
+  system in a way that is independent of a specific technical realization and
+  allows for different technical variants. These benefits need to be weighed
+  against the costs for developing and maintaining several architectural
+  models.
+
+* Participants know methods and frameworks for model-based system development,
+  such as Harmony <<douglass>>, SYSMOD <<weilkiens>>, and FAS <<weilkiens-mbsa>>.
+
+* Participants understand that development approaches for embedded systems are
+  often subject to domain specific standards.
 
 
 [[LG-1-2]]
-==== LG 1-2: Fundamentals of system architecture
+==== LG 1-2: Modelling and analysis of functional architectures
 
-* Describe the contents of a system architecture
+Participants can apply a systematic approach to modelling and analysis of
+functional architectures:
 
-* Explain the differences and correlations between functional architecture and technical system architecture
+* Model the system context with external systems, physical entities, users of
+  the system and the logical events that occur between the system and its
+  environment
 
-* Specify hardware/software interfaces
+* Hierarchically decompose the system from a purely functional perspective,
+  identifying function blocks and their interactions via events or information
+  flows
 
-* Examples of modelling notations for system architectures, e.g. SysML
+* Define event chains based on the functional architecture. An event chain
+  traces the end-to-end behavior from an external triggering event to the
+  desired system reaction through the involved function blocks, events and
+  information flows.
 
-* Examples of tools for the system architecture
+Participants understand that a functional architecture enables reasoning about
+system quality characteristics at an abstract level, e.g., regarding time
+behavior, dependability, or flexibility.
+
+Participants know examples how functional architectures can be modelled,
+for example with SysML.
 
 
-****
-TODO: Include distributed systems topic here. Shortly relate to multicore system
-networks. -> beneficial for safety and real-time chapter
-****
+[[LG-1-3]]
+==== LG 1-3: Modelling and analysis of technical system architectures
+
+Participants understand the systematic approach to modelling and analysis of
+technical system architectures:
+
+* Analyze the impact factors, like quality requirements, organizational
+  constraints, technological constraints, as defined in the CPSA Foundation
+  Level curriculum. For the technical system architecture of embedded systems,
+  impact factors are often related to dependability and safety requirements,
+  performance and real-time requirements, flexibility requirements and support
+  for different product variants and product lines. Examples for further
+  considerations are physical proximity to sensors and actuators, limited
+  construction space, connectivity requirements, hardware cost, or development
+  schedules.
+
+* Based on the impact factors analysis, identify architectural issues and
+  develop solution strategies for topics such as error handling, resource
+  efficiency, real-time architectural design and variability
+
+* Evaluate alternative technical system architectures, and select a technical
+  system architecture for further refinement
+
+* Hierarchically decompose the system into technical building blocks, and
+  establish a mapping to the elements of the functional architecture, if applicable
+
+* Map event chains to the technical architecture, if applicable: For example,
+  allocate a function to determine a measurement to a physical sensor, or allocate
+  an information flow to a bus
+
+* Evaluate the defined technical system architecture with regard to the impact
+  factors
+
+Participants know examples how technical system architectures can be modelled,
+for example with SysML.
+
+Participants understand that the design of a technical system architecture is an
+iterative process that requires feedback from software development and hardware
+development.
+
+Participants know typical decisions that need to be made in the design of the
+technical system architecture:
+
+* How a function block is realized, for example in software, with an ASIC, an
+  FPGA, or a combination of these
+
+* Deciding the number of control units and their hardware characteristics
+  (e.g., single core, homogeneous multi core, heterogeneous multi core, amount of
+  RAM, ROM, NVRAM, peripherals like sensors and actuators, custom hardware)
+
+* Allocation of function blocks to one or more control units, considering
+  for example performance and isolation requirements
+
+* Decide on the communication paradigm (e.g., time triggered vs. event triggered)
+
+* Decide on network topologies (e.g., bus vs. star) and network technologies,
+  both wired (e.g., ethernet, flexray, CAN), and wireless (e.g., Bluetooth,
+  WiFi, cellular)
+
+* Understand the challenges of distributed systems regarding latency,
+  throughput, lack of a global clock, impact on dependability
 
 // end::EN[]
