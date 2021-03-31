@@ -8,7 +8,8 @@
 
 === Terms and Principles
 
-Variants, feature models, FODA, product lines
+Variants, feature models, FODA, plattform development, product lines, feature variability, variability in time,
+binding time
 
 
 // end::EN[]

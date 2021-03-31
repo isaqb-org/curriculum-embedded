@@ -6,35 +6,63 @@
 
 // tag::EN[]
 [[LG-5-1]]
-==== LG 5-1: Understand foundations of variant management
+==== LG 5-1: Understand the motivation for adaptability 
 
-Participants can:
+Participants understand the motivation and needs for adaptability and variability and how the need
+can be determined.
 
-* Model variability, e.g. using FODA (feature-oriented domain analysis)
+Participants know high level approaches to adaptability and variability such as the 150%-model, 80%-model,
+product platforms or product lines.
 
-* Describe different mechanisms for implementing variability as well as their strengths and weaknesses:
+Participants understand how points of variability can be defined in the requirements.
 
-** Aggregation/delegation
+[[LG-5-2]]
+==== LG 5-2: Understand the modelling of variability on the architecture level
 
-** Inheritance
+Participants understand the the use of a seperat functional and technical architecture and how those
+relate to adaptability and variability.
 
-** Parameterisation
+Participants understand that variability can occure at the same time on a functional and a technical
+level (e.g., different functionality is provided by a product, for each functionality different technical
+implementations are available).
 
-** Selecting alternative building blocks
+Participants know how to model points of variability in a functional and technical architecture.
 
-** Conditional compilation
+[[LG-5-3]]
+==== LG 5-3: Know solutions to implementing adaptability and understand their trade-offs
 
-** Aspect-oriented programming
+Participants know how adaptability and variability are support by:
+    * architecture principles such as modularity,
 
-** Generation
+    * architecture goals such as reuseability and maintainability,
 
-* Select mechanisms for implementing variability for a concrete system and reasonably justify their decision
+    * architecture and design patterns such as frameworks, plugins, libraries, adapter, face.
 
-Participants understand:
+Participants are able to implement points of variability in an architecture
 
-* Mechanisms for implementing variability take effect at different times, e.g. compile time vs run time.
+Participants know possible binding times when variability can take place (before runtime, at 
+startup/load time, at runtime)
 
-Participants know:
+Participants know trade-offs and drawbacks of increased variability and adaptability as well as competing
+architecture goals such as testability, performance, safety, security and backwards compatability.
 
-* Tools for variant management
+[[LG-5-4]]
+==== LG 5-4: Understand variability in time
+
+Participants know that variability is not only a question of features, but also naturally occures over
+time, based on different system configurations.
+
+Participants understand the trade-offs of using legacy code and how its usage can restrict adaptability
+and variability.
+
+Participants understand the necessity of refactoring in common development approaches (top-down, bottom-up,
+emergent, cyclic iterative).
+
+[[LG-5-5]]
+==== LG 5-5: Know tools to support variability
+
+Participants know common tools to model and manage variability.
+
+Participants understand how code generation can support adaptability and variability and know common
+tools for code generation.
 // end::EN[]
