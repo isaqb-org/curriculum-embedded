@@ -19,7 +19,7 @@ Participants understand how points of variability can be defined in the requirem
 [[LG-5-2]]
 ==== LG 5-2: Understand the modelling of variability on the architecture level
 
-Participants understand the use of a separate functional and technical architecture and how those
+Participants understand the use of a separate maintenance of functional and technical architecture and how those
 relate to adaptability and variability.
 
 Participants understand that variability can occur at the same time on a functional and a technical
