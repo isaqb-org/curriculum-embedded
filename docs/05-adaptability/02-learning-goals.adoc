@@ -37,7 +37,9 @@ Participants know how adaptability and variability are support by:
 
     * architecture goals such as reusability and maintainability,
 
-    * architecture and design patterns such as frameworks, plugins, libraries, adapter, facade.
+    * architecture and design patterns such as frameworks, plugins, libraries, adapter, facade,
+    
+    * architecture decisions such as deployment decisions (e.g., edge vs. cloud computing).
 
 Participants are able to implement points of variability in an architecture
 
