@@ -11,7 +11,7 @@
 Participants understand the motivation and needs for adaptability and variability and how the need
 can be determined.
 
-Participants know high level approaches to adaptability and variability such as the 150%-model, 80%-model,
+Participants know high level approches to adaptability and variability such as the 150%-model, 80%-model,
 product platforms or product lines.
 
 Participants understand how points of variability can be defined in the requirements.
@@ -32,6 +32,7 @@ Participants know how to model points of variability in a functional and technic
 ==== LG 5-3: Know solutions to implementing adaptability and understand their trade-offs
 
 Participants know how adaptability and variability are support by:
+
     * architecture principles such as modularity,
 
     * architecture goals such as reusability and maintainability,
