@@ -26,25 +26,24 @@ Participants understand that variability can occur at the same time on a functio
 level (e.g., different functionality is provided by a product, for each functionality different technical
 implementations are available).
 
-Participants know how to model points of variability in a functional and technical architecture.
+Participants know how to model points of variability in requirements, functional and technical architectures.
 
 [[LG-5-3]]
 ==== LG 5-3: Know solutions to implementing adaptability and understand their trade-offs
 
-Participants know how adaptability and variability are support by:
+Participants know how adaptability and variability are supported by:
     * architecture principles such as modularity,
-
-    * architecture goals such as reusability and maintainability,
 
     * architecture and design patterns such as frameworks, plugins, libraries, adapter, face.
 
-Participants are able to implement points of variability in an architecture
+Participants are able to design points of variability in an architecture
 
 Participants know possible binding times when variability can take place (before runtime, at 
 startup/load time, at runtime)
 
-Participants know trade-offs and drawbacks of increased variability and adaptability as well as competing
-architecture goals such as testability, performance, safety, security and backwards compatibility.
+Participants know trade-offs and drawbacks of increased variability and adaptability as well as competing 
+architecture goals (e.g., testability, performance, safety, security and backwards
+compatibility) and complementing architecture goals (e.g., maintainability, reusability).
 
 [[LG-5-4]]
 ==== LG 5-4: Understand variability in time
@@ -55,8 +54,8 @@ time, based on different system configurations.
 Participants understand the trade-offs of using legacy code and how its usage can restrict adaptability
 and variability.
 
-Participants understand the necessity of refactoring in common development approaches (top-down, bottom-up,
-emergent, cyclic iterative).
+Participants know how to maintain adaptability and deal with new adaptability requirements, e.g. by 
+refactoring.
 
 Participants know approaches how to handle system and software updates, as well as trade-offs of updates.
 
