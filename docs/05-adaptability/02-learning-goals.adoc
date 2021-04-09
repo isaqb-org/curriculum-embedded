@@ -19,7 +19,7 @@ Participants understand how points of variability can be defined in the requirem
 [[LG-5-2]]
 ==== LG 5-2: Understand the modelling of variability on the architecture level
 
-Participants understand the use of a separate functional and technical architecture and how those
+Participants understand the use of a separate maintenance of functional and technical architecture and how those
 relate to adaptability and variability.
 
 Participants understand that variability can occur at the same time on a functional and a technical
@@ -31,10 +31,13 @@ Participants know how to model points of variability in requirements, functional
 [[LG-5-3]]
 ==== LG 5-3: Know solutions to implementing adaptability and understand their trade-offs
 
-Participants know how adaptability and variability are supported by:
+Participants know how adaptability and variability are support by:
+
     * architecture principles such as modularity,
 
-    * architecture and design patterns such as frameworks, plugins, libraries, adapter, face.
+    * architecture and design patterns such as frameworks, plugins, libraries, adapter, facade.
+    
+    * architecture decisions such as deployment decisions (e.g., edge vs. cloud computing).
 
 Participants are able to design points of variability in an architecture
 
