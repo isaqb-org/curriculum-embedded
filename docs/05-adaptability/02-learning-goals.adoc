@@ -14,8 +14,6 @@ can be determined.
 Participants know high level approaches to adaptability and variability such as the 150%-model, 80%-model,
 product platforms or product lines.
 
-Participants understand how points of variability can be defined in the requirements.
-
 [[LG-5-2]]
 ==== LG 5-2: Understand the modelling of variability on the architecture level
 
