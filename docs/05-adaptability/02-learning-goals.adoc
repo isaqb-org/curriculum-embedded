@@ -29,7 +29,7 @@ Participants know how to model points of variability in requirements, functional
 [[LG-5-3]]
 ==== LG 5-3: Know solutions to implementing adaptability and understand their trade-offs
 
-Participants know how adaptability and variability are support by:
+Participants know how adaptability and variability are supported by:
 
     * architecture principles such as modularity,
 
