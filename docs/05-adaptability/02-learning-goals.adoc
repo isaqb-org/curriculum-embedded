@@ -47,7 +47,7 @@ architecture goals (e.g., testability, performance, safety, security and backwar
 compatibility) and complementing architecture goals (e.g., maintainability, reusability).
 
 [[LG-5-4]]
-==== LG 5-4: Understand variability in time
+==== LG 5-4: Understand the evolution of design
 
 Participants know that variability is not only a question of features, but also naturally occurs over
 time, based on different system configurations.
