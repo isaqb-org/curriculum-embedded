@@ -8,7 +8,7 @@
 [[LG-5-1]]
 ==== LG 5-1: Understand the motivation for adaptability 
 
-Participants understand the motivation and needs for adaptability and variability and how the need
+Participants understand the motivation and need for adaptability and variability and how the need
 can be determined.
 
 Participants know high level approaches to adaptability and variability such as the 150%-model, 80%-model,
@@ -19,8 +19,8 @@ Participants understand how points of variability can be defined in the requirem
 [[LG-5-2]]
 ==== LG 5-2: Understand the modelling of variability on the architecture level
 
-Participants understand the use of a separate maintenance of functional and technical architecture and how those
-relate to adaptability and variability.
+Participants understand the use of a separate maintenance of a functional and technical architecture
+and how those relate to adaptability and variability.
 
 Participants understand that variability can occur at the same time on a functional and a technical
 level (e.g., different functionality is provided by a product, for each functionality different technical
