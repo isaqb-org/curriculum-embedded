@@ -4,64 +4,139 @@
 // end::DE[]
 
 // tag::EN[]
+
+
 [[LG-2-1]]
-==== LG 2-1: Modelling software architectures for embedded systems
+==== LG 2-1: Modelling software for embedded systems
 
-Participants can:
+Participants know different approaches for modelling software for embedded
+systems. They understand the basic concepts, strengths and weaknesses of these
+approaches:
 
-* Describe the basic concepts, strengths and weaknesses of different approaches to modelling software architectures for embedded systems (e.g. UML, graphical and textual domain-specific languages, e.g. AADL, ROOM)
+* UML as a general purpose modelling language
 
-* Select a suitable modelling approach based on the requirements and boundary
-conditions of a project
+* UML profiles to adapt UML to a specific domain (e.g., MARTE as a UML profile
+  for modelling real-time systems)
 
-Participants understand:
+* Graphical and textual domain specific languages (e.g., AADL)
 
-* The use of profiles allows UML to be adapted for modelling embedded systems
-(e.g. MARTE)
+* State machines for modelling reactive systems
 
-Participants know:
+* Modelling data- and signal-flows (e.g., function block diagrams, Simulink)
 
-* Examples of modelling tools
+Participants understand how models can be used for analyzing the software, for
+examples with regards to failures (e.g., FTA / FMEA), schedulability, error
+propagation, and latency.
+
+Participants are able to select a suitable modelling approach based on the
+requirements and boundary conditions of the system under development.
 
 
 [[LG-2-2]]
-==== LG 2-2: Implementing software architectures for embedded systems
+==== LG 2-2: Implementing software for embedded systems
 
-Participants can:
+Participants understand how programming languages influence quality
+characteristics and cross-cutting concepts:
 
-Explain the basic concepts, strengths and weaknesses of different approaches to
-implementing software architectures for embedded systems:
+* Impact of the programming language on analyzability (e.g., with static
+  and dynamic analysis tools)
 
-* Code generation from state models (e.g. Matlab stateflow)
+* Impact of the programming language abstractions and concepts for concurrency,
+  memory management and error handling on cross-cutting concepts and
+  dependability
 
-* Code generation from dataflow models (e.g. Matlab Simulink)
+Participants know different programming language paradigms (e.g., procedural,
+object-oriented, functional). Participants know examples for programming languages
+supporting these paradigms that are suitable for embedded systems, and
+understand their strengths and weaknesses.
 
-* Generating code frames and interfaces (e.g. AUTOSAR interfaces)
 
-* Generating infrastructure code
+[[LG-2-3]]
+==== LG 2-3: Memory management
 
-* Code generation from graphical or textual domain-specific languages, e.g. ROOM
+Participants understand how memory management strategies and memory management
+related capabilities of the programming language affect memory safety,
+flexibility, predictability, performance and programming complexity:
 
-* Manual implementation
+* Understand the tradeoffs in choosing dynamic or static allocation of memory
 
-Explain how different approaches to implementation can be combined
+* Know managed approaches to dynamically allocated memory (e.g., garbage
+  collection, automated reference counting, ownership / non-lexical scoping) and
+  their tradeoffs
 
-Select a suitable approach to implementation based on the requirements and
-boundary conditions of a project
+* Know the impact of system architectural decisions on memory management (e.g.,
+  availability of memory management hardware like an MMU or MPU, CPU caches),
+  know software-based approaches to memory safety
 
-Participants understand:
+[[LG-2-4]]
+==== LG 2-4: Error handling
 
-* When selecting an approach to modelling or implementing software architectures
-for embedded systems, normative requirements must often be taken into
-consideration (e.g. code generators used in safety-related systems, tool
-certification).
+Participants know different language features and patterns for error handling
+and their strengths and weaknesses, such as return values, global error status
+variables, global error handlers, exceptions, options
 
-* With embedded systems, limited system resources are often an import impact
-factor for the implementation (e.g. potentially increased resource requirements
-when code is generated rather than manually implemented).
 
-Participants know:
+[[LG-2-5]]
+==== LG 2-5: Model-based development of embedded systems
 
-* Examples of tools for code generation for embedded systems
+Participants know how models can be used to generate artifacts for the
+realization, and understand the tradeoffs:
+
+* Different kinds of models and model elements can be used: structural models
+  (e.g., UML component models, AADL) and behavioral models (e.g., statecharts,
+  activity diagrams)
+
+* Different kinds artifacts can be generated, e.g. implementation code, test
+  cases, configurations, or analysis models
+
+* Using a model-based approach can have the following benefits:
+
+** Reduced effort, since these artifacts do not have to be created manually
+
+** Increased quality, since manual errors can be eliminated
+
+** Can support adaptibility in a resource-efficient way by resolving variability
+   during code generation
+
+* Using a model-based approach has the following potential costs:
+
+** Creating a sufficiently detailed model requires significant effort, which
+   needs to be weighed againts the potential savings
+
+** Generated code often has increased resource demands
+
+** Potential vendor lock-in, specifically with commercial tools
+
+** The generated code may be of insufficient quality or not suitable for the
+   target platform
+
+** Using a model-based approach in a safety-critical environment may lead to
+   significant tool qualification efforts
+
+
+
+[[LG-2-6]]
+==== LG 2-6: Verification of embedded software
+
+Participants can explain and give examples for different error categories
+(e.g. memory management errors, synchronization errors, type defects, timing
+errors).
+
+Participants understand how analysis techniques can be used to detect errors,
+and know the limitations of these techniques:
+
+* Participants can define static analysis, understand the difference between
+  sound and unsound analysis, and know the application areas of static analysis
+  tools. Participants know examples for static analysis tools.
+
+* Participants can define dynamic analysis and know the application areas of
+  dynamic analysis tools. Participants know examples for dynamic analysis
+  tools.
+
+[[LG-2-7]]
+==== LG 2-7: Design paradigms
+
+Participants know design principles and paradigms for embdded software, such as
+design by contract, the robustness principle, or defensive programming.
 
 // end::EN[]
