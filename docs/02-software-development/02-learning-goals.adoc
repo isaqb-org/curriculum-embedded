@@ -101,7 +101,7 @@ realization, and understand the tradeoffs:
 * Using a model-based approach has the following potential costs:
 
 ** Creating a sufficiently detailed model requires significant effort, which
-   needs to be weighed againts the potential savings
+   needs to be weighed against the potential savings
 
 ** Generated code often has increased resource demands
 

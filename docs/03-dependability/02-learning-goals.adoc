@@ -9,7 +9,8 @@
 
 Understand the following terms and how they are related to each other:
 dependability, safety, availability, reliability, fault tolerance, security,
-fault, error, failure, fail stop, fail operational, freedom from interference, spatial interference, temporal interference, communication interference
+fault, error, failure, fail stop, fail operational, freedom from interference,
+spatial interference, temporal interference, communication interference
 
 
 [[LG-3-2]]
@@ -25,14 +26,17 @@ Understand the fundamental approach to develop a safety related system:
 
 * Realizing safety requirements on system, hardware and software level
 
-* Analyzing the system's residual risk, e.g. with FMEA and FTA, to verify that an acceptable level of risk has been achieved
+* Analyzing the system's residual risk, e.g. with FMEA and FTA, to verify that
+  an acceptable level of risk has been achieved
 
 Understand that functional safety must be considered on the system level, and
 impacts system architecture, software architecture, and hardware architecture
 
 Understand the influence of standards in the development of safety related systems
 
-Understand the difference in approach to safety releated system development of differents standards such as the IEC 61508, ISO 26262, ISO 13485 and other domain specific safety standards
+Understand the difference in approach to safety related system development of
+differents standards such as the IEC 61508, ISO 26262, ISO 13485 and other
+domain specific safety standards
 
 
 [[LG-3-3]]
@@ -41,18 +45,23 @@ Understand the difference in approach to safety releated system development of d
 Understand the process:
 
 * Based on the risk analysis, risks are classified regarding their severity
-(e.g. a Safety Integrity Level in IEC 61508)
+  (e.g., a Safety Integrity Level in IEC 61508)
 
 * The classification of a risk is propagated to safety goals and/or safety
-requirements that are defined to control the risk, and further propagated to
-derived safety requirements and to the building blocks to which a safety
-requirement is allocated
+  requirements that are defined to control the risk, and further propagated to
+  derived safety requirements and to the building blocks to which a safety
+  requirement is allocated
 
-* Coupling between building blocks can lead to a propagation of the associated risk between the building blocks
+* Coupling between building blocks can lead to a propagation of the associated
+  risk between the building blocks
 
-* By decomposing a building block its associated risk can be distributed and encapsulated over multiple building blocks. This leads to a lower risk classification for the indiviual building blocks. To do so, freedom from interference must to be assured between them
+* By decomposing a building block its associated risk can be distributed and
+  encapsulated over multiple building blocks. This leads to a lower risk
+  classification for the indiviual building blocks. To do so, freedom from
+  interference must to be assured between them
 
-* The details of safety classification and decomposition are subject to specific norms and standards
+* The details of safety classification and decomposition are subject to specific
+  norms and standards
 
 
 [[LG-3-4]]
@@ -68,42 +77,53 @@ software units
 ==== LG 3-5: Understand approaches to developing fault tolerant systems
 
 * Fault prevention is concerned with reducing the number of faults that are
-present in a system, e.g. via design methodologies, reviews, etc.
+  present in a system, e.g. via design methodologies, reviews, etc.
 
 * It is not possible to completely prevent the introduction of faults, therefore
-a fault tolerant system needs to be able to handle unanticipated errors
+  a fault tolerant system needs to be able to handle unanticipated errors
 
 * A fault-tolerant system needs to detect errors, and then perform error
-recovery or error mitigation to prevent error propagation, which may lead to
-system failure
+  recovery or error mitigation to prevent error propagation, which may lead to
+  system failure
 
 * After error detection, there are several ways to react to the error. Reaction
-patterns are fail-stop, fail-operational, fail-silent and fail-consistent behavior 
+  patterns are fail-stop, fail-operational, fail-silent and fail-consistent
+  behavior
 
 * Redundancy techniques can help to build fault-tolerant systems. Homogeneous
-and heterogeneous techniques exist. Denpending on the types of errors to handle,
-a suitable redundancy technique or a combinatin of techniques has to be selected
+  and heterogeneous techniques exist. Depending on the types of errors to
+  handle, a suitable redundancy technique or a combination of techniques has to
+  be selected
 
-* Redundancy is applied to an architectural buildung block. Therefore, the sphere
-of redundancy, that is, the code under protection, has to be aligned with the definition
-of architectural building block. Strong cohesion and loose coupling principles have to
-be taken into consideration for that
+* Redundancy is applied to an architectural building block. Therefore, the
+  sphere of redundancy, that is, the code under protection, has to be aligned
+  with the definition of architectural building block. Strong cohesion and loose
+  coupling principles have to be taken into consideration for that
 
 * The sphere of redundancy is also assigend to an isolation zone with respect to
-memory regions (i.e., address spaces) and control flows (i.e., threads)
+  memory regions (i.e., address spaces) and control flows (i.e., threads)
 
 [[LG-3-6]]
 ==== LG 3-6: Can apply architectural patterns and techniques for fault tolerant and safety-related systems
 
 * Can distinguish between structural, functional, informational and temporal redundancy
 
-* Can select and apply architectural patterns and techniques and know advantages, disadvantages and limitations of these patterns
+* Can select and apply architectural patterns and techniques and know
+  advantages, disadvantages and limitations of these patterns
 
-* Are familiar with examples of patterns, such as Triple-Modular Redundancy, Duo-Duplex Redundancy, N-Version Programming, Recovery Blocks, Correcting Audits, Escalation, [Fault Observer], [Maintenance Interface], Software Update, Units of Mitigation, Software- and Hardware-based memory protection techniques, Centralized vs. Distributed Voting, Process-Level Redundancy, Ground State, Cold/Warm/Hot Standby
+* Are familiar with examples of patterns, such as Triple-Modular Redundancy,
+  Duo-Duplex Redundancy, N-Version Programming, Recovery Blocks, Correcting
+  Audits, Escalation, [Fault Observer], [Maintenance Interface], Software
+  Update, Units of Mitigation, Software- and Hardware-based memory protection
+  techniques, Centralized vs. Distributed Voting, Process-Level Redundancy,
+  Ground State, Cold/Warm/Hot Standby
 
-* Can determine the increase in reliability gained by introducing redundancy and are aware of the importance of replicate reliability
+* Can determine the increase in reliability gained by introducing redundancy and
+  are aware of the importance of replicate reliability
 
-* Know that even after introducing redundancy single-points of failure may remain and can name techniques for hardening these, such as control-flow protection
+* Know that even after introducing redundancy single-points of failure may
+  remain and can name techniques for hardening these, such as control-flow
+  protection
 
 * Know sources of common-mode failures and can explain the meaning of the term
 
@@ -115,36 +135,37 @@ memory regions (i.e., address spaces) and control flows (i.e., threads)
 ==== LG 3-7: Can apply approaches to fault prevention
 
 * Suitable processes and methods for design, implementation, verification, and
-testing are crucial to prevent faults in the system
+  testing are crucial to prevent faults in the system
 
 * In a safety-related system, norms and standards give recommendations for
-processes and methods
+  processes and methods
 
 
 [[LG-3-8]]
 ==== LG 3-8: Can apply patterns for detecting errors and failures
 
 * Can select and apply general patterns and techniques such as Checksum,
-Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
-Plausibility Checks, Control Flow Monitoring
+  Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
+  Plausibility Checks, Control Flow Monitoring
 
 * Can select and apply detection patterns that are used with redundancy such as
-Voting, Lockstep
+  Voting, Lockstep
 
-* Understand the importance of timely error detection 
+* Understand the importance of timely error detection
 
 
 [[LG-3-9]]
 ==== LG 3-9: Can apply patterns for error recovery
 
 * Can select and apply patterns for error recovery such as Data Reset, Error
-Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation, Restart,
-Return to Reference Point, Rollback, Roll Forward
+  Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation,
+  Restart, Return to Reference Point, Rollback, Roll Forward
 
 [[LG-3-10]]
 ==== LG 3-10: Can apply patterns for error mitigation
 
-* Can select and apply patterns for error mitigation such as Error Correcting Codes and Marked Data
+* Can select and apply patterns for error mitigation such as Error Correcting
+  Codes and Marked Data
 
 
 // end::EN[]
