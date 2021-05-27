@@ -12,33 +12,34 @@ interaction with the environment
 
 * Explain the difference between timeliness and speed
 
-* Understand that generally all actions along the event chain from the occurrence of a relevant event
-to the system reaction must be examined when implementing real-time
-requirements: e.g. sensor data read-out, operating system context switch, sensor
-data evaluation, actuator control
+* Understand that generally all actions along the event chain from the
+  occurrence of a relevant event to the system reaction must be examined when
+  implementing real-time requirements: e.g. sensor data read-out, operating
+  system context switch, sensor data evaluation, actuator control
 
 * Explain the difference between hard real-time requirements and soft real-time
-requirements
+  requirements
 
 * When implementing hard real-time requirements, a defined maximum deadline must
-be given for each action.
+  be given for each action.
 
 * Understand the different types of events (periodic, sporadic, aperiodic)
 
-* Understand that real-time architectural design should be performed early on in the project
+* Understand that real-time architectural design should be performed early on in
+  the project
 
-* Know that real-time architectural design also may also encompass choosing and configuring an
-operating system, which poses a technological impact factor
+* Know that real-time architectural design also may also encompass choosing and
+  configuring an operating system, which poses a technological impact factor
 
 [[LG-4-2]]
 ==== LG 4-2: Being able to apply a systematic approach to real-time system design
-
 
 Apply the fundamental approach to real-time architectural design:
 
 * Specify and/or identify external real-time constraints
 
-* Choose one of the fundamental approaches to create a real-time architecture (time-triggered vs. event-triggered approaches)
+* Choose one of the fundamental approaches to create a real-time architecture
+  (time-triggered vs. event-triggered approaches)
 
 * Create the task-architecture view of the system architecture
 
@@ -46,23 +47,30 @@ Apply the fundamental approach to real-time architectural design:
 
 * Analyse and verify the real-time architectural design
 
-* Respect verification- and resource-usage-analyses results by improving and refining 
-the real-time architectural design to support the iterative-incremental development approach
+* Respect verification- and resource-usage-analyses results by improving and
+  refining the real-time architectural design to support the
+  iterative-incremental development approach
 
 Participants know:
 
-* The integration of real-time-systems design within the development cycle (e.g., V-Model)
+* The integration of real-time-systems design within the development cycle
+  (e.g., V-Model)
 
-* Real-time is a cross-cutting concern, i.e. it must be taken into account throughout the lifetime of the system (requirements elicitation, systems architecture, hardware architecture, software architecture, software implementation, test and verification, deployment).
+* Real-time is a cross-cutting concern, i.e. it must be taken into account
+  throughout the lifetime of the system (requirements elicitation, systems
+  architecture, hardware architecture, software architecture, software
+  implementation, test and verification, deployment).
 
 [[LG-4-3]]
 ==== LG 4-3: Being able to specify and model real-time requirements
 
 * Identify and specify external real-time constraints
 
-* Know a general approach to specifying and modelling of real-time requirements and systems (e.g. specifying real-time requirements in UML or SysML)
+* Know a general approach to specifying and modelling of real-time requirements
+  and systems (e.g. specifying real-time requirements in UML or SysML)
 
-* Are able to select and apply an approach for specifying the real-time requirements of a specific system
+* Are able to select and apply an approach for specifying the real-time
+  requirements of a specific system
 
 
 [[LG-4-4]]
@@ -70,19 +78,27 @@ Participants know:
 
 * Describe time-triggered and event-triggered approaches
 
-* Understand the tradeoffs of time-triggered vs. event-triggered approaches regarding determinism and flexibility
+* Understand the tradeoffs of time-triggered vs. event-triggered approaches
+  regarding determinism and flexibility
 
-* Understand approaches to handling non-periodic events (interrupt-driven execution, background execution, slack-stealing, periodic, deferred or sporadic server)
+* Understand approaches to handling non-periodic events (interrupt-driven
+  execution, background execution, slack-stealing, periodic, deferred or
+  sporadic server)
 
-* Understand different approaches to scheduling (online vs. offline, static vs. dynamic) and migration  (offline/online, task-level, job-level, free)
+* Understand different approaches to scheduling (online vs. offline,
+  static vs. dynamic) and migration (offline/online, task-level, job-level,
+  free)
 
-* Can describe advantages and disadvantages of partitioned, clustered and global scheduling
+* Can describe advantages and disadvantages of partitioned, clustered and global
+  scheduling
 
-* Understand that decision for a paradigm is often made early on, has a profound, cross-cutting impact on the architecture as well  as the implementation, and is hard to change after the fact
+* Understand that decision for a paradigm is often made early on, has a
+  profound, cross-cutting impact on the architecture as well as the
+  implementation, and is hard to change after the fact
 
 
-[[LG-4-Z]]
-==== LG 4-Z: Being able to create the real-time architectural design
+[[LG-4-5]]
+==== LG 4-5: Being able to create the real-time architectural design
 
 Participants are able to define a task architecture and design the implementation of the real-time system
 
@@ -92,25 +108,28 @@ Participants are able to define a task architecture and design the implementatio
 
 * Map logical tasks to jobs
 
-* Identify jobs with similar properties and allocate these to the same elements of the technical solution
+* Identify jobs with similar properties and allocate these to the same elements
+  of the technical solution
 
-* Can describe important timing properties of RTOSes and hardware (i.e. interrupt latency, scheduling latency, dispatch latency)
+* Can describe important timing properties of RTOSes and hardware
+  (i.e. interrupt latency, scheduling latency, dispatch latency)
 
 
-[[LG-4-5]]
-==== LG 4-5: Being able to select adequate technical solutions to concurrency
+[[LG-4-6]]
+==== LG 4-6: Being able to select adequate technical solutions to concurrency
 
 Can describe the technical solutions cyclic executive, multitasking and interrupts
 
-* Can describe the strengths and weaknesses of using interrupts in a real-time-application implementation
+* Can describe the strengths and weaknesses of using interrupts in a
+  real-time-application implementation
 
 * Know criteria for selecting between different technical solutions
 
 * Can describe how different solution methods can be combined (e.g. cyclic
-executive and interrupts)
+  executive and interrupts)
 
 * Can select a technical solution for a concrete system and reasonably justify
-their decision
+  their decision
 
 Cyclic schedules and frame-based scheduling:
 
@@ -118,7 +137,8 @@ Cyclic schedules and frame-based scheduling:
 
 * Analyze the real-time characteristics of a solution based on cyclic executive
 
-* Can describe how different solution methods can be combined (e.g. cyclic executive and interrupt handlers)
+* Can describe how different solution methods can be combined (e.g. cyclic
+  executive and interrupt handlers)
 
 * Can design cyclic schedules for simple real-time problems
 
@@ -128,145 +148,161 @@ RTOS-Based Event-Triggered Approach:
 
 * Can describe the advantages and disadvantages of using preemption
 
-* Understand rate-monotonic, deadline-monotonic and earliest-deadline first scheduling
+* Understand rate-monotonic, deadline-monotonic and earliest-deadline first
+  scheduling
 
 * Name the strengths and weaknesses of the different scheduling methods (static
-vs dynamic, preemptive vs non-preemptive)
+  vs dynamic, preemptive vs non-preemptive)
 
 * Select an appropriate scheduling method according to the real-time
-requirements and define the tasks and their characteristics Interrupts:
+  requirements and define the tasks and their characteristics Interrupts:
 
 Application-Level Interrupt Handling:
 
 * Name the strengths and weaknesses of using interrupts at the application level
 
 * Define a concept for using interrupts at the application level: prioritizing
-interrupts, rules for blocking interrupts, using the prologue/epilogue model
+  interrupts, rules for blocking interrupts, using the prologue/epilogue model
 
-* Understand that the concepts for using interrupts at the application level will generally depend on the processor architecture (e.g. number of priorities) and the RTOS (support for prologue/epilogue mechanism).
+* Understand that the concepts for using interrupts at the application level
+  will generally depend on the processor architecture (e.g. number of
+  priorities) and the RTOS (support for prologue/epilogue mechanism).
 
 
-[[LG-4-6]]
-==== LG 4-6: Being able to prevent problems caused by concurrent access to shared resources
+[[LG-4-7]]
+==== LG 4-7: Being able to prevent problems caused by concurrent access to shared resources
 
 * Name potential problems caused by concurrent access to shared resources (e.g. blocking time)
 
 * Understand that whether problems due to concurrent access can actually occur
-depends strongly on the chosen technical solution to concurrency (e.g.
-time-triggered vs. event-triggered approaches)
+  depends strongly on the chosen technical solution to concurrency (e.g.
+  time-triggered vs. event-triggered approaches)
 
 * Describe and select strategies for preventing typical concurrency problems for
-a concrete system (critical sections, non-preemptive critical sections protocol, semaphores, synchronization objects /
-mutexes, atomic actions, non-blocking synchronization)
+  a concrete system (critical sections, non-preemptive critical sections
+  protocol, semaphores, synchronization objects / mutexes, atomic actions,
+  non-blocking synchronization)
 
 * Optimize critical sections (e.g. by assigning the functions of modules, which
-share the same software resources, in the same RTOS task whenever possible)
+  share the same software resources, in the same RTOS task whenever possible)
 
 * Explain how deadlocks occur and show for a concrete system how deadlocks can
-be avoided
+  be avoided
 
 * Explain priority inversion and show solution methods (priority ceiling,
-priority inheritance)
+  priority inheritance)
 
-[[LG-4-7]]
-==== LG 4-7: Understanding the impact of the operating system on real-time characteristics
+[[LG-4-8]]
+==== LG 4-8: Understanding the impact of the operating system on real-time characteristics
 
 * Can explain the characteristics of a real-time operating system
 
 * Understand that real-time operating systems and general-purpose operating
-systems serve different purposes.
+  systems serve different purposes.
 
 * Know a minimum of two examples of real-time operating systems including their
-characteristics (e.g. QNX, eCos, OSEK OS, uC/OS-II, ...)
+  characteristics (e.g. QNX, eCos, OSEK OS, uC/OS-II, ...)
 
-* Refine the real-time architectural design in the context of the selected operating system (e.g., refine 
-tasks priorities and assigning program elements to task entities)
+* Refine the real-time architectural design in the context of the selected
+  operating system (e.g., refine tasks priorities and assigning program elements
+  to task entities)
 
 
-[[LG-4-8]]
-==== LG 4-8: Understanding solution approaches for interactions between jobs and their tradeoffs
+[[LG-4-9]]
+==== LG 4-9: Understanding solution approaches for interactions between jobs and their tradeoffs
 
 * Define message passing and the shared data as basic approaches to interaction
-between jobs and name their consequences
+  between jobs and name their consequences
 
 * Analyze the impact of interaction between jobs on real-time behavior
 
 * Define concepts for making interactions compatible with the real-time
-requirements of jobs
+  requirements of jobs
 
 
-[[LG-4-9]]
-==== LG 4-9: Understanding approaches to real-time analysis
+[[LG-4-10]]
+==== LG 4-10: Understanding approaches to real-time analysis
 
-Evaluate the real-time and multitasking design (either by design reviews
-and design analyses (e.g. schedulability analysis) or/and using scheduling simulation and verification tools)
+Evaluate the real-time and multitasking design (either by design reviews and
+design analyses (e.g. schedulability analysis) or/and using scheduling
+simulation and verification tools)
 
 Schedulability analysis:
 
 * Understand how to gather data, to base a schedulability analysis on (past
-experiences, measurements, simulation, mathematical methods, static analysis)
+  experiences, measurements, simulation, mathematical methods, static analysis)
 
-* Understanding simulation and analytical methods as approaches to
-real-time analysis gain confidence if the real-time constraints can be met
+* Understanding simulation and analytical methods as approaches to real-time
+  analysis gain confidence if the real-time constraints can be met
 
 * Understand that the schedulability of a set of tasks cannot be shown in a
-dependable way by individual measurements (e.g. blocking time)
+  dependable way by individual measurements (e.g. blocking time)
 
 * Know different approaches to schedulability analysis (rate-monotonic,
-deadline-monotonic, least-laxity-first, earliest-deadline-first)
+  deadline-monotonic, least-laxity-first, earliest-deadline-first)
 
-* Can apply rate-monotonic analysis as a tool to perform a dependable schedulability analysis
-(calculate the CPU load of each job and for the overall system)
+* Can apply rate-monotonic analysis as a tool to perform a dependable
+  schedulability analysis (calculate the CPU load of each job and for the
+  overall system)
 
 * Understand the limitations of analytical approaches regarding complex
-real-time systems, due to dependencies between jobs
+  real-time systems, due to dependencies between jobs
 
 * Understand simulation as an approach for complex real-time systems
 
 Worst-case-execution-time (WCET) determination:
 
 * Determining the maximum execution time of a job is crucial for real-time
-analysis (i.e., determination of the WCET)
+  analysis (i.e., determination of the WCET)
 
-* Understand that the precision and accuracy of WCET analysis is limited and is influenced by the complexity of the hardware and software (impact of caches, pipelines, shortest vs. longest program path, memory management, dynamic dispatch, ...)
+* Understand that the precision and accuracy of WCET analysis is limited and is
+  influenced by the complexity of the hardware and software (impact of caches,
+  pipelines, shortest vs. longest program path, memory management, dynamic
+  dispatch, ...)
 
-* Can explain advantages, disadvantages and limitations of static, dynamic analysis and hybrid approaches
+* Can explain advantages, disadvantages and limitations of static, dynamic
+  analysis and hybrid approaches
 
-* Provide an estimate of the overall CPU load to support schedulability analyses such
-as rate-monotonic analysis
+* Provide an estimate of the overall CPU load to support schedulability analyses
+  such as rate-monotonic analysis
 
-Additional analyses supporting the correctness of the real-time system with respect to data
-integrity in the face of concurrency, WCET, schedulability and changeability
+Additional analyses supporting the correctness of the real-time system with
+respect to data integrity in the face of concurrency, WCET, schedulability and
+changeability
 
 * Perform shared resources analysis (e.g. shared variables analysis and
-protection using critical sections, which could be protected by semaphores or
-disable/enable interrupts) and understand that shared resources also influence execution times.
+  protection using critical sections, which could be protected by semaphores or
+  disable/enable interrupts) and understand that shared resources also influence
+  execution times.
 
-* Consider the impact factor of later additions to the task system and the effects on scheduling
-and WCET (e.g., adding additional functions and assigning them to new tasks)
+* Consider the impact factor of later additions to the task system and the
+  effects on scheduling and WCET (e.g., adding additional functions and
+  assigning them to new tasks)
 
 
-[[LG-4-10]]
-==== LG 4-10: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
+[[LG-4-11]]
+==== LG 4-11: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
 
 Understand the necessity of tool-support in the design process of complex
 real-time systems:
 
 * Understand that for complex embedded systems with a large number of external
-real-time constraints, tools for specification, design and analysis of real-time
-systems are needed
+  real-time constraints, tools for specification, design and analysis of
+  real-time systems are needed
 
 * Know application areas of tools for real-time architectural design and
-–analysis, such as modeling the real-time architectural design, static WCET analysis, analytical
-schedulability analysis, white-box vs. black-box simulation of real-time systems
+  -analysis, such as modeling the real-time architectural design, static WCET
+  analysis, analytical schedulability analysis, white-box vs. black-box
+  simulation of real-time systems
 
 * Know examples for specific tools and their application areas (e.g. Inchron,
-Timing-Architects, Symtavision, aiT, TimeWeaver)
+  Timing-Architects, Symtavision, aiT, TimeWeaver)
 
 
-[[LG-4-11]]
-==== LG 4-11: Understanding the relationship to distributed and multi-core system architectures
+[[LG-4-12]]
+==== LG 4-12: Understanding the relationship to distributed and multi-core system architectures
 
-* Understand the challenges introduced when building distributed or multi-core real-time systems (proper methods of synchronization, global scheduling, global time base, latencies imposed by communication)
+* Understand the challenges introduced when building distributed or multi-core
+  real-time systems (proper methods of synchronization, global scheduling,
+  global time base, latencies imposed by communication)
 // end::EN[]
-
