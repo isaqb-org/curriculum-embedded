@@ -22,7 +22,7 @@ approaches:
 
 * State machines for modelling reactive systems
 
-* Modelling data- and signal-flows (e.g., function block diagrams, Simulink)
+* Modelling data- and signal-flows (e.g., function block diagrams)
 
 Participants understand how models can be used for analyzing the software, for
 examples with regards to failures (e.g., FTA / FMEA), schedulability, error

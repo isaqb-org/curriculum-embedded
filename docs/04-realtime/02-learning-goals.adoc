@@ -32,9 +32,9 @@ interaction with the environment
   configuring an operating system, which poses a technological impact factor
 
 [[LG-4-2]]
-==== LG 4-2: Being able to apply a systematic approach to real-time system design
+==== LG 4-2: Knowing the systematic approach to real-time system design
 
-Apply the fundamental approach to real-time architectural design:
+Participants know the fundamental approach to real-time architectural design:
 
 * Specify and/or identify external real-time constraints
 
@@ -82,14 +82,14 @@ Participants know:
   regarding determinism and flexibility
 
 * Understand approaches to handling non-periodic events (interrupt-driven
-  execution, background execution, slack-stealing, periodic, deferred or
-  sporadic server)
+  execution, background execution, slack-stealing), know further approaches
+  (periodic, deferrable or sporadic server)
 
-* Understand different approaches to scheduling (online vs. offline,
+* Know different approaches to scheduling (online vs. offline,
   static vs. dynamic) and migration (offline/online, task-level, job-level,
   free)
 
-* Can describe advantages and disadvantages of partitioned, clustered and global
+* Know advantages and disadvantages of partitioned, clustered and global
   scheduling
 
 * Understand that decision for a paradigm is often made early on, has a
@@ -109,7 +109,7 @@ Participants are able to define a task architecture and design the implementatio
 * Map logical tasks to jobs
 
 * Identify jobs with similar properties and allocate these to the same elements
-  of the technical solution
+  of the technical solution (e.g., processes, threads)
 
 * Can describe important timing properties of RTOSes and hardware
   (i.e. interrupt latency, scheduling latency, dispatch latency)
@@ -155,7 +155,7 @@ RTOS-Based Event-Triggered Approach:
   vs dynamic, preemptive vs non-preemptive)
 
 * Select an appropriate scheduling method according to the real-time
-  requirements and define the tasks and their characteristics Interrupts:
+  requirements and define the tasks and their characteristics
 
 Application-Level Interrupt Handling:
 
@@ -169,6 +169,7 @@ Application-Level Interrupt Handling:
   priorities) and the RTOS (support for prologue/epilogue mechanism).
 
 
+
 [[LG-4-7]]
 ==== LG 4-7: Being able to prevent problems caused by concurrent access to shared resources
 
@@ -177,6 +178,9 @@ Application-Level Interrupt Handling:
 * Understand that whether problems due to concurrent access can actually occur
   depends strongly on the chosen technical solution to concurrency (e.g.
   time-triggered vs. event-triggered approaches)
+
+* Understand solution approaches for interactions between jobs and their
+  tradeoffs (e.g., message passing, shared data)
 
 * Describe and select strategies for preventing typical concurrency problems for
   a concrete system (critical sections, non-preemptive critical sections
@@ -191,6 +195,9 @@ Application-Level Interrupt Handling:
 
 * Explain priority inversion and show solution methods (priority ceiling,
   priority inheritance)
+
+
+
 
 [[LG-4-8]]
 ==== LG 4-8: Understanding the impact of the operating system on real-time characteristics
@@ -209,19 +216,7 @@ Application-Level Interrupt Handling:
 
 
 [[LG-4-9]]
-==== LG 4-9: Understanding solution approaches for interactions between jobs and their tradeoffs
-
-* Define message passing and the shared data as basic approaches to interaction
-  between jobs and name their consequences
-
-* Analyze the impact of interaction between jobs on real-time behavior
-
-* Define concepts for making interactions compatible with the real-time
-  requirements of jobs
-
-
-[[LG-4-10]]
-==== LG 4-10: Understanding approaches to real-time analysis
+==== LG 4-9: Understanding approaches to real-time analysis
 
 Evaluate the real-time and multitasking design (either by design reviews and
 design analyses (e.g. schedulability analysis) or/and using scheduling
@@ -280,8 +275,8 @@ changeability
   assigning them to new tasks)
 
 
-[[LG-4-11]]
-==== LG 4-11: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
+[[LG-4-10]]
+==== LG 4-10: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
 
 Understand the necessity of tool-support in the design process of complex
 real-time systems:
@@ -295,12 +290,11 @@ real-time systems:
   analysis, analytical schedulability analysis, white-box vs. black-box
   simulation of real-time systems
 
-* Know examples for specific tools and their application areas (e.g. Inchron,
-  Timing-Architects, Symtavision, aiT, TimeWeaver)
+* Know examples for specific tools and their application areas
 
 
-[[LG-4-12]]
-==== LG 4-12: Understanding the relationship to distributed and multi-core system architectures
+[[LG-4-11]]
+==== LG 4-11: Understanding the relationship to distributed and multi-core system architectures
 
 * Understand the challenges introduced when building distributed or multi-core
   real-time systems (proper methods of synchronization, global scheduling,
