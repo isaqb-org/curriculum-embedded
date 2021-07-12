@@ -1,14 +1,32 @@
 // tag::DE[]
-=== Was vermittelt das Modul „{curriculum-short}“?
-
-Das Modul präsentiert den Teilnehmerinnen und Teilnehmern {curriculum-name} als …
-Am Ende des Moduls kennen die Teilnehmerinnen und Teilnehmer … und können …
 // end::DE[]
 
 // tag::EN[]
 === What does the module “{curriculum-short}” convey?
 
-****
-TO DO
-****
+Embedded systems are computer systems that are integrated in a larger (often
+mechatronic) system, via which they interact with the physical environment
+through sensors and actuators. As the requirements concerning the functionality
+and the quality characteristics of these systems are increasing, the size and
+the complexity of embedded systems software grows considerably.
+
+In domains such as automotive systems, automation, rail, or medical devices for
+treatment or diagnostics, particular quality characteristics need to be
+achieved:
+
+* systems must be highly reliable and are often safety-critical
+
+* systems must react to events in their enviroment in a timely, predictable way,
+  leading to hard realtime requirements
+
+* systems need to be adaptable to quickly react to changing market requirements
+
+The module “{curriculum-short}” conveys a methodical approach to architecture
+design for dependable embedded systems. It shows how software architecture
+interacts with the overall system architecture, and how the requirements with
+regards to safety, dependability, realtime and adaptability are adressed in a
+systematic way. In addition to patterns and solution concepts for designing
+appropriate software architectures, the module also adresses the analysis of
+software architectures with regard to the required quality characteristics.
+
 // end::EN[]
