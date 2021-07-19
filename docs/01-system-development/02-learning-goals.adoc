@@ -31,7 +31,7 @@
   models.
 
 * Participants know methods and frameworks for model-based system development,
-  such as Harmony <<douglass>>, SYSMOD <<weilkiens>>, and FAS <<weilkiens-mbsa>>.
+  such as Harmony <<douglass>>, SYSMOD <<weilkiens>>.
 
 * Participants understand that development approaches for embedded systems are
   often subject to domain specific standards.
@@ -61,7 +61,7 @@ system quality characteristics at an abstract level, e.g., regarding time
 behavior, dependability, or flexibility.
 
 Participants know examples how functional architectures can be modelled,
-for example with SysML.
+for example with SysML or FAS <<weilkiens-mbsa>>..
 
 
 [[LG-1-3]]
