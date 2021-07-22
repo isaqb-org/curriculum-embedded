@@ -96,11 +96,11 @@ software units
   be selected
 
 * Redundancy is applied to an architectural building block. Therefore, the
-  sphere of redundancy, that is, the code under protection, has to be aligned
-  with the definition of architectural building block. Strong cohesion and loose
+  sphere of replication, that is, the code under protection, has to be aligned
+  with the definition of architectural building blocks. Strong cohesion and loose
   coupling principles have to be taken into consideration for that
 
-* The sphere of redundancy is also assigend to an isolation zone with respect to
+* The sphere of replication is also assigned to an isolation zone with respect to
   memory regions (i.e., address spaces) and control flows (i.e., threads)
 
 [[LG-3-6]]
