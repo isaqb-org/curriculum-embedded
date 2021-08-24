@@ -9,8 +9,9 @@
 
 Understand the following terms and how they are related to each other:
 dependability, safety, availability, reliability, fault tolerance, security,
-fault, error, failure, fail stop, fail operational, freedom from interference,
-spatial interference, temporal interference, communication interference
+fault, error, failure, redundancy, replication, freedom from interference,
+spatial interference, temporal interference, communication interference,
+fail-stop, fail-operational, fail-silent, fail-stop, fail-consistent
 
 
 [[LG-3-2]]
@@ -52,13 +53,13 @@ Understand the process:
   derived safety requirements and to the building blocks to which a safety
   requirement is allocated
 
-* Coupling between building blocks can lead to a propagation of the associated
-  risk between the building blocks
+* Spatial and temporal coupling between building blocks can lead to interference
+  between building blocks and to a propagation of the associated risk
 
-* By decomposing a building block its associated risk can be distributed and
-  encapsulated over multiple building blocks. This leads to a lower risk
+* By decomposing a building block, its associated risk can be distributed over
+  and encapsulated in multiple building blocks. This can lead to a lower risk
   classification for the indiviual building blocks. To do so, freedom from
-  interference must to be assured between them
+  interference must to be ensured between them
 
 * The details of safety classification and decomposition are subject to specific
   norms and standards
@@ -82,54 +83,54 @@ software units
 * It is not possible to completely prevent the introduction of faults, therefore
   a fault tolerant system needs to be able to handle unanticipated errors
 
-* A fault-tolerant system needs to detect errors, and then perform error
-  recovery or error mitigation to prevent error propagation, which may lead to
-  system failure
+* A fault-tolerant system needs to detect errors and then perform error recovery
+  or error mitigation to prevent error propagation. The propagation of
+  undetected or unhandled errors may lead to system failure.
 
-* After error detection, there are several ways to react to the error. Reaction
-  patterns are fail-stop, fail-operational, fail-silent and fail-consistent
-  behavior
+* The externally observable behavior of component in the event of an error can
+  be classified as fail-stop, fail-operational, fail-silent or fail-consistent
+  behavior.
 
-* Redundancy techniques can help to build fault-tolerant systems. Homogeneous
-  and heterogeneous techniques exist. Depending on the types of errors to
-  handle, a suitable redundancy technique or a combination of techniques has to
-  be selected
-
-* Redundancy is applied to an architectural building block. Therefore, the
-  sphere of replication, that is, the code under protection, has to be aligned
-  with the definition of architectural building blocks. Strong cohesion and loose
-  coupling principles have to be taken into consideration for that
-
-* The sphere of replication is also assigned to an isolation zone with respect to
-  memory regions (i.e., address spaces) and control flows (i.e., threads)
+* Redundancy can help to build fault-tolerant systems. Homogeneous and
+  heterogeneous approaches exist. Depending on the types of errors to handle, a
+  suitable redundancy approach or a combination of approaches has to be selected
 
 [[LG-3-6]]
 ==== LG 3-6: Can apply architectural patterns and techniques for fault tolerant and safety-related systems
 
-* Can distinguish between structural, functional, informational and temporal redundancy
+* Can distinguish between structural, functional, informational and temporal
+  redundancy
 
-* Can select and apply architectural patterns and techniques and know
-  advantages, disadvantages and limitations of these patterns
+* Know replication as a means to achieve structural redundancy. Replication is
+  applied to an architectural building block. Therefore, the sphere of
+  replication has to be aligned with architectural building blocks. Strong
+  cohesion and loose coupling principles have to be taken into consideration for
+  that. The sphere of replication is also assigned to an isolation zone with
+  respect to memory regions (i.e., address spaces) and control flows (i.e.,
+  threads)
 
-* Are familiar with examples of patterns, such as Triple-Modular Redundancy,
-  Duo-Duplex Redundancy, N-Version Programming, Recovery Blocks, Correcting
-  Audits, Escalation, [Fault Observer], [Maintenance Interface], Software
-  Update, Units of Mitigation, Software- and Hardware-based memory protection
-  techniques, Centralized vs. Distributed Voting, Process-Level Redundancy,
-  Ground State, Cold/Warm/Hot Standby
+* Can select and apply architectural patterns and techniques to achieve fault
+  tolerance and know advantages, disadvantages and limitations of these patterns
+
+* Are familiar with examples of patterns, such as Units of Mitigation,
+  Escalation, Fault Observer, Process-Level Redundancy, Ground State,
+  Cold/Warm/Hot Standby, Triple-Modular Redundancy, Duo-Duplex Redundancy,
+  Centralized vs. Distributed Voting, N-Version Programming, Recovery Blocks,
+  Correcting Audits, Software Update, Software- and Hardware-based memory
+  protection techniques,
 
 * Can determine the increase in reliability gained by introducing redundancy and
   are aware of the importance of replicate reliability
 
-* Know that even after introducing redundancy single-points of failure may
-  remain and can name techniques for hardening these, such as control-flow
+* Know that even after introducing redundancy, single-points of failure may
+  remain. Can name techniques for hardening these, such as control-flow
   protection
 
-* Know sources of common-mode failures and can explain the meaning of the term
+* Can explain the meaning of the term and know sources of common-mode failures
 
-* Are familiar with techniques for testing hardened systems, such as fault injection.
+* Are familiar with techniques for testing hardened systems, such as fault
+  injection
 
-* Can decide which error-reaction pattern is suitable for the system
 
 [[LG-3-7]]
 ==== LG 3-7: Can apply approaches to fault prevention
@@ -159,7 +160,7 @@ software units
 
 * Can select and apply patterns for error recovery such as Data Reset, Error
   Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation,
-  Restart, Return to Reference Point, Rollback, Roll Forward
+  Restart, Return to Reference Point, Rollback, Roll-Forward
 
 [[LG-3-10]]
 ==== LG 3-10: Can apply patterns for error mitigation

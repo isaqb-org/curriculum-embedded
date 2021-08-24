@@ -9,9 +9,8 @@
 === Terms and Principles
 
 Dependability, safety, availability, reliability, fault tolerance, security,
-fault, error, failure, hazard analysis, safety integrity level (SIL), safety
-concept, functional architecture, technical architecture, HW/SW fault tolerance,
-fail safe vs fail operational, fail silent vs fail consistent
+fault, error, failure, hazard analysis, error detection, error recovery, error
+mitigation, redundancy, replication, fail-safe vs fail-operational, fail-silent,
+fail-stop, fail-consistent
 
 // end::EN[]
-
