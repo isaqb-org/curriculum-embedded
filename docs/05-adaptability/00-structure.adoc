@@ -8,10 +8,6 @@
 == Adaptability
 // end::EN[]
 
-****
-Move to / after system architecture. Implications of adaptability concepts on architecture (real-time systems, safety, efficiency, flexibility). Rename variant management to adaptibilty (done) and mention variant management as subdiscipline of adaptability.
-****
-
 include::01-duration-terms.adoc[{include_configuration}]
 
 include::02-learning-goals.adoc[{include_configuration}]
