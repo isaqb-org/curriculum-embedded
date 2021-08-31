@@ -9,8 +9,8 @@
 === Terms and Principles
 
 Dependability, safety, availability, reliability, fault tolerance, security,
-fault, error, failure, hazard analysis, error detection, error recovery, error
+fault, error, failure, fault prevention, error detection, error recovery, error
 mitigation, redundancy, replication, fail-safe vs fail-operational, fail-silent,
-fail-stop, fail-consistent
+fail-stop, fail-consistent, freedom from interference
 
 // end::EN[]
