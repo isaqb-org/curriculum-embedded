@@ -36,7 +36,7 @@ impacts system architecture, software architecture, and hardware architecture
 Understand the influence of standards in the development of safety related systems
 
 Understand the difference in approach to safety related system development of
-differents standards such as the IEC 61508, ISO 26262, ISO 13485 and other
+differents standards such as the IEC 61508, ISO 26262, ISO 62304 and other
 domain specific safety standards
 
 
