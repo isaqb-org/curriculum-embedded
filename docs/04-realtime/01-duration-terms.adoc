@@ -3,7 +3,7 @@
 
 // tag::EN[]
 |===
-| Duration: 390 min | Practice time: 150 min
+| Duration: 360 min.
 |===
 
 === Terms and Principles
@@ -14,7 +14,7 @@ scheduling, time-triggered vs event-triggered real-time systems, priority
 inversion, priority inheritance, priority ceiling, schedulability analysis, WCET, WOET,
 / execution time estimation, CPU load estimation, real-time architectural design
 simulation and verification, concurrent resource access and coordination
-techniques, black box simulation vs. white box simulation 
+techniques, black box simulation vs. white box simulation
 
 
 // end::EN[]
