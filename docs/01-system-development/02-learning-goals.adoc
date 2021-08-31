@@ -6,7 +6,9 @@
 // tag::EN[]
 
 [[LG-1-1]]
-==== LG 1-1: Understand the systematic approach to systems development
+==== LG 1-1: Systematic approach to systems development
+
+Participants understand the systematic approach to systems development:
 
 * Participants understand the cross-cutting nature of aspects like time
   behavior, dependability and safety with regards to system-, software- and
