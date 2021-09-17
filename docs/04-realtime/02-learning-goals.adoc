@@ -5,298 +5,273 @@
 
 // tag::EN[]
 [[LG-4-1]]
-==== LG 4-1: Understanding the basic terms and properties of real-time systems
+==== LG 4-1: Basic terms and properties of real-time systems
 
-* The real-time requirements of embedded systems are the result of their
-interaction with the environment
+Participants understand that real-time requirements of embedded systems are the
+result of their interaction with the environment.
 
-* Explain the difference between timeliness and speed
+Participants can explain the difference between timeliness and speed.
 
-* Understand that generally all actions along the event chain from the
-  occurrence of a relevant event to the system reaction must be examined when
-  implementing real-time requirements: e.g. sensor data read-out, operating
-  system context switch, sensor data evaluation, actuator control
+Participants can explain the difference between hard real-time requirements and
+soft real-time requirements.
 
-* Explain the difference between hard real-time requirements and soft real-time
-  requirements
+Participants understand that all actions along the event chain from the
+occurrence of a relevant event to the system reaction must be examined when
+implementing real-time requirements (e.g., sensor data read-out, operating
+system context switch, sensor data evaluation, actuator control). For hard
+real-time requirements, a hard deadline must be defined for each of these
+actions.
 
-* When implementing hard real-time requirements, a defined maximum deadline must
-  be given for each action.
+Participants understand the different types of events (periodic, sporadic,
+aperiodic).
 
-* Understand the different types of events (periodic, sporadic, aperiodic)
+Participants understand that real-time architectural design should be performed
+early on in the project.
 
-* Understand that real-time architectural design should be performed early on in
-  the project
-
-* Know that real-time architectural design also may also encompass choosing and
-  configuring an operating system, which poses a technological impact factor
+Participants know that real-time architectural design may also encompass
+choosing and configuring an operating system, which poses a technological impact
+factor.
 
 [[LG-4-2]]
-==== LG 4-2: Knowing the systematic approach to real-time system design
+==== LG 4-2: Developing real-time systems
 
-Participants know the fundamental approach to real-time architectural design:
+Participants understand the fundamental approach to developing real-time
+systems:
 
-* Specify and/or identify external real-time constraints
+* Identify and specify external real-time requirements
 
-* Choose one of the fundamental approaches to create a real-time architecture
-  (time-triggered vs. event-triggered approaches)
-
-* Create the task-architecture view of the system architecture
-
-* Implement the real-time architectural design
-
-* Analyse and verify the real-time architectural design
-
-* Respect verification- and resource-usage-analyses results by improving and
-  refining the real-time architectural design to support the
-  iterative-incremental development approach
-
-Participants know:
-
-* The integration of real-time-systems design within the development cycle
-  (e.g., V-Model)
-
-* Real-time is a cross-cutting concern, i.e. it must be taken into account
-  throughout the lifetime of the system (requirements elicitation, systems
-  architecture, hardware architecture, software architecture, software
-  implementation, test and verification, deployment).
-
-[[LG-4-3]]
-==== LG 4-3: Being able to specify and model real-time requirements
-
-* Identify and specify external real-time constraints
-
-* Know a general approach to specifying and modelling of real-time requirements
-  and systems (e.g. specifying real-time requirements in UML or SysML)
-
-* Are able to select and apply an approach for specifying the real-time
-  requirements of a specific system
-
-
-[[LG-4-4]]
-==== LG 4-4: Understanding time triggered vs. event triggered approaches to real-time architectural design
-
-* Describe time-triggered and event-triggered approaches
-
-* Understand the tradeoffs of time-triggered vs. event-triggered approaches
-  regarding determinism and flexibility
-
-* Understand approaches to handling non-periodic events (interrupt-driven
-  execution, background execution, slack-stealing), know further approaches
-  (periodic, deferrable or sporadic server)
-
-* Know different approaches to scheduling (online vs. offline,
-  static vs. dynamic) and migration (offline/online, task-level, job-level,
-  free)
-
-* Know advantages and disadvantages of partitioned, clustered and global
-  scheduling
-
-* Understand that decision for a paradigm is often made early on, has a
-  profound, cross-cutting impact on the architecture as well as the
-  implementation, and is hard to change after the fact
-
-
-[[LG-4-5]]
-==== LG 4-5: Being able to create the real-time architectural design
-
-Participants are able to define a task architecture and design the implementation of the real-time system
+* Choose a time-triggered or event-triggered approach to real-time architectural
+  design
 
 * Identify logical tasks and their properties
 
-* Identify shared resources required by logcial tasks and their properties
+* Identify shared resources required by logical tasks and their properties
 
 * Map logical tasks to jobs
 
-* Identify jobs with similar properties and allocate these to the same elements
-  of the technical solution (e.g., processes, threads)
+* Decide on technical solutions (e.g., RTOS tasks), and allocate jobs to the
+  the technical solution elements
 
-* Can describe important timing properties of RTOSes and hardware
-  (i.e. interrupt latency, scheduling latency, dispatch latency)
+* Implement the real-time architectural design
+
+* Continuously analyze and verify the real-time architectural design and the
+  implementation to iteratively refine the real-time architectural design
+
+Participants know how real-time system design is integrated into the overall
+development lifecycle.
+
+Participants understand that extending functions or adding new functions at a
+later time can have a large impact on time behavior and
+schedulability. The degree to which such extensions must be supported is an
+important impact factor to real-time architectural design.
+
+Participants understand that real-time is a cross-cutting concern. They
+understand that real-time affects the entire lifecycle of the system and
+affects many disciplines and activities (e.g., requirements elicitation, systems
+architecture, hardware architecture, software architecture, software
+implementation, test and verification, deployment).
 
 
-[[LG-4-6]]
-==== LG 4-6: Being able to select adequate technical solutions to concurrency
+[[LG-4-3]]
+==== LG 4-3: Real-time requirements
 
-Can describe the technical solutions cyclic executive, multitasking and interrupts
+Participants are able to specify and model real-time requirements. They know
+different approaches to specifying real-time requirements (e.g., how to specify
+real-time requirements in UML or SysML) and are able to select a suitable
+approach for a particular system.
 
-* Can describe the strengths and weaknesses of using interrupts in a
-  real-time-application implementation
 
-* Know criteria for selecting between different technical solutions
+[[LG-4-4]]
+==== LG 4-4: Time-triggered vs. event-triggered approaches
 
-* Can describe how different solution methods can be combined (e.g. cyclic
-  executive and interrupts)
+Participants can describe the time-triggered and event-triggered approaches to
+real-time architectural design. They understand the tradeoffs of both approaches
+regarding determinism and flexibility.
 
-* Can select a technical solution for a concrete system and reasonably justify
-  their decision
+Participants understand that the decision for an approach has a profound,
+cross-cutting impact on the architecture and the implementation and is
+therefore hard to change.
+
+
+[[LG-4-5]]
+==== LG 4-5: Technical solutions to scheduling and concurrency
+
+Participants can describe technical solutions like cyclic executive, RTOS-based
+event-triggered approach, and application-level interrupt handling.
+
+Participants know criteria for deciding between different technical
+solutions. They are able select a technical solution for a specific system and
+reasonably justify their decision.
+
+Participants can describe how different technical solutions can be combined (e.g.,
+cyclic executive and interrupts).
+
+Participants understand approaches to handling non-periodic events
+(interrupt-driven execution, background execution, slack-stealing). They know
+further approaches (periodic, deferrable or sporadic server).
 
 Cyclic schedules and frame-based scheduling:
 
-* Describe the benefits and drawbacks of cyclic scheduling
+* Participants can describe the benefits and drawbacks of cyclic scheduling.
 
-* Analyze the real-time characteristics of a solution based on cyclic executive
+* Participants can analyze the real-time characteristics of a solution based on
+  a cyclic executive.
 
-* Can describe how different solution methods can be combined (e.g. cyclic
-  executive and interrupt handlers)
+* Participant can design cyclic schedules for simple real-time problems.
 
-* Can design cyclic schedules for simple real-time problems
+RTOS-based event-triggered approach:
 
-RTOS-Based Event-Triggered Approach:
+* Participants can describe the differences between static and dynamic
+  scheduling methods.
 
-* Describe the difference between static and dynamic scheduling methods
+* Participants can describe the advantages and disadvantages of using preemption.
 
-* Can describe the advantages and disadvantages of using preemption
+* Participants understand rate-monotonic, deadline-monotonic and
+  earliest deadline first scheduling.
 
-* Understand rate-monotonic, deadline-monotonic and earliest-deadline first
-  scheduling
+* Participants can select an appropriate scheduling approach according to the
+  real-time requirements.
 
-* Name the strengths and weaknesses of the different scheduling methods (static
-  vs dynamic, preemptive vs non-preemptive)
+* Participants can identify jobs with similar properties and allocate them to
+  the same elements of the technical solution (e.g., processes or threads).
 
-* Select an appropriate scheduling method according to the real-time
-  requirements and define the tasks and their characteristics
+* Participants can define the RTOS-tasks and their characteristics.
 
-Application-Level Interrupt Handling:
+* Participants can describe important timing properties of RTOSes and hardware
+  (i.e. interrupt latency, scheduling latency, dispatch latency)
 
-* Name the strengths and weaknesses of using interrupts at the application level
+Application-level interrupt handling:
 
-* Define a concept for using interrupts at the application level: prioritizing
-  interrupts, rules for blocking interrupts, using the prologue/epilogue model
+* Participants understand the strengths and weaknesses of using interrupts at
+  the application level.
 
-* Understand that the concepts for using interrupts at the application level
-  will generally depend on the processor architecture (e.g. number of
-  priorities) and the RTOS (support for prologue/epilogue mechanism).
+* Participants can define a concept for using interrupts at the application
+  level: prioritizing interrupts, rules for blocking interrupts, using the
+  prologue/epilogue model
 
+* Participants understand that the concepts for using interrupts at the
+  application level depend on the processor architecture (e.g., number of
+  priorities) and the RTOS (e.g., support for prologue/epilogue model).
+
+
+[[LG-4-6]]
+==== LG 4-6: Concurrent access to shared resources
+
+Participants understand the potential problems caused by concurrent access to
+shared resources (e.g., blocking time). They understand that whether these
+problems can actually occur depends strongly on the chosen technical solution to
+concurrency (e.g., time-triggered vs. event-triggered approach).
+
+Participants understand solution approaches for interactions between jobs and
+their tradeoffs (e.g., message passing, shared data).
+
+Participants know strategies for preventing typical concurrency problems (e.g.,
+critical sections, non-preemptive critical sections protocol, semaphores,
+synchronization objects / mutexes, atomic actions, non-blocking
+synchronization). They can select appropriate strategies for a specific system.
+
+Participants know how to optimize critical sections (e.g., by assigning program
+elements which share the same software resources to the same RTOS task).
+
+Participants understand how deadlocks occur and how they can be avoided.
+
+Partipants understand priority inversion and know solution approaches (priority
+ceiling, priority inheritance).
 
 
 [[LG-4-7]]
-==== LG 4-7: Being able to prevent problems caused by concurrent access to shared resources
+==== LG 4-7: Impact of the operating system on real-time characteristics
 
-* Name potential problems caused by concurrent access to shared resources (e.g. blocking time)
+Participants can explain the characteristics of a real-time operating
+system. They understand that real-time operating systems and general-purpose
+operating systems serve different purposes.
 
-* Understand that whether problems due to concurrent access can actually occur
-  depends strongly on the chosen technical solution to concurrency (e.g.
-  time-triggered vs. event-triggered approaches)
+Participants know a minimum of two examples of real-time operating systems and
+their characteristics.
 
-* Understand solution approaches for interactions between jobs and their
-  tradeoffs (e.g., message passing, shared data)
-
-* Describe and select strategies for preventing typical concurrency problems for
-  a concrete system (critical sections, non-preemptive critical sections
-  protocol, semaphores, synchronization objects / mutexes, atomic actions,
-  non-blocking synchronization)
-
-* Optimize critical sections (e.g. by assigning the functions of modules, which
-  share the same software resources, in the same RTOS task whenever possible)
-
-* Explain how deadlocks occur and show for a concrete system how deadlocks can
-  be avoided
-
-* Explain priority inversion and show solution methods (priority ceiling,
-  priority inheritance)
-
-
+Participants can refine the real-time architectural design in the context of the
+selected operating system (e.g., refine tasks priorities and assign program
+elements to task entities).
 
 
 [[LG-4-8]]
-==== LG 4-8: Understanding the impact of the operating system on real-time characteristics
+==== LG 4-8: Real-time analysis
 
-* Can explain the characteristics of a real-time operating system
-
-* Understand that real-time operating systems and general-purpose operating
-  systems serve different purposes.
-
-* Know a minimum of two examples of real-time operating systems including their
-  characteristics (e.g. QNX, eCos, OSEK OS, uC/OS-II, ...)
-
-* Refine the real-time architectural design in the context of the selected
-  operating system (e.g., refine tasks priorities and assigning program elements
-  to task entities)
-
-
-[[LG-4-9]]
-==== LG 4-9: Understanding approaches to real-time analysis
-
-Evaluate the real-time and multitasking design (either by design reviews and
-design analyses (e.g. schedulability analysis) or/and using scheduling
-simulation and verification tools)
+Participants know different approaches how the real-time architectural design
+can be evaluated, such as performing design reviews, performing schedulability
+analysis, or using tools for scheduling simulation and verification.
 
 Schedulability analysis:
 
-* Understand how to gather data, to base a schedulability analysis on (past
-  experiences, measurements, simulation, mathematical methods, static analysis)
+* Participants understand how to gather data on which a schedulability analysis
+  can be based (e.g., past experiences, measurements, simulation, mathematical
+  methods, static analysis).
 
-* Understanding simulation and analytical methods as approaches to real-time
-  analysis gain confidence if the real-time constraints can be met
+* Participants know simulation and analytical methods as approaches to gain
+  confidence that the real-time requirements can be met.
 
-* Understand that the schedulability of a set of tasks cannot be shown in a
-  dependable way by individual measurements (e.g. blocking time)
+* Participants understand that the schedulability of a set of tasks cannot be
+  shown dependably by individual measurements (e.g., due to blocking time).
 
-* Know different approaches to schedulability analysis (rate-monotonic,
-  deadline-monotonic, least-laxity-first, earliest-deadline-first)
+* Participants know approaches to schedulability analysis for rate-monotonic,
+  deadline-monotonic, or earliest-deadline-first scheduling.
 
-* Can apply rate-monotonic analysis as a tool to perform a dependable
-  schedulability analysis (calculate the CPU load of each job and for the
-  overall system)
+* Participants can apply rate-monotonic analysis to perform a dependable
+  schedulability analysis.
 
-* Understand the limitations of analytical approaches regarding complex
-  real-time systems, due to dependencies between jobs
+* Participants understand the limitations of analytical approaches regarding
+  complex real-time systems, due to dependencies between jobs.
 
-* Understand simulation as an approach for complex real-time systems
+* Participants understand simulation as an approach for complex real-time
+  systems.
 
-Worst-case-execution-time (WCET) determination:
+Worst-case execution time (WCET) analysis:
 
-* Determining the maximum execution time of a job is crucial for real-time
-  analysis (i.e., determination of the WCET)
+* Participants understand that determining the maximum execution time of a job
+  is crucial for real-time analysis. Soundness and tightness are important
+  quality characteristics of WCET analysis.
 
-* Understand that the precision and accuracy of WCET analysis is limited and is
-  influenced by the complexity of the hardware and software (impact of caches,
-  pipelines, shortest vs. longest program path, memory management, dynamic
-  dispatch, ...)
+* Participants understand that the precision of WCET analysis is limited. The
+  precision is influenced by hardware and software complexity (e.g., impact of
+  caches, pipelines, shortest vs. longest program path, memory management,
+  dynamic dispatch).
 
-* Can explain advantages, disadvantages and limitations of static, dynamic
-  analysis and hybrid approaches
+* Participants can explain advantages, disadvantages and limitations of static
+  analysis, dynamic analysis and hybrid approaches to WCET analysis.
 
-* Provide an estimate of the overall CPU load to support schedulability analyses
-  such as rate-monotonic analysis
+* Participants can estimate the overall CPU load to support schedulability
+  analyses such as rate-monotonic analysis.
 
-Additional analyses supporting the correctness of the real-time system with
-respect to data integrity in the face of concurrency, WCET, schedulability and
-changeability
+Shared resource analysis:
 
-* Perform shared resources analysis (e.g. shared variables analysis and
-  protection using critical sections, which could be protected by semaphores or
-  disable/enable interrupts) and understand that shared resources also influence
-  execution times.
+* Participants understand how shared resources (and how they are protected)
+  affect the WCET. They understand that therefore shared-resource analysis
+  needs to be performed as part of real-time analysis.
 
-* Consider the impact factor of later additions to the task system and the
-  effects on scheduling and WCET (e.g., adding additional functions and
-  assigning them to new tasks)
+
+[[LG-4-9]]
+==== LG 4-9: Tools for real-time architectural design and –analysis
+
+Participants understand that tools for specification, design and analysis of
+real-time systems are needed for complex embedded systems with a large number of
+external real-time requirements.
+
+Participants know application areas of tools for real-time architectural design
+and -analysis, such as modeling the real-time architectural design, static WCET
+analysis, analytical schedulability analysis, white-box vs. black-box simulation
+of real-time systems. Participants kxnow examples of specific tools and their
+application areas.
 
 
 [[LG-4-10]]
-==== LG 4-10: Understanding the role of tools for real-time architectural design and –analysis of complex embedded systems
+==== LG 4-10: Relationship to distributed and multi-core system architectures
 
-Understand the necessity of tool-support in the design process of complex
-real-time systems:
+Participants understand the challenges introduced when building distributed or
+multi-core real-time systems (e.g., proper methods of synchronization, global
+scheduling, global time base, latencies imposed by communication).
 
-* Understand that for complex embedded systems with a large number of external
-  real-time constraints, tools for specification, design and analysis of
-  real-time systems are needed
+Participants know different approaches to scheduling (partitioned, clustered,
+global scheduling) and migration (offline/online, task-level, job-level, free)
+in multicore systems.
 
-* Know application areas of tools for real-time architectural design and
-  -analysis, such as modeling the real-time architectural design, static WCET
-  analysis, analytical schedulability analysis, white-box vs. black-box
-  simulation of real-time systems
-
-* Know examples for specific tools and their application areas
-
-
-[[LG-4-11]]
-==== LG 4-11: Understanding the relationship to distributed and multi-core system architectures
-
-* Understand the challenges introduced when building distributed or multi-core
-  real-time systems (proper methods of synchronization, global scheduling,
-  global time base, latencies imposed by communication)
 // end::EN[]
