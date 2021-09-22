@@ -22,7 +22,7 @@ image:https://img.shields.io/github/issues-closed/isaqb-org/curriculum-embedded.
 This is <<copyrighted,copyrighted work>>.
 
 == Content
-This repository contains the iSAQB Advanced Level curriculum for *EMBEDDED - Safety-critial Embedded Systems* in AsciiDoc.
+This repository contains the iSAQB Advanced Level curriculum for *EMBEDDED - Dependable Embedded Systems* in AsciiDoc.
 
 toc::[]
 
@@ -60,7 +60,7 @@ It was forked from https://github.com/isaqb-org/curriculum-template,
 so the contributors of that project basically contributed to this one, too.
 
 
-[[copyrighted]]em
+[[copyrighted]]
 == Licensing and Copyright
 
 include::LICENSE.adoc[]
