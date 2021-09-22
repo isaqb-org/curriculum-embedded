@@ -8,8 +8,9 @@
 
 === Terms and Principles
 
-Variants, feature models, FODA, plattform development, product lines, feature variability, variability in time,
-binding time
+Variants, feature models, platform development, product lines, product
+platforms, variation point, adaptability, variability, variability in space,
+variability in time, binding time
 
 
 // end::EN[]
