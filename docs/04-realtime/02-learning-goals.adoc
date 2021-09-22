@@ -61,15 +61,15 @@ Participants know how real-time system design is integrated into the overall
 development lifecycle.
 
 Participants understand that extending functions or adding new functions at a
-later time can have a large impact on time behavior and
-schedulability. The degree to which such extensions must be supported is an
-important impact factor to real-time architectural design.
+later time can have a large impact on time behavior and schedulability. The
+degree to which such extensions must be supported is an important impact factor
+to real-time architectural design. They understand that real-time affects the
+entire lifecycle of the system and affects many disciplines and activities
+(e.g., requirements elicitation, systems architecture, hardware architecture,
+software architecture, software implementation, test and verification,
+deployment).
 
-Participants understand that real-time is a cross-cutting concern. They
-understand that real-time affects the entire lifecycle of the system and
-affects many disciplines and activities (e.g., requirements elicitation, systems
-architecture, hardware architecture, software architecture, software
-implementation, test and verification, deployment).
+Participants understand that real-time is a cross-cutting concern.
 
 
 [[LG-4-3]]
@@ -259,7 +259,7 @@ external real-time requirements.
 Participants know application areas of tools for real-time architectural design
 and -analysis, such as modeling the real-time architectural design, static WCET
 analysis, analytical schedulability analysis, white-box vs. black-box simulation
-of real-time systems. Participants kxnow examples of specific tools and their
+of real-time systems. Participants know examples of specific tools and their
 application areas.
 
 
