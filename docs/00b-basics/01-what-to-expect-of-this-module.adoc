@@ -4,8 +4,8 @@
 // tag::EN[]
 === What does the module “{curriculum-short}” convey?
 
-Embedded systems are computer systems that are integrated in a larger (often
-mechatronic) system, via which they interact with the physical environment
+Embedded systems are computer systems that are integrated in a larger
+cyber-physical system, via which they interact with the physical environment
 through sensors and actuators. As the requirements concerning the functionality
 and the quality characteristics of these systems are increasing, the size and
 the complexity of embedded systems software grows considerably.

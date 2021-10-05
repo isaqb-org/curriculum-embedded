@@ -7,28 +7,28 @@
 
 
 [[LG-2-1]]
-==== LG 2-1: Modelling software for embedded systems
+==== LG 2-1: Modeling software for embedded systems
 
-Participants know different approaches for modelling software for embedded
+Participants know different approaches for modeling software for embedded
 systems. They understand the basic concepts, strengths and weaknesses of these
 approaches:
 
-* UML as a general purpose modelling language
+* UML as a general purpose modeling language
 
 * UML profiles to adapt UML to a specific domain (e.g., MARTE as a UML profile
-  for modelling real-time systems)
+  for modeling real-time systems)
 
 * Graphical and textual domain specific languages (e.g., AADL)
 
-* State machines for modelling reactive systems
+* State machines for modeling reactive systems
 
-* Modelling data- and signal-flows (e.g., function block diagrams)
+* Modeling data- and signal-flows (e.g., function block diagrams)
 
 Participants understand how models can be used for analyzing the software, for
 examples with regards to failures (e.g., FTA / FMEA), schedulability, error
 propagation, and latency.
 
-Participants are able to select a suitable modelling approach based on the
+Participants are able to select a suitable modeling approach based on the
 requirements and boundary conditions of the system under development.
 
 

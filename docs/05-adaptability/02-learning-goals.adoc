@@ -25,7 +25,7 @@ Participants know high level approaches to adaptability and variability such as
 the 150%-model, 80%-model, product platforms or product lines.
 
 [[LG-5-2]]
-==== LG 5-2: Modelling variability in the architecture
+==== LG 5-2: Modeling variability in the architecture
 
 Participants understand how the separation between functional architectures and
 technical architectures can support adaptability and variability by allowing
