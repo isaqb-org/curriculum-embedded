@@ -271,7 +271,6 @@ multi-core real-time systems (e.g., proper methods of synchronization, global
 scheduling, global time base, latencies imposed by communication).
 
 Participants know different approaches to scheduling (partitioned, clustered,
-global scheduling) and migration (offline/online, task-level, job-level, free)
-in multicore systems.
-
+global scheduling) and migration in multicore systems (e.g., offline vs. online
+migration).
 // end::EN[]
