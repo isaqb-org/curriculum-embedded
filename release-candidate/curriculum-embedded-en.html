@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.8">
+<title>Curriculum forCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModuleEMBEDDEDDependable Embedded Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Uncomment @import statement below to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock pre.nowrap,.literalblock pre.nowrap pre,.listingblock pre.nowrap,.listingblock pre.nowrap pre{white-space:pre;word-wrap:normal}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #dddddf}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd){background:#f8f8f7}
+table.stripes-none tr,table.stripes-odd tr:nth-of-type(even){background:none}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Curriculum for<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Module<br>EMBEDDED<br><br>Dependable Embedded Systems</h1>
+<div class="details">
+<span id="revnumber"> 2021.1-EN,</span>
+<span id="revdate">20211007</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_list_of_learning_goals">List of Learning Goals</a></li>
+<li><a href="#_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</a>
+<ul class="sectlevel2">
+<li><a href="#_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</a></li>
+<li><a href="#_what_can_advanced_level_cpsa_a_graduates_do">What can Advanced Level (CPSA-A) graduates do?</a></li>
+<li><a href="#_requirements_for_cpsa_a_certification">Requirements for CPSA-A certification</a></li>
+</ul>
+</li>
+<li><a href="#_essentials">Essentials</a>
+<ul class="sectlevel2">
+<li><a href="#_what_does_the_module_embedded_convey">What does the module “EMBEDDED” convey?</a></li>
+<li><a href="#_curriculum_structure_and_recommended_durations">Curriculum Structure and Recommended Durations</a></li>
+<li><a href="#_duration_teaching_method_and_further_details">Duration, Teaching Method and Further Details</a></li>
+<li><a href="#_prerequisites">Prerequisites</a></li>
+<li><a href="#_structure_of_the_curriculum">Structure of the Curriculum</a></li>
+<li><a href="#_supplementary_information_terms_translations">Supplementary Information, Terms, Translations</a></li>
+</ul>
+</li>
+<li><a href="#_system_development_for_embedded_systems">1. System development for embedded systems</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles">1.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals">1.2. Learning Goals</a></li>
+<li><a href="#_references">1.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_software_development_for_embedded_systems">2. Software development for embedded systems</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_2">2.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_2">2.2. Learning Goals</a></li>
+<li><a href="#_references_2">2.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_dependability_and_functional_safety">3. Dependability and Functional Safety</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_3">3.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_3">3.2. Learning Goals</a></li>
+<li><a href="#_references_3">3.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_real_time_and_concurrency">4. Real time and concurrency</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_4">4.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_4">4.2. Learning Goals</a></li>
+<li><a href="#_references_4">4.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_adaptability">5. Adaptability</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_principles_5">5.1. Terms and Principles</a></li>
+<li><a href="#_learning_goals_5">5.2. Learning Goals</a></li>
+<li><a href="#_references_5">5.3. References</a></li>
+</ul>
+</li>
+<li><a href="#_references_6">References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p><strong>&#169; (Copyright), International Software Architecture Qualification Board e. V.
+(iSAQB<sup>&#174;</sup> e. V.) 2021</strong></p>
+</div>
+<div class="paragraph">
+<p>The curriculum may only be used subject to the following conditions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You wish to obtain the CPSA Certified Professional for Software Architecture Advanced Level<sup>&#174;</sup> certificate. For the purpose of obtaining the certificate, it shall be permitted to use these text documents and/or curricula by creating working copies for your own computer. If any other use of documents and/or curricula is intended, for instance for their dissemination to third parties, for advertising etc., please write to <a href="mailto:info@isaqb.org">info@isaqb.org</a> to enquire whether this is permitted. A separate license agreement would then have to be entered into.</p>
+</li>
+<li>
+<p>If you are a trainer or training provider, it shall be possible for you to use the documents and/or curricula once you have obtained a usage license.
+Please address any enquiries to <a href="mailto:info@isaqb.org">info@isaqb.org</a>. License agreements with comprehensive provisions for all aspects exist.</p>
+</li>
+<li>
+<p>If you fall neither into category 1 nor category 2, but would like to use these documents and/or curricula nonetheless, please also contact the iSAQB e. V. by writing to <a href="mailto:info@isaqb.org">info@isaqb.org</a>. You will then be informed about the possibility of acquiring relevant licenses through existing license agreements, allowing you to obtain your desired usage authorizations.</p>
+</li>
+</ol>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Important Notice</div>
+<div class="paragraph">
+<p><strong>We stress that, as a matter of principle, this curriculum is protected by copyright.
+The International Software Architecture Qualification Board e. V. (iSAQB<sup>&#174;</sup> e. V.) has exclusive entitlement to these copyrights.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The abbreviation "e. V." is part of the iSAQB&#8217;s official name and stands for "eingetragener Verein" (registered association), which describes its status as a legal entity according to German law.
+For the purpose of simplicity, iSAQB e. V. shall hereafter be referred to as iSAQB without the use of said abbreviation.</p>
+</div>
+<div style="page-break-after: always;"></div>
+<!-- toc disabled -->
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_list_of_learning_goals">List of Learning Goals</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#LG-1-1">LG 1-1: Systematic approach to systems development</a></p>
+</li>
+<li>
+<p><a href="#LG-1-2">LG 1-2: Modelling and analysis of functional architectures</a></p>
+</li>
+<li>
+<p><a href="#LG-1-3">LG 1-3: Modeling and analysis of technical system architectures</a></p>
+</li>
+<li>
+<p><a href="#LG-2-1">LG 2-1: Modeling software for embedded systems</a></p>
+</li>
+<li>
+<p><a href="#LG-2-2">LG 2-2: Implementing software for embedded systems</a></p>
+</li>
+<li>
+<p><a href="#LG-2-3">LG 2-3: Memory management</a></p>
+</li>
+<li>
+<p><a href="#LG-2-4">LG 2-4: Error handling</a></p>
+</li>
+<li>
+<p><a href="#LG-2-5">LG 2-5: Model-based development of embedded systems</a></p>
+</li>
+<li>
+<p><a href="#LG-2-6">LG 2-6: Verification of embedded software</a></p>
+</li>
+<li>
+<p><a href="#LG-2-7">LG 2-7: Design paradigms</a></p>
+</li>
+<li>
+<p><a href="#LG-3-1">LG 3-1: Fundamental terms of dependable and safety-related systems</a></p>
+</li>
+<li>
+<p><a href="#LG-3-2">LG 3-2: Developing safety-related systems</a></p>
+</li>
+<li>
+<p><a href="#LG-3-3">LG 3-3: Safety classification of requirements and building blocks</a></p>
+</li>
+<li>
+<p><a href="#LG-3-4">LG 3-4: Tight relationship between system, software and hardware development</a></p>
+</li>
+<li>
+<p><a href="#LG-3-5">LG 3-5: Developing fault-tolerant systems</a></p>
+</li>
+<li>
+<p><a href="#LG-3-6">LG 3-6: Architectural patterns and techniques</a></p>
+</li>
+<li>
+<p><a href="#LG-3-7">LG 3-7: Approaches to fault prevention</a></p>
+</li>
+<li>
+<p><a href="#LG-3-8">LG 3-8: Patterns for detecting errors and failures</a></p>
+</li>
+<li>
+<p><a href="#LG-3-9">LG 3-9: Patterns for error recovery</a></p>
+</li>
+<li>
+<p><a href="#LG-3-10">LG 3-10: Patterns for error mitigation</a></p>
+</li>
+<li>
+<p><a href="#LG-4-1">LG 4-1: Basic terms and properties of real-time systems</a></p>
+</li>
+<li>
+<p><a href="#LG-4-2">LG 4-2: Developing real-time systems</a></p>
+</li>
+<li>
+<p><a href="#LG-4-3">LG 4-3: Real-time requirements</a></p>
+</li>
+<li>
+<p><a href="#LG-4-4">LG 4-4: Time-triggered vs. event-triggered approaches</a></p>
+</li>
+<li>
+<p><a href="#LG-4-5">LG 4-5: Technical solutions to scheduling and concurrency</a></p>
+</li>
+<li>
+<p><a href="#LG-4-6">LG 4-6: Concurrent access to shared resources</a></p>
+</li>
+<li>
+<p><a href="#LG-4-7">LG 4-7: Impact of the operating system on real-time characteristics</a></p>
+</li>
+<li>
+<p><a href="#LG-4-8">LG 4-8: Real-time analysis</a></p>
+</li>
+<li>
+<p><a href="#LG-4-9">LG 4-9: Tools for real-time architectural design and –analysis</a></p>
+</li>
+<li>
+<p><a href="#LG-4-10">LG 4-10: Relationship to distributed and multi-core system architectures</a></p>
+</li>
+<li>
+<p><a href="#LG-5-1">LG 5-1: Foundations of adaptability and variability</a></p>
+</li>
+<li>
+<p><a href="#LG-5-2">LG 5-2: Modeling variability in the architecture</a></p>
+</li>
+<li>
+<p><a href="#LG-5-3">LG 5-3: Supporting adaptability and variability</a></p>
+</li>
+<li>
+<p><a href="#LG-5-4">LG 5-4: Evolution of embedded systems</a></p>
+</li>
+<li>
+<p><a href="#LG-5-5">LG 5-5: Tools for supporting variability and adaptability</a></p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction_general_information_about_the_isaqb_advanced_level">Introduction: General information about the iSAQB Advanced Level</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_what_is_taught_in_an_advanced_level_module">What is taught in an Advanced Level module?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The iSAQB Advanced Level offers modular training in three areas of competence with flexibly designable training paths. It takes individual inclinations and priorities into account.</p>
+</li>
+<li>
+<p>The certification is done as an assignment. The assessment and oral exam is conducted by experts appointed by the iSAQB.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_can_advanced_level_cpsa_a_graduates_do">What can Advanced Level (CPSA-A) graduates do?</h3>
+<div class="paragraph">
+<p>CPSA-A graduates can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Independently and methodically design medium to large IT systems</p>
+</li>
+<li>
+<p>In IT systems of medium to high criticality, assume technical and content-related responsibility</p>
+</li>
+<li>
+<p>Conceptualize, design, and document actions to achieve quality requirements and support development teams in the implementation of these actions</p>
+</li>
+<li>
+<p>Control and execute architecture-relevant communication in medium to large development teams</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requirements_for_cpsa_a_certification">Requirements for CPSA-A certification</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Successful training and certification as a Certified Professional for Software Architecture, Foundation Level<sup>&#174;</sup> (CPSA-F)</p>
+</li>
+<li>
+<p>At least three years of full-time professional experience in the IT sector; collaboration on the design and development of at least two different IT systems</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Exceptions are allowed on application (e.g., collaboration on open source projects)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Training and further education within the scope of iSAQB Advanced Level training courses with a minimum of 70 credit points from at least three different areas of competence</p>
+<div class="ulist">
+<ul>
+<li>
+<p>existing certifications (for example: Sun/Oracle Java architect, Microsoft CSA) can be credited upon application</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Successful completion of the CPSA-A certification exam</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br>
+<br></p>
+</div>
+<div class="paragraph text-center">
+<p><span class="image"><img src="images/00-preamble/cpsa-a-logo.png" alt="Certified Professional for Software Architecture<sup>&#174;</sup> Advanced Level (CPSA-A)"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_essentials">Essentials</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_what_does_the_module_embedded_convey">What does the module “EMBEDDED” convey?</h3>
+<div class="paragraph">
+<p>Embedded systems are computer systems that are integrated in a larger
+cyber-physical system, via which they interact with the physical environment
+through sensors and actuators. As the requirements concerning the functionality
+and the quality characteristics of these systems are increasing, the size and
+the complexity of embedded systems software grows considerably.</p>
+</div>
+<div class="paragraph">
+<p>In domains such as automotive systems, automation, rail, or medical devices for
+treatment or diagnostics, particular quality characteristics need to be
+achieved:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>systems must be highly reliable and are often safety-critical</p>
+</li>
+<li>
+<p>systems must react to events in their enviroment in a timely, predictable way,
+leading to hard realtime requirements</p>
+</li>
+<li>
+<p>systems need to be adaptable to quickly react to changing market requirements</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The module “EMBEDDED” conveys a methodical approach to architecture
+design for dependable embedded systems. It shows how software architecture
+interacts with the overall system architecture, and how the requirements with
+regards to safety, dependability, realtime and adaptability are adressed in a
+systematic way. In addition to patterns and solution concepts for designing
+appropriate software architectures, the module also adresses the analysis of
+software architectures with regard to the required quality characteristics.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_curriculum_structure_and_recommended_durations">Curriculum Structure and Recommended Durations</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Content</th>
+<th class="tableblock halign-right valign-top">Recommended minimum duration (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. System development for embedded systems</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">120</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Software development for embedded systems</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">180</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Dependability and Functional safety</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">330</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Real time and concurrency</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">360</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Adaptability</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">90</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-right valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1080 (18h)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_duration_teaching_method_and_further_details">Duration, Teaching Method and Further Details</h3>
+<div class="paragraph">
+<p>The times stated below are recommendations.
+The duration of a training course on the EMBEDDED module should be at least 3 days, but may be longer.
+Providers may differ in terms of duration, teaching method, type and structure of the exercises and the detailed course structure.
+In particular, the curriculum provides no specifications on the nature of the examples and exercises.</p>
+</div>
+<div class="paragraph">
+<p>Licensed training courses for the EMBEDDED module contribute the following credit points towards admission to the final Advanced Level certification exam:</p>
+</div>
+<table class="tableblock frame-none grid-rows stripes-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methodical Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 Points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20 Points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Communicative Competence:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 Points</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_prerequisites">Prerequisites</h3>
+<div class="paragraph">
+<p>Participants <strong>should</strong> have the following prerequisite knowledge:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Foundations of software architecture, as they are taught in CPSA-F accredited
+trainings</p>
+</li>
+<li>
+<p>Practical experience with the implementation and design of embedded systems
+and the typical challenges in developing embedded systems</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Knowledge in the following areas may be <strong>helpful</strong> for understanding some
+concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Practical experience with developing safety-relevant systems and/or real-time
+systems</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_structure_of_the_curriculum">Structure of the Curriculum</h3>
+<div class="paragraph">
+<p>The individual sections of the curriculum are described according to the following structure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Terms/principles</strong>: Essential core terms of this topic.</p>
+</li>
+<li>
+<p><strong>Teaching/practice time</strong>: Defines the minimum amount of teaching and practice time that must be spent on this topic or its practice in an accredited training course.</p>
+</li>
+<li>
+<p><strong>Learning goals</strong>: Describes the content to be conveyed including its core terms and principles.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This section therefore also outlines the skills to be acquired in corresponding training courses.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_supplementary_information_terms_translations">Supplementary Information, Terms, Translations</h3>
+<div class="paragraph">
+<p>To the extent necessary for understanding the curriculum, we have added definitions of technical terms to the <a href="https://github.com/isaqb-org/glossary">iSAQB glossary</a> and complemented them by references to (translated) literature.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_system_development_for_embedded_systems">1. System development for embedded systems</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 120 min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles">1.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>System architecture, functional architecture, technical system architecture,
+event chain, system development, software development, hardware development</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals">1.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-1-1">LG 1-1: Systematic approach to systems development</h4>
+<div class="paragraph">
+<p>Participants understand the systematic approach to systems development:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants understand the cross-cutting nature of aspects like time
+behavior, dependability and safety with regards to system-, software- and
+hardware-develoment, and the necessity to address these with an integrated
+systems development approach.</p>
+</li>
+<li>
+<p>Participants understand that systems development follows an iterative approach
+that includes both top-down activities like working with models, estimations
+and simulations, and bottom-up activities like tests and measurements on real
+systems to validate the estimations and simulations.</p>
+</li>
+<li>
+<p>Participants understand that modeling and model-based analysis enable the
+evaluation of different architectures in a cost-efficient way. Model-based
+approaches therefore enable a more thorough exploration of the design space.</p>
+</li>
+<li>
+<p>Participants understand the costs and benefits of developing and maintaining
+multiple architectural abstraction levels, such as functional and technical
+system architectures: A functional architecture enables reasoning about a
+system in a way that is independent of a specific technical realization and
+allows for different technical variants. These benefits need to be weighed
+against the costs for developing and maintaining several architectural
+models.</p>
+</li>
+<li>
+<p>Participants know methods and frameworks for model-based system development,
+such as Harmony <a href="#douglass">[Douglass 2015]</a>, SYSMOD <a href="#weilkiens">[Weilkiens 2008]</a>.</p>
+</li>
+<li>
+<p>Participants understand that development approaches for embedded systems are
+often subject to domain specific standards.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-2">LG 1-2: Modelling and analysis of functional architectures</h4>
+<div class="paragraph">
+<p>Participants can apply a systematic approach to modelling and analysis of
+functional architectures:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Model the system context with external systems, physical entities, users of
+the system and the logical events that occur between the system and its
+environment</p>
+</li>
+<li>
+<p>Hierarchically decompose the system from a purely functional perspective,
+identifying function blocks and their interactions via events or information
+flows</p>
+</li>
+<li>
+<p>Define event chains based on the functional architecture. An event chain
+traces the end-to-end behavior from an external triggering event to the
+desired system reaction through the involved function blocks, events and
+information flows.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants understand that a functional architecture enables reasoning about
+system quality characteristics at an abstract level, e.g., regarding time
+behavior, dependability, or flexibility.</p>
+</div>
+<div class="paragraph">
+<p>Participants know examples how functional architectures can be modelled,
+for example with SysML or FAS <a href="#weilkiens-mbsa">[Weilkiens+2015]</a>..</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-1-3">LG 1-3: Modeling and analysis of technical system architectures</h4>
+<div class="paragraph">
+<p>Participants understand the systematic approach to modeling and analysis of
+technical system architectures:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Analyze the impact factors, like quality requirements, organizational
+constraints, technological constraints, as defined in the CPSA Foundation
+Level curriculum. For the technical system architecture of embedded systems,
+impact factors are often related to dependability and safety requirements,
+performance and real-time requirements, flexibility requirements and support
+for different product variants and product lines. Examples for further
+considerations are physical proximity to sensors and actuators, limited
+construction space, connectivity requirements, hardware cost, or development
+schedules.</p>
+</li>
+<li>
+<p>Based on the impact factors analysis, identify architectural issues and
+develop solution strategies for topics such as error handling, resource
+efficiency, real-time architectural design and variability</p>
+</li>
+<li>
+<p>Evaluate alternative technical system architectures, and select a technical
+system architecture for further refinement</p>
+</li>
+<li>
+<p>Hierarchically decompose the system into technical building blocks, and
+establish a mapping to the elements of the functional architecture, if applicable</p>
+</li>
+<li>
+<p>Map event chains to the technical architecture, if applicable: For example,
+allocate a function to determine a measurement to a physical sensor, or allocate
+an information flow to a bus</p>
+</li>
+<li>
+<p>Evaluate the defined technical system architecture with regard to the impact
+factors</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants know examples how technical system architectures can be modelled,
+for example with SysML.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that the design of a technical system architecture is an
+iterative process that requires feedback from software development and hardware
+development.</p>
+</div>
+<div class="paragraph">
+<p>Participants know typical decisions that need to be made in the design of the
+technical system architecture:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How a function block is realized, for example in software, with an ASIC, an
+FPGA, or a combination of these</p>
+</li>
+<li>
+<p>Deciding the number of control units and their hardware characteristics
+(e.g., single core, homogeneous multi core, heterogeneous multi core, amount of
+RAM, ROM, NVRAM, peripherals like sensors and actuators, custom hardware)</p>
+</li>
+<li>
+<p>Allocation of function blocks to one or more control units, considering
+for example performance and isolation requirements</p>
+</li>
+<li>
+<p>Decide on the communication paradigm (e.g., time triggered vs. event triggered)</p>
+</li>
+<li>
+<p>Decide on network topologies (e.g., bus vs. star) and network technologies,
+both wired (e.g., ethernet, flexray, CAN), and wireless (e.g., Bluetooth,
+WiFi, cellular)</p>
+</li>
+<li>
+<p>Understand the challenges of distributed systems regarding latency,
+throughput, lack of a global clock, impact on dependability</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references">1.3. References</h3>
+<div class="paragraph">
+<p><a href="#weilkiens">[Weilkiens 2008]</a>, <a href="#douglass">[Douglass 2015]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_development_for_embedded_systems">2. Software development for embedded systems</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 180 min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_2">2.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>Software architecture, UML, domain-specific languages, code generation</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_2">2.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-2-1">LG 2-1: Modeling software for embedded systems</h4>
+<div class="paragraph">
+<p>Participants know different approaches for modeling software for embedded
+systems. They understand the basic concepts, strengths and weaknesses of these
+approaches:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>UML as a general purpose modeling language</p>
+</li>
+<li>
+<p>UML profiles to adapt UML to a specific domain (e.g., MARTE as a UML profile
+for modeling real-time systems)</p>
+</li>
+<li>
+<p>Graphical and textual domain specific languages (e.g., AADL)</p>
+</li>
+<li>
+<p>State machines for modeling reactive systems</p>
+</li>
+<li>
+<p>Modeling data- and signal-flows (e.g., function block diagrams)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants understand how models can be used for analyzing the software, for
+examples with regards to failures (e.g., FTA / FMEA), schedulability, error
+propagation, and latency.</p>
+</div>
+<div class="paragraph">
+<p>Participants are able to select a suitable modeling approach based on the
+requirements and boundary conditions of the system under development.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-2">LG 2-2: Implementing software for embedded systems</h4>
+<div class="paragraph">
+<p>Participants understand how programming languages influence quality
+characteristics and cross-cutting concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Impact of the programming language on analyzability (e.g., with static
+and dynamic analysis tools)</p>
+</li>
+<li>
+<p>Impact of the programming language abstractions and concepts for concurrency,
+memory management and error handling on cross-cutting concepts and
+dependability</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants know different programming language paradigms (e.g., procedural,
+object-oriented, functional). Participants know examples for programming languages
+supporting these paradigms that are suitable for embedded systems, and
+understand their strengths and weaknesses.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-3">LG 2-3: Memory management</h4>
+<div class="paragraph">
+<p>Participants understand how memory management strategies and memory management
+related capabilities of the programming language affect memory safety,
+flexibility, predictability, performance and programming complexity:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand the tradeoffs in choosing dynamic or static allocation of memory</p>
+</li>
+<li>
+<p>Know managed approaches to dynamically allocated memory (e.g., garbage
+collection, automated reference counting, ownership / non-lexical scoping) and
+their tradeoffs</p>
+</li>
+<li>
+<p>Know the impact of system architectural decisions on memory management (e.g.,
+availability of memory management hardware like an MMU or MPU, CPU caches),
+know software-based approaches to memory safety</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-4">LG 2-4: Error handling</h4>
+<div class="paragraph">
+<p>Participants know different language features and patterns for error handling
+and their strengths and weaknesses, such as return values, global error status
+variables, global error handlers, exceptions, options</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-5">LG 2-5: Model-based development of embedded systems</h4>
+<div class="paragraph">
+<p>Participants know how models can be used to generate artifacts for the
+realization, and understand the tradeoffs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Different kinds of models and model elements can be used: structural models
+(e.g., UML component models, AADL) and behavioral models (e.g., statecharts,
+activity diagrams)</p>
+</li>
+<li>
+<p>Different kinds artifacts can be generated, e.g. implementation code, test
+cases, configurations, or analysis models</p>
+</li>
+<li>
+<p>Using a model-based approach can have the following benefits:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Reduced effort, since these artifacts do not have to be created manually</p>
+</li>
+<li>
+<p>Increased quality, since manual errors can be eliminated</p>
+</li>
+<li>
+<p>Can support adaptibility in a resource-efficient way by resolving variability
+during code generation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Using a model-based approach has the following potential costs:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating a sufficiently detailed model requires significant effort, which
+needs to be weighed against the potential savings</p>
+</li>
+<li>
+<p>Generated code often has increased resource demands</p>
+</li>
+<li>
+<p>Potential vendor lock-in, specifically with commercial tools</p>
+</li>
+<li>
+<p>The generated code may be of insufficient quality or not suitable for the
+target platform</p>
+</li>
+<li>
+<p>Using a model-based approach in a safety-critical environment may lead to
+significant tool qualification efforts</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-6">LG 2-6: Verification of embedded software</h4>
+<div class="paragraph">
+<p>Participants can explain and give examples for different error categories
+(e.g. memory management errors, synchronization errors, type defects, timing
+errors).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand how analysis techniques can be used to detect errors,
+and know the limitations of these techniques:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants can define static analysis, understand the difference between
+sound and unsound analysis, and know the application areas of static analysis
+tools. Participants know examples for static analysis tools.</p>
+</li>
+<li>
+<p>Participants can define dynamic analysis and know the application areas of
+dynamic analysis tools. Participants know examples for dynamic analysis
+tools.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-2-7">LG 2-7: Design paradigms</h4>
+<div class="paragraph">
+<p>Participants know design principles and paradigms for embdded software, such as
+design by contract, the robustness principle, or defensive programming.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_2">2.3. References</h3>
+<div class="paragraph">
+<p><a href="#koopman">[Koopman 2021]</a>, <a href="#weilkiens">[Weilkiens 2008]</a>, <a href="#andrews">[Andrews+2008]</a>, <a href="#samek">[Samek 2008]</a>, <a href="#selic-room">[Selic+1994]</a>, <a href="#selic-marte">[Selic+2014]</a>, <a href="#feiler">[Feiler+ 2012]</a>, <a href="#kordon">[Kordon 2013]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependability_and_functional_safety">3. Dependability and Functional Safety</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 330 min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_3">3.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>Dependability, safety, availability, reliability, fault tolerance, security,
+fault, error, failure, fault prevention, error detection, error recovery, error
+mitigation, redundancy, replication, fail-safe vs fail-operational, fail-silent,
+fail-stop, fail-consistent, freedom from interference</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_3">3.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-3-1">LG 3-1: Fundamental terms of dependable and safety-related systems</h4>
+<div class="paragraph">
+<p>Understand the following terms and how they are related to each other:
+dependability, safety, availability, reliability, fault tolerance, security,
+fault, error, failure, redundancy, replication, freedom from interference,
+spatial interference, temporal interference, communication interference,
+fail-stop, fail-operational, fail-silent, fail-stop, fail-consistent</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-2">LG 3-2: Developing safety-related systems</h4>
+<div class="paragraph">
+<p>Participants understand the fundamental approach to develop a safety-related
+system:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Perform a hazard and risk analysis</p>
+</li>
+<li>
+<p>Decide on a risk treatment (mitigate, eliminate, transfer or accept)</p>
+</li>
+<li>
+<p>Define and allocate safety requirements</p>
+</li>
+<li>
+<p>Realize safety requirements on system, hardware and software level</p>
+</li>
+<li>
+<p>Analyze the system&#8217;s residual risk, e.g. with FMEA and FTA, to verify that
+an acceptable level of risk has been achieved</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants understand that functional safety must be considered on the system
+level, and impacts system architecture, software architecture, and hardware
+architecture.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand the influence of standards in the development of
+safety-related systems.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand the difference in approach to safety-related system
+development of standards such as the IEC 61508, ISO 26262, ISO 62304 and other
+domain-specific safety standards.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-3">LG 3-3: Safety classification of requirements and building blocks</h4>
+<div class="paragraph">
+<p>Participants understand the process of safety classification:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Based on the risk analysis, risks are classified regarding their severity
+(e.g., a Safety Integrity Level in IEC 61508).</p>
+</li>
+<li>
+<p>The classification of a risk is propagated to safety goals and/or safety
+requirements that are defined to control the risk, and further propagated to
+derived safety requirements and to the building blocks to which a safety
+requirement is allocated.</p>
+</li>
+<li>
+<p>Spatial and temporal coupling between building blocks can lead to interference
+between building blocks and to a propagation of the associated risk.</p>
+</li>
+<li>
+<p>By decomposing a building block, its associated risk can be distributed over
+and encapsulated in multiple building blocks. This can lead to a lower risk
+classification for the indiviual building blocks. To do so, freedom from
+interference must to be ensured between them.</p>
+</li>
+<li>
+<p>The details of safety classification and decomposition are subject to specific
+norms and standards.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-4">LG 3-4: Tight relationship between system, software and hardware development</h4>
+<div class="paragraph">
+<p>Participants understand that system development, software development and
+hardware development are closely intertwined when developing dependable and
+safety-related systems. For example, software plays a critical role in
+diagnosing hardware failures, and hardware plays a critical role in ensuring
+freedom of interference between software units.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-5">LG 3-5: Developing fault-tolerant systems</h4>
+<div class="paragraph">
+<p>Participants understand fundamental concepts and activities for developing
+fault-tolerant systems and how they interact with each other:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fault prevention is concerned with reducing the number of faults that are
+present in a system (e.g., by applying design methodologies or performing
+reviews).</p>
+</li>
+<li>
+<p>It is not possible to completely prevent the introduction of faults, therefore
+a fault-tolerant system needs to be able to handle unanticipated errors.</p>
+</li>
+<li>
+<p>A fault-tolerant system needs to detect errors and then perform error recovery
+or error mitigation to prevent error propagation. The propagation of
+undetected or unhandled errors may lead to system failure.</p>
+</li>
+<li>
+<p>The externally observable behavior of component in the event of an error can
+be classified as fail-stop, fail-operational, fail-silent or fail-consistent
+behavior.</p>
+</li>
+<li>
+<p>Redundancy can help to build fault-tolerant systems. Homogeneous and
+heterogeneous approaches exist. Depending on the types of errors to handle, a
+suitable redundancy approach or a combination of approaches has to be
+selected.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-6">LG 3-6: Architectural patterns and techniques</h4>
+<div class="paragraph">
+<p>Participants can apply architectural patterns and techniques for developing
+fault-tolerant and safety-related systems:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants can distinguish between structural, functional, informational and
+temporal redundancy.</p>
+</li>
+<li>
+<p>Participants know replication as a means to achieve structural
+redundancy. Replication is applied to an architectural building
+block. Therefore, the sphere of replication has to be aligned with
+architectural building blocks. Strong cohesion and loose coupling principles
+have to be taken into consideration for that. The sphere of replication is
+also assigned to an isolation zone with respect to memory regions (i.e.,
+address spaces) and control flows (i.e., threads).</p>
+</li>
+<li>
+<p>Participants can select and apply architectural patterns and techniques to
+achieve fault tolerance and know advantages, disadvantages and limitations of
+these patterns.</p>
+</li>
+<li>
+<p>Participants know examples of architectural patterns and techniques, such as
+Units of Mitigation, Escalation, Fault Observer, Process-Level Redundancy,
+Ground State, Cold/Warm/Hot Standby, Triple-Modular Redundancy, Duo-Duplex
+Redundancy, Centralized vs. Distributed Voting, N-Version Programming,
+Recovery Blocks, Correcting Audits, Software Update, Software- and
+Hardware-based memory protection techniques.</p>
+</li>
+<li>
+<p>Participants can determine the increase in reliability gained by introducing
+redundancy. They are aware of the importance of replicate reliability.</p>
+</li>
+<li>
+<p>Participants understand that even after introducing redundancy, single-points
+of failure may remain. They know techniques for hardening these, such as
+control-flow protection.</p>
+</li>
+<li>
+<p>Participants understand what common-mode failures are and know sources of
+common-mode failures.</p>
+</li>
+<li>
+<p>Participants know techniques for testing hardened systems, such as fault
+injection.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-7">LG 3-7: Approaches to fault prevention</h4>
+<div class="paragraph">
+<p>Participants understand that suitable processes and methods for design,
+implementation, verification, and testing are crucial to prevent faults in the
+system.</p>
+</div>
+<div class="paragraph">
+<p>Participants know that in a safety-related system, norms and standards give
+recommendations for processes and methods.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-8">LG 3-8: Patterns for detecting errors and failures</h4>
+<div class="paragraph">
+<p>Participants an select and apply patterns and techniques such as Checksum,
+Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
+Plausibility Checks, Control Flow Monitoring.</p>
+</div>
+<div class="paragraph">
+<p>Participants can select and apply detection patterns that are used with
+redundancy such as Voting, Lockstep.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand the importance of timely error detection.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-9">LG 3-9: Patterns for error recovery</h4>
+<div class="paragraph">
+<p>Patterns can select and apply patterns for error recovery such as Data Reset,
+Error Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation,
+Restart, Return to Reference Point, Rollback, Roll-Forward.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-3-10">LG 3-10: Patterns for error mitigation</h4>
+<div class="paragraph">
+<p>Participants can select and apply patterns for error mitigation such as Error
+Correcting Codes and Marked Data.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_3">3.3. References</h3>
+<div class="paragraph">
+<p><a href="#hanmer">[Hanmer 2007]</a>, <a href="#nasa">[NASA 2004]</a>, <a href="#smith">[Smith+2016]</a>, <a href="#iec61508">[IEC 61508]</a>, <a href="#iso26262">[ISO 26262:2018]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_real_time_and_concurrency">4. Real time and concurrency</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 360 min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_4">4.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>Hard vs. soft real-time requirements, cyclic executive, interrupts, real-time
+operating systems, jobs, tasks, threads, processes, static vs dynamic
+scheduling, time-triggered vs event-triggered real-time systems, priority
+inversion, priority inheritance, priority ceiling, schedulability analysis, WCET, WOET,
+/ execution time estimation, CPU load estimation, real-time architectural design
+simulation and verification, concurrent resource access and coordination
+techniques, black box simulation vs. white box simulation</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_4">4.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-4-1">LG 4-1: Basic terms and properties of real-time systems</h4>
+<div class="paragraph">
+<p>Participants understand that real-time requirements of embedded systems are the
+result of their interaction with the environment.</p>
+</div>
+<div class="paragraph">
+<p>Participants can explain the difference between timeliness and speed.</p>
+</div>
+<div class="paragraph">
+<p>Participants can explain the difference between hard real-time requirements and
+soft real-time requirements.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that all actions along the event chain from the
+occurrence of a relevant event to the system reaction must be examined when
+implementing real-time requirements (e.g., sensor data read-out, operating
+system context switch, sensor data evaluation, actuator control). For hard
+real-time requirements, a hard deadline must be defined for each of these
+actions.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand the different types of events (periodic, sporadic,
+aperiodic).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that real-time architectural design should be performed
+early on in the project.</p>
+</div>
+<div class="paragraph">
+<p>Participants know that real-time architectural design may also encompass
+choosing and configuring an operating system, which poses a technological impact
+factor.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-2">LG 4-2: Developing real-time systems</h4>
+<div class="paragraph">
+<p>Participants understand the fundamental approach to developing real-time
+systems:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Identify and specify external real-time requirements</p>
+</li>
+<li>
+<p>Choose a time-triggered or event-triggered approach to real-time architectural
+design</p>
+</li>
+<li>
+<p>Identify logical tasks and their properties</p>
+</li>
+<li>
+<p>Identify shared resources required by logical tasks and their properties</p>
+</li>
+<li>
+<p>Map logical tasks to jobs</p>
+</li>
+<li>
+<p>Decide on technical solutions (e.g., RTOS tasks), and allocate jobs to the
+the technical solution elements</p>
+</li>
+<li>
+<p>Implement the real-time architectural design</p>
+</li>
+<li>
+<p>Continuously analyze and verify the real-time architectural design and the
+implementation to iteratively refine the real-time architectural design</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants know how real-time system design is integrated into the overall
+development lifecycle.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that extending functions or adding new functions at a
+later time can have a large impact on time behavior and schedulability. The
+degree to which such extensions must be supported is an important impact factor
+to real-time architectural design. They understand that real-time affects the
+entire lifecycle of the system and affects many disciplines and activities
+(e.g., requirements elicitation, systems architecture, hardware architecture,
+software architecture, software implementation, test and verification,
+deployment).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that real-time is a cross-cutting concern.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-3">LG 4-3: Real-time requirements</h4>
+<div class="paragraph">
+<p>Participants are able to specify and model real-time requirements. They know
+different approaches to specifying real-time requirements (e.g., how to specify
+real-time requirements in UML or SysML) and are able to select a suitable
+approach for a particular system.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-4">LG 4-4: Time-triggered vs. event-triggered approaches</h4>
+<div class="paragraph">
+<p>Participants can describe the time-triggered and event-triggered approaches to
+real-time architectural design. They understand the tradeoffs of both approaches
+regarding determinism and flexibility.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that the decision for an approach has a profound,
+cross-cutting impact on the architecture and the implementation and is
+therefore hard to change.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-5">LG 4-5: Technical solutions to scheduling and concurrency</h4>
+<div class="paragraph">
+<p>Participants can describe technical solutions like cyclic executive, RTOS-based
+event-triggered approach, and application-level interrupt handling.</p>
+</div>
+<div class="paragraph">
+<p>Participants know criteria for deciding between different technical
+solutions. They are able select a technical solution for a specific system and
+reasonably justify their decision.</p>
+</div>
+<div class="paragraph">
+<p>Participants can describe how different technical solutions can be combined (e.g.,
+cyclic executive and interrupts).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand approaches to handling non-periodic events
+(interrupt-driven execution, background execution, slack-stealing). They know
+further approaches (periodic, deferrable or sporadic server).</p>
+</div>
+<div class="paragraph">
+<p>Cyclic schedules and frame-based scheduling:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants can describe the benefits and drawbacks of cyclic scheduling.</p>
+</li>
+<li>
+<p>Participants can analyze the real-time characteristics of a solution based on
+a cyclic executive.</p>
+</li>
+<li>
+<p>Participant can design cyclic schedules for simple real-time problems.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>RTOS-based event-triggered approach:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants can describe the differences between static and dynamic
+scheduling methods.</p>
+</li>
+<li>
+<p>Participants can describe the advantages and disadvantages of using preemption.</p>
+</li>
+<li>
+<p>Participants understand rate-monotonic, deadline-monotonic and
+earliest deadline first scheduling.</p>
+</li>
+<li>
+<p>Participants can select an appropriate scheduling approach according to the
+real-time requirements.</p>
+</li>
+<li>
+<p>Participants can identify jobs with similar properties and allocate them to
+the same elements of the technical solution (e.g., processes or threads).</p>
+</li>
+<li>
+<p>Participants can define the RTOS-tasks and their characteristics.</p>
+</li>
+<li>
+<p>Participants can describe important timing properties of RTOSes and hardware
+(i.e. interrupt latency, scheduling latency, dispatch latency)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Application-level interrupt handling:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants understand the strengths and weaknesses of using interrupts at
+the application level.</p>
+</li>
+<li>
+<p>Participants can define a concept for using interrupts at the application
+level: prioritizing interrupts, rules for blocking interrupts, using the
+prologue/epilogue model</p>
+</li>
+<li>
+<p>Participants understand that the concepts for using interrupts at the
+application level depend on the processor architecture (e.g., number of
+priorities) and the RTOS (e.g., support for prologue/epilogue model).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-6">LG 4-6: Concurrent access to shared resources</h4>
+<div class="paragraph">
+<p>Participants understand the potential problems caused by concurrent access to
+shared resources (e.g., blocking time). They understand that whether these
+problems can actually occur depends strongly on the chosen technical solution to
+concurrency (e.g., time-triggered vs. event-triggered approach).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand solution approaches for interactions between jobs and
+their tradeoffs (e.g., message passing, shared data).</p>
+</div>
+<div class="paragraph">
+<p>Participants know strategies for preventing typical concurrency problems (e.g.,
+critical sections, non-preemptive critical sections protocol, semaphores,
+synchronization objects / mutexes, atomic actions, non-blocking
+synchronization). They can select appropriate strategies for a specific system.</p>
+</div>
+<div class="paragraph">
+<p>Participants know how to optimize critical sections (e.g., by assigning program
+elements which share the same software resources to the same RTOS task).</p>
+</div>
+<div class="paragraph">
+<p>Participants understand how deadlocks occur and how they can be avoided.</p>
+</div>
+<div class="paragraph">
+<p>Partipants understand priority inversion and know solution approaches (priority
+ceiling, priority inheritance).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-7">LG 4-7: Impact of the operating system on real-time characteristics</h4>
+<div class="paragraph">
+<p>Participants can explain the characteristics of a real-time operating
+system. They understand that real-time operating systems and general-purpose
+operating systems serve different purposes.</p>
+</div>
+<div class="paragraph">
+<p>Participants know a minimum of two examples of real-time operating systems and
+their characteristics.</p>
+</div>
+<div class="paragraph">
+<p>Participants can refine the real-time architectural design in the context of the
+selected operating system (e.g., refine tasks priorities and assign program
+elements to task entities).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-8">LG 4-8: Real-time analysis</h4>
+<div class="paragraph">
+<p>Participants know different approaches how the real-time architectural design
+can be evaluated, such as performing design reviews, performing schedulability
+analysis, or using tools for scheduling simulation and verification.</p>
+</div>
+<div class="paragraph">
+<p>Schedulability analysis:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants understand how to gather data on which a schedulability analysis
+can be based (e.g., past experiences, measurements, simulation, mathematical
+methods, static analysis).</p>
+</li>
+<li>
+<p>Participants know simulation and analytical methods as approaches to gain
+confidence that the real-time requirements can be met.</p>
+</li>
+<li>
+<p>Participants understand that the schedulability of a set of tasks cannot be
+shown dependably by individual measurements (e.g., due to blocking time).</p>
+</li>
+<li>
+<p>Participants know approaches to schedulability analysis for rate-monotonic,
+deadline-monotonic, or earliest-deadline-first scheduling.</p>
+</li>
+<li>
+<p>Participants can apply rate-monotonic analysis to perform a dependable
+schedulability analysis.</p>
+</li>
+<li>
+<p>Participants understand the limitations of analytical approaches regarding
+complex real-time systems, due to dependencies between jobs.</p>
+</li>
+<li>
+<p>Participants understand simulation as an approach for complex real-time
+systems.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Worst-case execution time (WCET) analysis:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants understand that determining the maximum execution time of a job
+is crucial for real-time analysis. Soundness and tightness are important
+quality characteristics of WCET analysis.</p>
+</li>
+<li>
+<p>Participants understand that the precision of WCET analysis is limited. The
+precision is influenced by hardware and software complexity (e.g., impact of
+caches, pipelines, shortest vs. longest program path, memory management,
+dynamic dispatch).</p>
+</li>
+<li>
+<p>Participants can explain advantages, disadvantages and limitations of static
+analysis, dynamic analysis and hybrid approaches to WCET analysis.</p>
+</li>
+<li>
+<p>Participants can estimate the overall CPU load to support schedulability
+analyses such as rate-monotonic analysis.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Shared resource analysis:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Participants understand how shared resources (and how they are protected)
+affect the WCET. They understand that therefore shared-resource analysis
+needs to be performed as part of real-time analysis.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-9">LG 4-9: Tools for real-time architectural design and –analysis</h4>
+<div class="paragraph">
+<p>Participants understand that tools for specification, design and analysis of
+real-time systems are needed for complex embedded systems with a large number of
+external real-time requirements.</p>
+</div>
+<div class="paragraph">
+<p>Participants know application areas of tools for real-time architectural design
+and -analysis, such as modeling the real-time architectural design, static WCET
+analysis, analytical schedulability analysis, white-box vs. black-box simulation
+of real-time systems. Participants know examples of specific tools and their
+application areas.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-4-10">LG 4-10: Relationship to distributed and multi-core system architectures</h4>
+<div class="paragraph">
+<p>Participants understand the challenges introduced when building distributed or
+multi-core real-time systems (e.g., proper methods of synchronization, global
+scheduling, global time base, latencies imposed by communication).</p>
+</div>
+<div class="paragraph">
+<p>Participants know different approaches to scheduling (partitioned, clustered,
+global scheduling) and migration in multicore systems (e.g., offline vs. online
+migration).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_4">4.3. References</h3>
+<div class="paragraph">
+<p><a href="#kopetz">[Kopetz 2011]</a>, <a href="#liu">[Liu 2000]</a>, <a href="#baruah">[Baruah+2015]</a>, <a href="#stallings">[Stallings 2014]</a>, <a href="#douglass-rtuml">[Douglass 2014]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adaptability">5. Adaptability</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration: 90 min.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_terms_and_principles_5">5.1. Terms and Principles</h3>
+<div class="paragraph">
+<p>Variants, feature models, platform development, product lines, product
+platforms, variation point, adaptability, variability, variability in space,
+variability in time, binding time</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learning_goals_5">5.2. Learning Goals</h3>
+<div class="sect3">
+<h4 id="LG-5-1">LG 5-1: Foundations of adaptability and variability</h4>
+<div class="paragraph">
+<p>Participants understand the motivation and need for adaptability (supporting the
+evolution over time, variability in time) and variability (supporting multiple
+product variants, variability in space). They understand how the need for
+adaptability and variability can be determined and specified.</p>
+</div>
+<div class="paragraph">
+<p>Participants know possible binding times when variability can be resolved
+(before runtime, at startup/load time, at runtime).</p>
+</div>
+<div class="paragraph">
+<p>Participants know trade-offs and drawbacks of increased adaptability and
+variability as well as competing quality goals (e.g., testability, performance,
+safety, security and backwards compatibility) and complementing quality goals
+(e.g., maintainability, reusability).</p>
+</div>
+<div class="paragraph">
+<p>Participants know high level approaches to adaptability and variability such as
+the 150%-model, 80%-model, product platforms or product lines.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-2">LG 5-2: Modeling variability in the architecture</h4>
+<div class="paragraph">
+<p>Participants understand how the separation between functional architectures and
+technical architectures can support adaptability and variability by allowing
+alternative technical architectures for the same functional architecture.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand that variability can occur at the functional level
+(e.g., product variants differ in the provided functions) and at the technical
+level (e.g., alternative technical solutions exist for the same functionality).</p>
+</div>
+<div class="paragraph">
+<p>Participants know how to model variation points in requirements, functional
+architectures and technical architectures.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-3">LG 5-3: Supporting adaptability and variability</h4>
+<div class="paragraph">
+<p>Participants know how adaptability and variability are supported by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>principles such as modularity</p>
+</li>
+<li>
+<p>architecture and design patterns such as plugin, adapter, facade</p>
+</li>
+<li>
+<p>frameworks and libraries</p>
+</li>
+<li>
+<p>architecture decisions such as deployment decisions (e.g., edge vs. cloud
+computing)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Participants can apply these solutions to implement variation points in the
+architecture.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-4">LG 5-4: Evolution of embedded systems</h4>
+<div class="paragraph">
+<p>Participants understand that adaptability in embedded software is driven both by
+requirement changes and by evolution of the system architecture. This evolution
+needs to be addressed in the software architecture and in the development
+process.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand the trade-offs of using legacy code and how its usage
+can restrict adaptability and variability.</p>
+</div>
+<div class="paragraph">
+<p>Participants know how to maintain adaptability and deal with new adaptability
+requirements, e.g. by refactoring.</p>
+</div>
+<div class="paragraph">
+<p>Participants know approaches how to handle system and software updates, as well
+as trade-offs of updates.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="LG-5-5">LG 5-5: Tools for supporting variability and adaptability</h4>
+<div class="paragraph">
+<p>Participants know common tools to model and manage variability.</p>
+</div>
+<div class="paragraph">
+<p>Participants understand how code generation can support adaptability and
+variability and know common tools for code generation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_5">5.3. References</h3>
+<div class="paragraph">
+<p><a href="#anastasopoulos">[Anastasopoulos+ 2001]</a>, <a href="#clements">[Clements+2002]</a>, <a href="#kang">[Kang+1990]</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references_6">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section contains references that are cited in the curriculum.</p>
+</div>
+<div class="paragraph">
+<p><strong>A</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="anastasopoulos"></a>[Anastasopoulos+ 2001]
+Michalis Anastasopoulos, Cristina Gacek: Implementing Product Line Variabilities, in: ACM SIGSOFT Software Engineering Notes, May 2001</p>
+</li>
+<li>
+<p><a id="andrews"></a>[Andrews+2008]
+Jason Andrews, Kamal Hyder, Bob Perrin, Colin Walls, Rick Gentile, Keith E. Curtis, David J. Katz, Jack Ganssle, Jean J. Labrosse, Robert Oshana: Embedded Software, Elsevier, 2008</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>B</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="baruah"></a>[Baruah+2015]
+Sanjoy K. Baruah, Marko Bertogna, Giorgio C. Buttazzo: Multiprocessor Scheduling for Real-Time Systems, Springer 2015</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>C</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="clements"></a>[Clements+2002]
+Paul Clements, Linda M. Northrop: Software product lines - practices and patterns, Addison Wesley 2002</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>D</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="douglass-rtuml"></a>[Douglass 2014]
+Bruce Powel Douglass: Real Time UML Workshop for Embedded Systems, Newnes 2014</p>
+</li>
+<li>
+<p><a id="douglass"></a>[Douglass 2015]
+Bruce Powel Douglass: Agile Systems Engineering, Morgan Kaufman 2015</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>F</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="feiler"></a>[Feiler+ 2012]
+Peter H. Feiler, David P. Gluch: Model-Based Engineering with AADL, Addison-Wesley 2012</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>H</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="hanmer"></a>[Hanmer 2007]
+Robert Hanmer: Patterns for Fault Tolerant Software, Wiley 2007</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>K</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="koopman"></a>[Koopman 2021]
+Philip Koopman: Better Embedded System Software, Independently published 2021</p>
+</li>
+<li>
+<p><a id="kopetz"></a>[Kopetz 2011]
+Hermann Kopetz: Real-Time Systems - Design Principles for Distributed Embedded Applications, Springer 2011</p>
+</li>
+<li>
+<p><a id="kordon"></a>[Kordon 2013]
+Fabrice Kordon (Editor): Embedded Systems - Analysis and Modeling with SysML, UML and AADL, Wiley 2013</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>L</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="kang"></a>[Kang+1990]
+Kyo C. Kang, Sholom G. Cohen, James A. Hess, William E. Novak, A. Spencer Peterson: Feature-Oriented Domain Analysis (FODA) Feasibility Study, Technical Report CMU/SEI-90-TR-021, Software Engineering Institute, Carnegie Mellon University, 1990</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>I</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="iec61508"></a>[IEC 61508]
+IEC 61508:2010 Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems,
+The International Electrotechnical Commission 2010</p>
+</li>
+<li>
+<p><a id="iso26262"></a>[ISO 26262:2018]
+ISO 26262-1:2018 Road vehicles — Functional safety, International Organization for Standardization, 2018</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>L</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="liu"></a>[Liu 2000]
+Jane W.-S. Liu: Real-time systems. Prentice Hall 2000</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>N</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="nasa"></a>[NASA 2004]
+NASA Software Safety Guidebook, NASA-GB-8719.13, 2004</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>S</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="samek"></a>[Samek 2008]
+Miro Samek: Practical Statecharts in C/C++, CRC Press 2008</p>
+</li>
+<li>
+<p><a id="selic-room"></a>[Selic+1994]
+Bran Selic, Garth Gullekson, Paul T. Ward: Real-Time Object-Oriented Modeling, Wiley 1994</p>
+</li>
+<li>
+<p><a id="selic-marte"></a>[Selic+2014]
+Bran Selic, Sébastien Gérard: Modeling and Analysis of Real-Time and Embedded Systems with UML and MARTE, Morgan Kaufman 2013</p>
+</li>
+<li>
+<p><a id="smith"></a>[Smith+2016]
+David Smith, Kenneth Simpson: Safety Critical Systems Handbook, Butterworth Heinemann 2016</p>
+</li>
+<li>
+<p><a id="stallings"></a>[Stallings 2014]
+Stallings, W: Operating Systems: Internals and Design Principles, Prentice Hall</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>W</strong></p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="weilkiens"></a>[Weilkiens 2008]
+Tim Weilkiens: Systems Engineering with SysML/UML: Modeling, Analysis, Design, Morgan Kaufman 2008</p>
+</li>
+<li>
+<p><a id="weilkiens-mbsa"></a>[Weilkiens+2015]
+Tim Weilkiens, Jesko G. Lamm, Stephan Roth, Markus Walker: Model-Based System
+Architecture, Wiley 2015</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2021.1-EN<br>
+Last updated 2021-10-07 08:08:22 UTC
+</div>
+</div>
+</body>
+</html>
