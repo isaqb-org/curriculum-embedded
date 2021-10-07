@@ -40,9 +40,9 @@ Participants understand the systematic approach to systems development:
 
 
 [[LG-1-2]]
-==== LG 1-2: Modelling and analysis of functional architectures
+==== LG 1-2: Modeling and analysis of functional architectures
 
-Participants can apply a systematic approach to modelling and analysis of
+Participants can apply a systematic approach to modeling and analysis of
 functional architectures:
 
 * Model the system context with external systems, physical entities, users of
