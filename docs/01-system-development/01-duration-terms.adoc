@@ -8,7 +8,7 @@
 
 === Terms and Principles
 
-System architecture, functional architecture, technical system architecture,
-event chain, system development, software development, hardware development
+Systems architecture, functional architecture, technical systems architecture,
+event chain, systems development, software development, hardware development
 
 // end::EN[]

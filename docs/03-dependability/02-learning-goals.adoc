@@ -32,7 +32,7 @@ system:
   an acceptable level of risk has been achieved
 
 Participants understand that functional safety must be considered on the system
-level, and impacts system architecture, software architecture, and hardware
+level, and impacts systems architecture, software architecture, and hardware
 architecture.
 
 Participants understand the influence of standards in the development of
@@ -71,7 +71,7 @@ Participants understand the process of safety classification:
 [[LG-3-4]]
 ==== LG 3-4: Tight relationship between system, software and hardware development
 
-Participants understand that system development, software development and
+Participants understand that systems development, software development and
 hardware development are closely intertwined when developing dependable and
 safety-related systems. For example, software plays a critical role in
 diagnosing hardware failures, and hardware plays a critical role in ensuring

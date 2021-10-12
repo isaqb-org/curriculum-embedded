@@ -59,7 +59,7 @@ architecture.
 ==== LG 5-4: Evolution of embedded systems
 
 Participants understand that adaptability in embedded software is driven both by
-requirement changes and by evolution of the system architecture. This evolution
+requirement changes and by evolution of the systems architecture. This evolution
 needs to be addressed in the software architecture and in the development
 process.
 
