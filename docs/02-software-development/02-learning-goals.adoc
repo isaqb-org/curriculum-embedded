@@ -7,7 +7,7 @@
 
 
 [[LG-2-1]]
-==== LG 2-1: Modeling software for embedded systems
+==== LG 2-1: Modeling Software for Embedded Systems
 
 Participants know different approaches for modeling software for embedded
 systems. They understand the basic concepts, strengths and weaknesses of these
@@ -33,7 +33,7 @@ requirements and boundary conditions of the system under development.
 
 
 [[LG-2-2]]
-==== LG 2-2: Implementing software for embedded systems
+==== LG 2-2: Implementing Software for Embedded Systems
 
 Participants understand how programming languages influence quality
 characteristics and cross-cutting concepts:
@@ -52,7 +52,7 @@ understand their strengths and weaknesses.
 
 
 [[LG-2-3]]
-==== LG 2-3: Memory management
+==== LG 2-3: Memory Management
 
 Participants understand how memory management strategies and memory management
 related capabilities of the programming language affect memory safety,
@@ -69,7 +69,7 @@ flexibility, predictability, performance and programming complexity:
   know software-based approaches to memory safety
 
 [[LG-2-4]]
-==== LG 2-4: Error handling
+==== LG 2-4: Error Handling
 
 Participants know different language features and patterns for error handling
 and their strengths and weaknesses, such as return values, global error status
@@ -77,7 +77,7 @@ variables, global error handlers, exceptions, options
 
 
 [[LG-2-5]]
-==== LG 2-5: Model-based development of embedded systems
+==== LG 2-5: Model-Based Development of Embedded Systems
 
 Participants know how models can be used to generate artifacts for the
 realization, and understand the tradeoffs:
@@ -116,7 +116,7 @@ realization, and understand the tradeoffs:
 
 
 [[LG-2-6]]
-==== LG 2-6: Verification of embedded software
+==== LG 2-6: Verification of Embedded Software
 
 Participants can explain and give examples for different error categories
 (e.g. memory management errors, synchronization errors, type defects, timing
@@ -134,7 +134,7 @@ and know the limitations of these techniques:
   tools.
 
 [[LG-2-7]]
-==== LG 2-7: Design paradigms
+==== LG 2-7: Design Paradigms
 
 Participants know design principles and paradigms for embdded software, such as
 design by contract, the robustness principle, or defensive programming.

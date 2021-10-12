@@ -5,7 +5,7 @@
 
 // tag::EN[]
 [[LG-4-1]]
-==== LG 4-1: Basic terms and properties of real-time systems
+==== LG 4-1: Basic Terms and Properties of Real-Time Systems
 
 Participants understand that real-time requirements of embedded systems are the
 result of their interaction with the environment.
@@ -33,7 +33,7 @@ choosing and configuring an operating system, which poses a technological impact
 factor.
 
 [[LG-4-2]]
-==== LG 4-2: Developing real-time systems
+==== LG 4-2: Developing Real-Time Systems
 
 Participants understand the fundamental approach to developing real-time
 systems:
@@ -73,7 +73,7 @@ Participants understand that real-time is a cross-cutting concern.
 
 
 [[LG-4-3]]
-==== LG 4-3: Real-time requirements
+==== LG 4-3: Real-Time Requirements
 
 Participants are able to specify and model real-time requirements. They know
 different approaches to specifying real-time requirements (e.g., how to specify
@@ -82,7 +82,7 @@ approach for a particular system.
 
 
 [[LG-4-4]]
-==== LG 4-4: Time-triggered vs. event-triggered approaches
+==== LG 4-4: Time-Triggered vs. Event-Triggered Approaches
 
 Participants can describe the time-triggered and event-triggered approaches to
 real-time architectural design. They understand the tradeoffs of both approaches
@@ -94,7 +94,7 @@ therefore hard to change.
 
 
 [[LG-4-5]]
-==== LG 4-5: Technical solutions to scheduling and concurrency
+==== LG 4-5: Technical Solutions to Scheduling and Concurrency
 
 Participants can describe technical solutions like cyclic executive, RTOS-based
 event-triggered approach, and application-level interrupt handling.
@@ -155,7 +155,7 @@ Application-level interrupt handling:
 
 
 [[LG-4-6]]
-==== LG 4-6: Concurrent access to shared resources
+==== LG 4-6: Concurrent Access to Shared Resources
 
 Participants understand the potential problems caused by concurrent access to
 shared resources (e.g., blocking time). They understand that whether these
@@ -180,7 +180,7 @@ ceiling, priority inheritance).
 
 
 [[LG-4-7]]
-==== LG 4-7: Impact of the operating system on real-time characteristics
+==== LG 4-7: Impact of the Operating System on Real-Time Characteristics
 
 Participants can explain the characteristics of a real-time operating
 system. They understand that real-time operating systems and general-purpose
@@ -195,7 +195,7 @@ elements to task entities).
 
 
 [[LG-4-8]]
-==== LG 4-8: Real-time analysis
+==== LG 4-8: Real-Time Analysis
 
 Participants know different approaches how the real-time architectural design
 can be evaluated, such as performing design reviews, performing schedulability
@@ -250,7 +250,7 @@ Shared resource analysis:
 
 
 [[LG-4-9]]
-==== LG 4-9: Tools for real-time architectural design and –analysis
+==== LG 4-9: Tools for Real-Time Architectural Design and Analysis
 
 Participants understand that tools for specification, design and analysis of
 real-time systems are needed for complex embedded systems with a large number of
@@ -264,7 +264,7 @@ application areas.
 
 
 [[LG-4-10]]
-==== LG 4-10: Relationship to distributed and multi-core system architectures
+==== LG 4-10: Relationship to Distributed and Multi-Core Systems Architectures
 
 Participants understand the challenges introduced when building distributed or
 multi-core real-time systems (e.g., proper methods of synchronization, global

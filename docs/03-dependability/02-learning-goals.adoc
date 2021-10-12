@@ -5,7 +5,7 @@
 
 // tag::EN[]
 [[LG-3-1]]
-==== LG 3-1: Fundamental terms of dependable and safety-related systems
+==== LG 3-1: Fundamental Terms of Dependable and Safety-Related Systems
 
 Understand the following terms and how they are related to each other:
 dependability, safety, availability, reliability, fault tolerance, security,
@@ -15,7 +15,7 @@ fail-stop, fail-operational, fail-silent, fail-stop, fail-consistent
 
 
 [[LG-3-2]]
-==== LG 3-2: Developing safety-related systems
+==== LG 3-2: Developing Safety-Related Systems
 
 Participants understand the fundamental approach to develop a safety-related
 system:
@@ -44,7 +44,7 @@ domain-specific safety standards.
 
 
 [[LG-3-3]]
-==== LG 3-3: Safety classification of requirements and building blocks
+==== LG 3-3: Safety Classification of Requirements and Building Blocks
 
 Participants understand the process of safety classification:
 
@@ -69,7 +69,7 @@ Participants understand the process of safety classification:
 
 
 [[LG-3-4]]
-==== LG 3-4: Tight relationship between system, software and hardware development
+==== LG 3-4: Tight Relationship between System, Software and Hardware Development
 
 Participants understand that systems development, software development and
 hardware development are closely intertwined when developing dependable and
@@ -79,7 +79,7 @@ freedom of interference between software units.
 
 
 [[LG-3-5]]
-==== LG 3-5: Developing fault-tolerant systems
+==== LG 3-5: Developing Fault-Tolerant Systems
 
 Participants understand fundamental concepts and activities for developing
 fault-tolerant systems and how they interact with each other:
@@ -105,7 +105,7 @@ fault-tolerant systems and how they interact with each other:
   selected.
 
 [[LG-3-6]]
-==== LG 3-6: Architectural patterns and techniques
+==== LG 3-6: Architectural Patterns and Techniques
 
 Participants can apply architectural patterns and techniques for developing
 fault-tolerant and safety-related systems:
@@ -147,7 +147,7 @@ fault-tolerant and safety-related systems:
 
 
 [[LG-3-7]]
-==== LG 3-7: Approaches to fault prevention
+==== LG 3-7: Approaches to Fault Prevention
 
 Participants understand that suitable processes and methods for design,
 implementation, verification, and testing are crucial to prevent faults in the
@@ -158,7 +158,7 @@ recommendations for processes and methods.
 
 
 [[LG-3-8]]
-==== LG 3-8: Patterns for detecting errors and failures
+==== LG 3-8: Patterns for Detecting Errors and Failures
 
 Participants an select and apply patterns and techniques such as Checksum,
 Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
@@ -171,14 +171,14 @@ Participants understand the importance of timely error detection.
 
 
 [[LG-3-9]]
-==== LG 3-9: Patterns for error recovery
+==== LG 3-9: Patterns for Error Recovery
 
 Patterns can select and apply patterns for error recovery such as Data Reset,
 Error Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation,
 Restart, Return to Reference Point, Rollback, Roll-Forward.
 
 [[LG-3-10]]
-==== LG 3-10: Patterns for error mitigation
+==== LG 3-10: Patterns for Error Mitigation
 
 Participants can select and apply patterns for error mitigation such as Error
 Correcting Codes and Marked Data.
