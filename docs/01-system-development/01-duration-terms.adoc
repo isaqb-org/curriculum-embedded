@@ -9,6 +9,6 @@
 === Terms and Principles
 
 Systems architecture, functional architecture, technical systems architecture,
-event chain, systems development, software development, hardware development
+event chain, systems development, software development, hardware development.
 
 // end::EN[]

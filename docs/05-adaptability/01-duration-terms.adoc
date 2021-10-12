@@ -10,7 +10,7 @@
 
 Variants, feature models, platform development, product lines, product
 platforms, variation point, adaptability, variability, variability in space,
-variability in time, binding time
+variability in time, binding time.
 
 
 // end::EN[]

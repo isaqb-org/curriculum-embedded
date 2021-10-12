@@ -27,13 +27,13 @@ the 150%-model, 80%-model, product platforms or product lines.
 [[LG-5-2]]
 ==== LG 5-2: Modeling Variability in the Architecture
 
-Participants understand how the separation between functional architectures and
-technical architectures can support adaptability and variability by allowing
-alternative technical architectures for the same functional architecture.
-
 Participants understand that variability can occur at the functional level
 (e.g., product variants differ in the provided functions) and at the technical
 level (e.g., alternative technical solutions exist for the same functionality).
+
+Participants understand how the separation between functional architectures and
+technical architectures can support adaptability and variability by allowing
+alternative technical architectures for the same functional architecture.
 
 Participants know how to model variation points in requirements, functional
 architectures and technical architectures.

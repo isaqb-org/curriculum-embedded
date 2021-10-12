@@ -12,15 +12,15 @@ result of their interaction with the environment.
 
 Participants can explain the difference between timeliness and speed.
 
-Participants can explain the difference between hard real-time requirements and
+Participants can explain the difference between hard/firm real-time requirements and
 soft real-time requirements.
 
 Participants understand that all actions along the event chain from the
 occurrence of a relevant event to the system reaction must be examined when
-implementing real-time requirements (e.g., sensor data read-out, operating
-system context switch, sensor data evaluation, actuator control). For hard
-real-time requirements, a hard deadline must be defined for each of these
-actions.
+implementing real-time requirements (e.g., sensor data read-out, operating-system
+context switch, sensor-data processing, actuator control). For hard/firm
+real-time requirements, a deadline must be defined for each of these
+actions. Missing that deadline is not tolerable.
 
 Participants understand the different types of events (periodic, sporadic,
 aperiodic).
@@ -38,33 +38,33 @@ factor.
 Participants understand the fundamental approach to developing real-time
 systems:
 
-* Identify and specify external real-time requirements
+* Identify and specify external real-time requirements.
 
 * Choose a time-triggered or event-triggered approach to real-time architectural
-  design
+  design.
 
-* Identify logical tasks and their properties
+* Identify logical tasks and their properties.
 
-* Identify shared resources required by logical tasks and their properties
+* Identify shared resources required by logical tasks and their properties.
 
-* Map logical tasks to jobs
+* Map logical tasks to jobs.
 
 * Decide on technical solutions (e.g., RTOS tasks), and allocate jobs to the
-  the technical solution elements
+  the technical solution elements.
 
-* Implement the real-time architectural design
+* Implement the real-time architectural design.
 
 * Continuously analyze and verify the real-time architectural design and the
-  implementation to iteratively refine the real-time architectural design
+  implementation to iteratively refine the real-time architectural design.
 
 Participants know how real-time system design is integrated into the overall
-development lifecycle.
+development life cycle.
 
 Participants understand that extending functions or adding new functions at a
 later time can have a large impact on time behavior and schedulability. The
 degree to which such extensions must be supported is an important impact factor
 to real-time architectural design. They understand that real-time affects the
-entire lifecycle of the system and affects many disciplines and activities
+entire life cycle of the system and influences many disciplines and activities
 (e.g., requirements elicitation, systems architecture, hardware architecture,
 software architecture, software implementation, test and verification,
 deployment).
@@ -76,16 +76,15 @@ Participants understand that real-time is a cross-cutting concern.
 ==== LG 4-3: Real-Time Requirements
 
 Participants are able to specify and model real-time requirements. They know
-different approaches to specifying real-time requirements (e.g., how to specify
-real-time requirements in UML or SysML) and are able to select a suitable
-approach for a particular system.
+different approaches to specifying real-time requirements (e.g., UML, SysML, AADL)
+and are able to select a suitable approach for a particular system.
 
 
 [[LG-4-4]]
 ==== LG 4-4: Time-Triggered vs. Event-Triggered Approaches
 
 Participants can describe the time-triggered and event-triggered approaches to
-real-time architectural design. They understand the tradeoffs of both approaches
+real-time architectural design. They understand the trade-offs of both approaches
 regarding determinism and flexibility.
 
 Participants understand that the decision for an approach has a profound,
@@ -100,7 +99,7 @@ Participants can describe technical solutions like cyclic executive, RTOS-based
 event-triggered approach, and application-level interrupt handling.
 
 Participants know criteria for deciding between different technical
-solutions. They are able select a technical solution for a specific system and
+solutions. They are able to select a technical solution for a specific system and
 reasonably justify their decision.
 
 Participants can describe how different technical solutions can be combined (e.g.,
@@ -163,11 +162,11 @@ problems can actually occur depends strongly on the chosen technical solution to
 concurrency (e.g., time-triggered vs. event-triggered approach).
 
 Participants understand solution approaches for interactions between jobs and
-their tradeoffs (e.g., message passing, shared data).
+their trade-offs (e.g., message passing, shared data).
 
 Participants know strategies for preventing typical concurrency problems (e.g.,
 critical sections, non-preemptive critical sections protocol, semaphores,
-synchronization objects / mutexes, atomic actions, non-blocking
+synchronization objects and mutexes, atomic actions, non-blocking
 synchronization). They can select appropriate strategies for a specific system.
 
 Participants know how to optimize critical sections (e.g., by assigning program
@@ -198,20 +197,20 @@ elements to task entities).
 ==== LG 4-8: Real-Time Analysis
 
 Participants know different approaches how the real-time architectural design
-can be evaluated, such as performing design reviews, performing schedulability
+can be evaluated, such as design reviews, performing schedulability
 analysis, or using tools for scheduling simulation and verification.
 
 Schedulability analysis:
 
 * Participants understand how to gather data on which a schedulability analysis
-  can be based (e.g., past experiences, measurements, simulation, mathematical
+  can be based (e.g., past experience, measurements, simulation, mathematical
   methods, static analysis).
 
 * Participants know simulation and analytical methods as approaches to gain
   confidence that the real-time requirements can be met.
 
 * Participants understand that the schedulability of a set of tasks cannot be
-  shown dependably by individual measurements (e.g., due to blocking time).
+  shown reliably by individual measurements (e.g., due to blocking time).
 
 * Participants know approaches to schedulability analysis for rate-monotonic,
   deadline-monotonic, or earliest-deadline-first scheduling.
@@ -220,7 +219,7 @@ Schedulability analysis:
   schedulability analysis.
 
 * Participants understand the limitations of analytical approaches regarding
-  complex real-time systems, due to dependencies between jobs.
+  complex real-time systems, due to dependencies among jobs.
 
 * Participants understand simulation as an approach for complex real-time
   systems.
@@ -234,7 +233,7 @@ Worst-case execution time (WCET) analysis:
 * Participants understand that the precision of WCET analysis is limited. The
   precision is influenced by hardware and software complexity (e.g., impact of
   caches, pipelines, shortest vs. longest program path, memory management,
-  dynamic dispatch).
+  dynamic dispatch, approach to error handling).
 
 * Participants can explain advantages, disadvantages and limitations of static
   analysis, dynamic analysis and hybrid approaches to WCET analysis.
@@ -244,8 +243,10 @@ Worst-case execution time (WCET) analysis:
 
 Shared resource analysis:
 
-* Participants understand how shared resources (and how they are protected)
-  affect the WCET. They understand that therefore shared-resource analysis
+* Participants understand the difference between WCET and WCRT.
+
+* Participants understand how shared resources and the resource-access protocol
+  affect the WCRT. They understand that therefore shared-resource analysis
   needs to be performed as part of real-time analysis.
 
 
@@ -257,7 +258,7 @@ real-time systems are needed for complex embedded systems with a large number of
 external real-time requirements.
 
 Participants know application areas of tools for real-time architectural design
-and -analysis, such as modeling the real-time architectural design, static WCET
+and analysis, such as modeling the real-time architectural design, static WCET
 analysis, analytical schedulability analysis, white-box vs. black-box simulation
 of real-time systems. Participants know examples of specific tools and their
 application areas.
