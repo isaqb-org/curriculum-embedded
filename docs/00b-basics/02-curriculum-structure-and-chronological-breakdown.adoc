@@ -8,10 +8,10 @@
 |===
 | Content
 | Recommended minimum duration (minutes)
-| 1. System development for embedded systems | 120
-| 2. Software development for embedded systems | 180
-| 3. Dependability and Functional safety | 330
-| 4. Real time and concurrency | 360
+| 1. Systems Development for Embedded Systems | 120
+| 2. Software Development for Embedded Systems | 180
+| 3. Dependability and Functional Safety | 330
+| 4. Real-Time and Concurrency | 360
 | 5. Adaptability | 90
 | |
 | Total | 1080 (18h)

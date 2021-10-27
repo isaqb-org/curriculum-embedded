@@ -13,20 +13,19 @@ Participants know different approaches for modeling software for embedded
 systems. They understand the basic concepts, strengths and weaknesses of these
 approaches:
 
-* UML as a general-purpose modeling language.
+* UML as a general-purpose modeling language
 
 * UML profiles to adapt UML to a specific domain (e.g., MARTE as a UML profile
   for modeling real-time systems).
 
-* Graphical and textual domain-specific languages (e.g., AADL).
+* Graphical and textual domain-specific languages (e.g., AADL)
 
 * State machines for modeling reactive systems.
 
-* Modeling data- and signal-flows (e.g., function-block diagrams).
+* Modeling data- and signal-flows (e.g., function-block diagrams)
 
 Participants understand how models can be used for analyzing the software, for
-examples with regards to failures (e.g., FTA / FMEA), schedulability, error
-propagation, and latency.
+example regarding failures, schedulability, error propagation, and latency.
 
 Participants are able to select a suitable modeling approach based on the
 requirements and boundary conditions of the system under development.
@@ -64,16 +63,16 @@ flexibility, predictability, performance and programming complexity:
   collection, automated reference counting, ownership / non-lexical scoping) and
   their trade-offs.
 
-* Know the impact of systems-architectural decisions on memory management (e.g.,
-  availability of memory management hardware like an MMU or MPU, CPU caches),
-  know software-based approaches to memory safety.
+* Know the impact of system-architectural decisions on memory management (e.g.,
+  amount of memory, availability of memory management hardware like an MMU or
+  MPU, CPU caches), know software-based approaches to memory safety.
 
 [[LG-2-4]]
 ==== LG 2-4: Error Handling
 
 Participants know different language features and patterns for error handling
 and their strengths and weaknesses, such as return values, global error status
-variables, global error handlers, exceptions, monadic error handling (e.g.
+variables, global error handlers, exceptions, monadic error handling (e.g.,
 "Result" types, "Either" types).
 
 
@@ -101,7 +100,7 @@ realization, and understand the trade-offs:
 
 * Using a model-based approach has the following potential costs:
 
-** Creating a sufficiently detailed model requires significant effort and domain knowledge, which
+** Creating a sufficiently detailed model requires significant effort, which
    needs to be weighed against the potential savings.
 
 ** Generated code often has increased resource demands.

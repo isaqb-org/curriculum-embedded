@@ -5,7 +5,7 @@
 // end::DE[]
 
 // tag::EN[]
-== Software development for embedded systems
+== Software Development for Embedded Systems
 // end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]

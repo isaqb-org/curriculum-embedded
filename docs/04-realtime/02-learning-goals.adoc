@@ -12,8 +12,8 @@ result of their interaction with the environment.
 
 Participants can explain the difference between timeliness and speed.
 
-Participants can explain the difference between hard/firm real-time requirements and
-soft real-time requirements.
+Participants can explain the difference between hard/firm real-time requirements
+and soft real-time requirements.
 
 Participants understand that all actions along the event chain from the
 occurrence of a relevant event to the system reaction must be examined when
@@ -76,8 +76,9 @@ Participants understand that real-time is a cross-cutting concern.
 ==== LG 4-3: Real-Time Requirements
 
 Participants are able to specify and model real-time requirements. They know
-different approaches to specifying real-time requirements (e.g., UML, SysML, AADL)
-and are able to select a suitable approach for a particular system.
+different approaches to specifying real-time requirements (e.g., specifiying
+real-time requirements in UML, SysML, or AADL) and are able to select a suitable
+approach for a particular system.
 
 
 [[LG-4-4]]

@@ -6,7 +6,7 @@
 // end::DE[]
 
 // tag::EN[]
-== System development for embedded systems
+== Systems Development for Embedded Systems
 // end::EN[]
 
 

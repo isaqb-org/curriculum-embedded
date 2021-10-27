@@ -8,13 +8,14 @@
 
 === Terms and Principles
 
-Hard and firm vs. soft real-time requirements, cyclic executive and cyclic schedules, interrupts, real-time
-operating systems, jobs, tasks, threads, processes, static vs dynamic
-scheduling, time-triggered vs event-triggered real-time systems, priority
-inversion, priority inheritance, priority ceiling, schedulability analysis, worst-case execution time (WCET), worst observed execution time (WOET),
-execution time estimation, CPU load estimation, real-time architectural design
-simulation and verification, concurrent resource access and coordination
-techniques, black-box simulation vs. white-box simulation.
+Hard and firm vs. soft real-time requirements, cyclic executive and cyclic
+schedules, interrupts, real-time operating systems, jobs, tasks, threads,
+processes, static vs dynamic scheduling, time-triggered vs event-triggered
+real-time systems, priority inversion, priority inheritance, priority ceiling,
+schedulability analysis, worst-case execution time (WCET), worst observed
+execution time (WOET), execution time estimation, CPU load estimation, real-time
+architectural design simulation and verification, concurrent resource access and
+coordination techniques, black-box simulation vs. white-box simulation.
 
 
 // end::EN[]

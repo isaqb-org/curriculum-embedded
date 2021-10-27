@@ -47,11 +47,11 @@ functional architectures:
 
 * Model the system context with external systems, physical entities, users of
   the system and the logical events that occur between the system and its
-  environment
+  environment.
 
 * Hierarchically decompose the system from a purely functional perspective,
   identifying function blocks and their interactions via events or information
-  flows
+  flows.
 
 * Define event chains based on the functional architecture. An event chain
   traces the end-to-end behavior from an external triggering event to the
@@ -62,44 +62,45 @@ Participants understand that a functional architecture enables reasoning about
 system quality characteristics at an abstract level, e.g., regarding time
 behavior, dependability, or flexibility.
 
-Participants know examples of how functional architectures can be modelled,
-e.g. with SysML or FAS <<weilkiens-mbsa>>..
+Participants know examples of how functional architectures can be modeled (e.g.,
+with SysML or FAS <<weilkiens-mbsa>>).
 
 
 [[LG-1-3]]
-==== LG 1-3: Modeling and Analysis of Technical Systems Architectures
+==== LG 1-3: Modeling and Analysis of Technical System Architectures
 
 Participants understand the systematic approach to modeling and analysis of
 technical systems architectures:
 
 * Analyze the impact factors, like quality requirements, organizational
   constraints, technological constraints, as defined in the CPSA Foundation
-  Level curriculum. For the technical systems architecture of embedded systems,
+  Level curriculum. For the technical system architecture of an embedded system,
   impact factors are often related to dependability and safety requirements,
-  performance, memory and real-time requirements, flexibility requirements and support
-  for different product variants and product lines. Examples for further
+  performance and real-time requirements, and flexibility requirements to
+  support different product variants and product lines. Examples for further
   considerations are physical proximity to sensors and actuators, limited
-  construction space, connectivity requirements, hardware cost, or development
+  construction space, connectivity requirements, hardware cost, and development
   schedules.
 
-* Based on the impact-factor analysis, identify architectural issues and
-  develop solution strategies for topics such as error handling, resource
-  efficiency, real-time architectural design and variability.
+* Based on the impact factors, identify architectural issues and develop
+  solution strategies for topics such as error handling, resource efficiency,
+  real-time architectural design and variability.
 
-* Evaluate alternative technical systems architectures, and select a technical
-  systems architecture for further refinement.
+* Evaluate alternative technical system architectures, and select a technical
+  system architecture for further refinement.
 
 * Hierarchically decompose the system into technical building blocks, and
-  establish a mapping to the elements of the functional architecture, if applicable.
+  establish a mapping to the elements of the functional architecture, if
+  applicable.
 
 * Map event chains to the technical architecture, if applicable: For example,
-  allocate a function to determine a measurement to a physical sensor, or allocate
-  an information flow to a bus.
+  allocate a function to determine a measurement to a physical sensor, or
+  allocate an information flow to a bus.
 
-* Evaluate the defined technical systems architecture with regard to the impact
+* Evaluate the defined technical system architecture with regard to the impact
   factors.
 
-Participants know examples of how technical systems architectures can be modelled,
+Participants know examples of how technical system architectures can be modeled,
 for example with SysML.
 
 Participants understand that the design of a technical systems architecture is an
@@ -116,7 +117,7 @@ technical systems architecture:
   (e.g., single core, homogeneous multi core, heterogeneous multi core, amount of
   RAM, ROM, NVRAM, peripherals like sensors and actuators, custom hardware).
 
-* Allocation of functional blocks to one or more control units, considering
+* Allocation of function blocks to one or more control units, considering
   for example performance and isolation requirements.
 
 * Decide on the communication paradigm (e.g., time triggered vs. event triggered).
@@ -125,7 +126,7 @@ technical systems architecture:
   both wired (e.g., ethernet, flexray, CAN), and wireless (e.g., Bluetooth,
   WiFi, cellular).
 
-* Understand the challenges of distributed systems regarding latency,
-  throughput, lack of a global clock, impact on dependability.
+Participants understand the challenges of distributed systems regarding latency,
+throughput, lack of a global clock, and the impact on dependability.
 
 // end::EN[]

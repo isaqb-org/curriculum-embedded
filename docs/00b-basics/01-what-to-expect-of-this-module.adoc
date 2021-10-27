@@ -24,7 +24,7 @@ achieved:
 The module “{curriculum-short}” conveys a methodical approach to architecture
 design for dependable embedded systems. It shows how software architecture
 interacts with the overall systems architecture, and how the requirements with
-regards to safety, dependability, real time and adaptability are addressed in a
+regards to safety, dependability, real-time and adaptability are addressed in a
 systematic way. In addition to patterns and solution concepts for designing
 appropriate software architectures, the module also addresses the analysis of
 software architectures with regard to the required quality characteristics.

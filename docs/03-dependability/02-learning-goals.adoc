@@ -22,14 +22,14 @@ system:
 
 * Perform a hazard and risk analysis.
 
-* Decide the kind of risk treatment (mitigate, eliminate, transfer or accept).
+* Decide the kind of risk treatment (mitigate, eliminate, transfer, or accept).
 
 * Define and allocate safety requirements.
 
-* Implement safety requirements on system, hardware and software level.
+* Implement safety requirements on system, hardware, and software level.
 
-* Analyze the system's residual risk, e.g. with FMEA and FTA, to verify that
-  an acceptable level of risk has been achieved.
+* Analyze the system's residual risk to verify that an acceptable level of risk
+  has been achieved (e.g., with FMEA and FTA).
 
 Participants understand that functional safety must be considered on the system
 level, and impacts systems architecture, software architecture, and hardware
@@ -62,7 +62,7 @@ Participants understand the process of safety classification:
 * By decomposing a building block, its associated risk can be distributed over
   and encapsulated in multiple building blocks. This can lead to a lower risk
   classification for the individual building blocks. To do so, freedom from
-  interference must to be ensured between these.
+  interference must be ensured between these building blocks.
 
 * The details of safety classification and decomposition are subject to specific
   norms and standards.
@@ -96,7 +96,7 @@ fault-tolerant systems and how they interact with each other:
   undetected or unhandled errors may lead to system failure.
 
 * The externally observable behavior of component in the event of an error can
-  be classified as fail stop, fail operational, fail silent or fail consistent
+  be classified as fail stop, fail operational, fail silent, or fail consistent
   behavior.
 
 * Redundancy can help to build fault-tolerant systems. Homogeneous and
@@ -117,8 +117,8 @@ fault-tolerant and safety-related systems:
   redundancy. Replication is applied to an architectural building
   block. Therefore, the sphere of replication has to be aligned with
   architectural building blocks. Strong cohesion and loose coupling principles
-  have to be taken into consideration for that. The concept of the sphere of replication can
-  also be applied to isolation zones with respect to memory regions (i.e.,
+  have to be taken into consideration for that. The sphere of replication is
+  often aligned with isolation zones with respect to memory regions (i.e.,
   address spaces) and control flows (i.e., threads).
 
 * Participants can select and apply architectural patterns and techniques to
@@ -160,7 +160,7 @@ recommendations for processes and methods.
 ==== LG 3-8: Patterns for Detecting Errors and Failures
 
 Participants an select and apply patterns and techniques such as Checksum,
-Parameter Checking, Heartbeat, Leaky-Bucket Counter, System Monitor, Watchdog,
+Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
 Plausibility Checks, Control-Flow Monitoring.
 
 Participants can select and apply detection patterns that are used with
@@ -179,7 +179,7 @@ Restart, Return to Reference Point, Rollback, Roll-Forward.
 [[LG-3-10]]
 ==== LG 3-10: Patterns for Error Mitigation
 
-Participants can select and apply patterns for error mitigation such as Error-Correcting Codes and Marked Data.
-
+Participants can select and apply patterns for error mitigation such as
+Error-Correcting Codes and Marked Data.
 
 // end::EN[]
