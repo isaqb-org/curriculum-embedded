@@ -6,7 +6,7 @@
 
 // tag::EN[]
 [[LG-5-1]]
-==== LG 5-1: Foundations of adaptability and variability
+==== LG 5-1: Foundations of Adaptability and Variability
 
 Participants understand the motivation and need for adaptability (supporting the
 evolution over time, variability in time) and variability (supporting multiple
@@ -25,21 +25,21 @@ Participants know high level approaches to adaptability and variability such as
 the 150%-model, 80%-model, product platforms or product lines.
 
 [[LG-5-2]]
-==== LG 5-2: Modeling variability in the architecture
-
-Participants understand how the separation between functional architectures and
-technical architectures can support adaptability and variability by allowing
-alternative technical architectures for the same functional architecture.
+==== LG 5-2: Modeling Variability in the Architecture
 
 Participants understand that variability can occur at the functional level
 (e.g., product variants differ in the provided functions) and at the technical
 level (e.g., alternative technical solutions exist for the same functionality).
 
+Participants understand how the separation between functional architectures and
+technical architectures can support adaptability and variability by allowing
+alternative technical architectures for the same functional architecture.
+
 Participants know how to model variation points in requirements, functional
 architectures and technical architectures.
 
 [[LG-5-3]]
-==== LG 5-3: Supporting adaptability and variability
+==== LG 5-3: Supporting Adaptability and Variability
 
 Participants know how adaptability and variability are supported by:
 
@@ -56,10 +56,10 @@ Participants can apply these solutions to implement variation points in the
 architecture.
 
 [[LG-5-4]]
-==== LG 5-4: Evolution of embedded systems
+==== LG 5-4: Evolution of Embedded Systems
 
 Participants understand that adaptability in embedded software is driven both by
-requirement changes and by evolution of the system architecture. This evolution
+requirement changes and by evolution of the systems architecture. This evolution
 needs to be addressed in the software architecture and in the development
 process.
 
@@ -73,7 +73,7 @@ Participants know approaches how to handle system and software updates, as well
 as trade-offs of updates.
 
 [[LG-5-5]]
-==== LG 5-5: Tools for supporting variability and adaptability
+==== LG 5-5: Tools for Supporting Variability and Adaptability
 
 Participants know common tools to model and manage variability.
 

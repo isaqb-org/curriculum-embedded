@@ -7,22 +7,22 @@
 
 
 [[LG-2-1]]
-==== LG 2-1: Modeling software for embedded systems
+==== LG 2-1: Modeling Software for Embedded Systems
 
 Participants know different approaches for modeling software for embedded
 systems. They understand the basic concepts, strengths and weaknesses of these
 approaches:
 
-* UML as a general purpose modeling language
+* UML as a general-purpose modeling language.
 
 * UML profiles to adapt UML to a specific domain (e.g., MARTE as a UML profile
-  for modeling real-time systems)
+  for modeling real-time systems).
 
-* Graphical and textual domain specific languages (e.g., AADL)
+* Graphical and textual domain-specific languages (e.g., AADL).
 
-* State machines for modeling reactive systems
+* State machines for modeling reactive systems.
 
-* Modeling data- and signal-flows (e.g., function block diagrams)
+* Modeling data- and signal-flows (e.g., function-block diagrams).
 
 Participants understand how models can be used for analyzing the software, for
 examples with regards to failures (e.g., FTA / FMEA), schedulability, error
@@ -33,17 +33,17 @@ requirements and boundary conditions of the system under development.
 
 
 [[LG-2-2]]
-==== LG 2-2: Implementing software for embedded systems
+==== LG 2-2: Implementing Software for Embedded Systems
 
 Participants understand how programming languages influence quality
 characteristics and cross-cutting concepts:
 
 * Impact of the programming language on analyzability (e.g., with static
-  and dynamic analysis tools)
+  and dynamic analysis tools).
 
 * Impact of the programming language abstractions and concepts for concurrency,
   memory management and error handling on cross-cutting concepts and
-  dependability
+  dependability.
 
 Participants know different programming language paradigms (e.g., procedural,
 object-oriented, functional). Participants know examples for programming languages
@@ -52,75 +52,76 @@ understand their strengths and weaknesses.
 
 
 [[LG-2-3]]
-==== LG 2-3: Memory management
+==== LG 2-3: Memory Management
 
-Participants understand how memory management strategies and memory management
-related capabilities of the programming language affect memory safety,
+Participants understand how memory management strategies and memory-management-related
+capabilities of the programming language affect memory safety,
 flexibility, predictability, performance and programming complexity:
 
-* Understand the tradeoffs in choosing dynamic or static allocation of memory
+* Understand the trade-offs in choosing dynamic or static allocation of memory.
 
 * Know managed approaches to dynamically allocated memory (e.g., garbage
   collection, automated reference counting, ownership / non-lexical scoping) and
-  their tradeoffs
+  their trade-offs.
 
-* Know the impact of system architectural decisions on memory management (e.g.,
+* Know the impact of systems-architectural decisions on memory management (e.g.,
   availability of memory management hardware like an MMU or MPU, CPU caches),
-  know software-based approaches to memory safety
+  know software-based approaches to memory safety.
 
 [[LG-2-4]]
-==== LG 2-4: Error handling
+==== LG 2-4: Error Handling
 
 Participants know different language features and patterns for error handling
 and their strengths and weaknesses, such as return values, global error status
-variables, global error handlers, exceptions, options
+variables, global error handlers, exceptions, monadic error handling (e.g.
+"Result" types, "Either" types).
 
 
 [[LG-2-5]]
-==== LG 2-5: Model-based development of embedded systems
+==== LG 2-5: Model-Based Development of Embedded Systems
 
 Participants know how models can be used to generate artifacts for the
-realization, and understand the tradeoffs:
+realization, and understand the trade-offs:
 
 * Different kinds of models and model elements can be used: structural models
   (e.g., UML component models, AADL) and behavioral models (e.g., statecharts,
-  activity diagrams)
+  activity diagrams).
 
 * Different kinds artifacts can be generated, e.g. implementation code, test
-  cases, configurations, or analysis models
+  cases, configurations, or analysis models.
 
 * Using a model-based approach can have the following benefits:
 
-** Reduced effort, since these artifacts do not have to be created manually
+** Reduced effort since these artifacts do not have to be created manually.
 
-** Increased quality, since manual errors can be eliminated
+** Increased quality since manual errors can be eliminated.
 
 ** Can support adaptibility in a resource-efficient way by resolving variability
-   during code generation
+   during code generation.
 
 * Using a model-based approach has the following potential costs:
 
-** Creating a sufficiently detailed model requires significant effort, which
-   needs to be weighed against the potential savings
+** Creating a sufficiently detailed model requires significant effort and domain knowledge, which
+   needs to be weighed against the potential savings.
 
-** Generated code often has increased resource demands
+** Generated code often has increased resource demands.
 
-** Potential vendor lock-in, specifically with commercial tools
+** Potential vendor lock-in, specifically with commercial tools.
 
 ** The generated code may be of insufficient quality or not suitable for the
-   target platform
+   target platform.
 
 ** Using a model-based approach in a safety-critical environment may lead to
-   significant tool qualification efforts
+   significant tool qualification efforts.
 
 
 
 [[LG-2-6]]
-==== LG 2-6: Verification of embedded software
+==== LG 2-6: Verification of Embedded Software
 
 Participants can explain and give examples for different error categories
-(e.g. memory management errors, synchronization errors, type defects, timing
-errors).
+(e.g. memory-management errors, synchronization errors, type defects, timing
+errors, domain errors).
 
 Participants understand how analysis techniques can be used to detect errors,
 and know the limitations of these techniques:
@@ -134,7 +135,7 @@ and know the limitations of these techniques:
   tools.
 
 [[LG-2-7]]
-==== LG 2-7: Design paradigms
+==== LG 2-7: Design Paradigms
 
 Participants know design principles and paradigms for embdded software, such as
 design by contract, the robustness principle, or defensive programming.

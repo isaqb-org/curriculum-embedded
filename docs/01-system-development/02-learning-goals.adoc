@@ -6,19 +6,19 @@
 // tag::EN[]
 
 [[LG-1-1]]
-==== LG 1-1: Systematic approach to systems development
+==== LG 1-1: Systematic Approach to Systems Development
 
 Participants understand the systematic approach to systems development:
 
 * Participants understand the cross-cutting nature of aspects like time
   behavior, dependability and safety with regards to system-, software- and
-  hardware-develoment, and the necessity to address these with an integrated
+  hardware-development, and the necessity to address these with an integrated
   systems development approach.
 
 * Participants understand that systems development follows an iterative approach
   that includes both top-down activities like working with models, estimations
   and simulations, and bottom-up activities like tests and measurements on real
-  systems to validate the estimations and simulations.
+  systems to validate the estimates and simulations.
 
 * Participants understand that modeling and model-based analysis enable the
   evaluation of different architectures in a cost-efficient way. Model-based
@@ -26,13 +26,13 @@ Participants understand the systematic approach to systems development:
 
 * Participants understand the costs and benefits of developing and maintaining
   multiple architectural abstraction levels, such as functional and technical
-  system architectures: A functional architecture enables reasoning about a
+  systems architectures: A functional architecture enables reasoning about a
   system in a way that is independent of a specific technical realization and
   allows for different technical variants. These benefits need to be weighed
   against the costs for developing and maintaining several architectural
   models.
 
-* Participants know methods and frameworks for model-based system development,
+* Participants know methods and frameworks for model-based systems development,
   such as Harmony <<douglass>>, SYSMOD <<weilkiens>>.
 
 * Participants understand that development approaches for embedded systems are
@@ -40,7 +40,7 @@ Participants understand the systematic approach to systems development:
 
 
 [[LG-1-2]]
-==== LG 1-2: Modeling and analysis of functional architectures
+==== LG 1-2: Modeling and Analysis of Functional Architectures
 
 Participants can apply a systematic approach to modeling and analysis of
 functional architectures:
@@ -62,70 +62,70 @@ Participants understand that a functional architecture enables reasoning about
 system quality characteristics at an abstract level, e.g., regarding time
 behavior, dependability, or flexibility.
 
-Participants know examples how functional architectures can be modelled,
-for example with SysML or FAS <<weilkiens-mbsa>>..
+Participants know examples of how functional architectures can be modelled,
+e.g. with SysML or FAS <<weilkiens-mbsa>>..
 
 
 [[LG-1-3]]
-==== LG 1-3: Modeling and analysis of technical system architectures
+==== LG 1-3: Modeling and Analysis of Technical Systems Architectures
 
 Participants understand the systematic approach to modeling and analysis of
-technical system architectures:
+technical systems architectures:
 
 * Analyze the impact factors, like quality requirements, organizational
   constraints, technological constraints, as defined in the CPSA Foundation
-  Level curriculum. For the technical system architecture of embedded systems,
+  Level curriculum. For the technical systems architecture of embedded systems,
   impact factors are often related to dependability and safety requirements,
-  performance and real-time requirements, flexibility requirements and support
+  performance, memory and real-time requirements, flexibility requirements and support
   for different product variants and product lines. Examples for further
   considerations are physical proximity to sensors and actuators, limited
   construction space, connectivity requirements, hardware cost, or development
   schedules.
 
-* Based on the impact factors analysis, identify architectural issues and
+* Based on the impact-factor analysis, identify architectural issues and
   develop solution strategies for topics such as error handling, resource
-  efficiency, real-time architectural design and variability
+  efficiency, real-time architectural design and variability.
 
-* Evaluate alternative technical system architectures, and select a technical
-  system architecture for further refinement
+* Evaluate alternative technical systems architectures, and select a technical
+  systems architecture for further refinement.
 
 * Hierarchically decompose the system into technical building blocks, and
-  establish a mapping to the elements of the functional architecture, if applicable
+  establish a mapping to the elements of the functional architecture, if applicable.
 
 * Map event chains to the technical architecture, if applicable: For example,
   allocate a function to determine a measurement to a physical sensor, or allocate
-  an information flow to a bus
+  an information flow to a bus.
 
-* Evaluate the defined technical system architecture with regard to the impact
-  factors
+* Evaluate the defined technical systems architecture with regard to the impact
+  factors.
 
-Participants know examples how technical system architectures can be modelled,
+Participants know examples of how technical systems architectures can be modelled,
 for example with SysML.
 
-Participants understand that the design of a technical system architecture is an
+Participants understand that the design of a technical systems architecture is an
 iterative process that requires feedback from software development and hardware
 development.
 
 Participants know typical decisions that need to be made in the design of the
-technical system architecture:
+technical systems architecture:
 
-* How a function block is realized, for example in software, with an ASIC, an
-  FPGA, or a combination of these
+* How a function block is implemented, for example in software, with an ASIC, an
+  FPGA, or a combination of these.
 
 * Deciding the number of control units and their hardware characteristics
   (e.g., single core, homogeneous multi core, heterogeneous multi core, amount of
-  RAM, ROM, NVRAM, peripherals like sensors and actuators, custom hardware)
+  RAM, ROM, NVRAM, peripherals like sensors and actuators, custom hardware).
 
-* Allocation of function blocks to one or more control units, considering
-  for example performance and isolation requirements
+* Allocation of functional blocks to one or more control units, considering
+  for example performance and isolation requirements.
 
-* Decide on the communication paradigm (e.g., time triggered vs. event triggered)
+* Decide on the communication paradigm (e.g., time triggered vs. event triggered).
 
 * Decide on network topologies (e.g., bus vs. star) and network technologies,
   both wired (e.g., ethernet, flexray, CAN), and wireless (e.g., Bluetooth,
-  WiFi, cellular)
+  WiFi, cellular).
 
 * Understand the challenges of distributed systems regarding latency,
-  throughput, lack of a global clock, impact on dependability
+  throughput, lack of a global clock, impact on dependability.
 
 // end::EN[]

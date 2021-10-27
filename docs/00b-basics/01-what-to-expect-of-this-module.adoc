@@ -16,17 +16,17 @@ achieved:
 
 * systems must be highly reliable and are often safety-critical
 
-* systems must react to events in their enviroment in a timely, predictable way,
-  leading to hard realtime requirements
+* systems must react to events in their environment in a timely, predictable way,
+  leading to hard real-time requirements
 
 * systems need to be adaptable to quickly react to changing market requirements
 
 The module “{curriculum-short}” conveys a methodical approach to architecture
 design for dependable embedded systems. It shows how software architecture
-interacts with the overall system architecture, and how the requirements with
-regards to safety, dependability, realtime and adaptability are adressed in a
+interacts with the overall systems architecture, and how the requirements with
+regards to safety, dependability, real time and adaptability are addressed in a
 systematic way. In addition to patterns and solution concepts for designing
-appropriate software architectures, the module also adresses the analysis of
+appropriate software architectures, the module also addresses the analysis of
 software architectures with regard to the required quality characteristics.
 
 // end::EN[]

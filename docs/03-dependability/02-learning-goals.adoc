@@ -5,34 +5,34 @@
 
 // tag::EN[]
 [[LG-3-1]]
-==== LG 3-1: Fundamental terms of dependable and safety-related systems
+==== LG 3-1: Fundamental Terms of Dependable and Safety-Related Systems
 
-Understand the following terms and how they are related to each other:
+Understand the following terms and how these are related to each other:
 dependability, safety, availability, reliability, fault tolerance, security,
 fault, error, failure, redundancy, replication, freedom from interference,
 spatial interference, temporal interference, communication interference,
-fail-stop, fail-operational, fail-silent, fail-stop, fail-consistent
+fail operational, fail silent, fail stop, fail consistent.
 
 
 [[LG-3-2]]
-==== LG 3-2: Developing safety-related systems
+==== LG 3-2: Developing Safety-Related Systems
 
-Participants understand the fundamental approach to develop a safety-related
+Participants understand the fundamental approach for developing a safety-related
 system:
 
-* Perform a hazard and risk analysis
+* Perform a hazard and risk analysis.
 
-* Decide on a risk treatment (mitigate, eliminate, transfer or accept)
+* Decide the kind of risk treatment (mitigate, eliminate, transfer or accept).
 
-* Define and allocate safety requirements
+* Define and allocate safety requirements.
 
-* Realize safety requirements on system, hardware and software level
+* Implement safety requirements on system, hardware and software level.
 
 * Analyze the system's residual risk, e.g. with FMEA and FTA, to verify that
-  an acceptable level of risk has been achieved
+  an acceptable level of risk has been achieved.
 
 Participants understand that functional safety must be considered on the system
-level, and impacts system architecture, software architecture, and hardware
+level, and impacts systems architecture, software architecture, and hardware
 architecture.
 
 Participants understand the influence of standards in the development of
@@ -44,7 +44,7 @@ domain-specific safety standards.
 
 
 [[LG-3-3]]
-==== LG 3-3: Safety classification of requirements and building blocks
+==== LG 3-3: Safety Classification of Requirements and Building Blocks
 
 Participants understand the process of safety classification:
 
@@ -52,7 +52,7 @@ Participants understand the process of safety classification:
   (e.g., a Safety Integrity Level in IEC 61508).
 
 * The classification of a risk is propagated to safety goals and/or safety
-  requirements that are defined to control the risk, and further propagated to
+  requirements that are defined to control risk, and further propagated to
   derived safety requirements and to the building blocks to which a safety
   requirement is allocated.
 
@@ -61,25 +61,25 @@ Participants understand the process of safety classification:
 
 * By decomposing a building block, its associated risk can be distributed over
   and encapsulated in multiple building blocks. This can lead to a lower risk
-  classification for the indiviual building blocks. To do so, freedom from
-  interference must to be ensured between them.
+  classification for the individual building blocks. To do so, freedom from
+  interference must to be ensured between these.
 
 * The details of safety classification and decomposition are subject to specific
   norms and standards.
 
 
 [[LG-3-4]]
-==== LG 3-4: Tight relationship between system, software and hardware development
+==== LG 3-4: Tight Relationship between System, Software and Hardware Development
 
-Participants understand that system development, software development and
+Participants understand that systems development, software development and
 hardware development are closely intertwined when developing dependable and
 safety-related systems. For example, software plays a critical role in
 diagnosing hardware failures, and hardware plays a critical role in ensuring
-freedom of interference between software units.
+freedom from interference between software units.
 
 
 [[LG-3-5]]
-==== LG 3-5: Developing fault-tolerant systems
+==== LG 3-5: Developing Fault-Tolerant Systems
 
 Participants understand fundamental concepts and activities for developing
 fault-tolerant systems and how they interact with each other:
@@ -96,7 +96,7 @@ fault-tolerant systems and how they interact with each other:
   undetected or unhandled errors may lead to system failure.
 
 * The externally observable behavior of component in the event of an error can
-  be classified as fail-stop, fail-operational, fail-silent or fail-consistent
+  be classified as fail stop, fail operational, fail silent or fail consistent
   behavior.
 
 * Redundancy can help to build fault-tolerant systems. Homogeneous and
@@ -105,7 +105,7 @@ fault-tolerant systems and how they interact with each other:
   selected.
 
 [[LG-3-6]]
-==== LG 3-6: Architectural patterns and techniques
+==== LG 3-6: Architectural Patterns and Techniques
 
 Participants can apply architectural patterns and techniques for developing
 fault-tolerant and safety-related systems:
@@ -117,8 +117,8 @@ fault-tolerant and safety-related systems:
   redundancy. Replication is applied to an architectural building
   block. Therefore, the sphere of replication has to be aligned with
   architectural building blocks. Strong cohesion and loose coupling principles
-  have to be taken into consideration for that. The sphere of replication is
-  also assigned to an isolation zone with respect to memory regions (i.e.,
+  have to be taken into consideration for that. The concept of the sphere of replication can
+  also be applied to isolation zones with respect to memory regions (i.e.,
   address spaces) and control flows (i.e., threads).
 
 * Participants can select and apply architectural patterns and techniques to
@@ -129,25 +129,24 @@ fault-tolerant and safety-related systems:
   Units of Mitigation, Escalation, Fault Observer, Process-Level Redundancy,
   Ground State, Cold/Warm/Hot Standby, Triple-Modular Redundancy, Duo-Duplex
   Redundancy, Centralized vs. Distributed Voting, N-Version Programming,
-  Recovery Blocks, Correcting Audits, Software Update, Software- and
-  Hardware-based memory protection techniques.
+  Recovery Blocks, Correcting Audits, Software Update, software- and
+  hardware-based memory protection techniques.
 
 * Participants can determine the increase in reliability gained by introducing
   redundancy. They are aware of the importance of replicate reliability.
 
-* Participants understand that even after introducing redundancy, single-points
+* Participants understand that even after introducing redundancy, single points
   of failure may remain. They know techniques for hardening these, such as
   control-flow protection.
 
-* Participants understand what common-mode failures are and know sources of
-  common-mode failures.
+* Participants understand what common-mode failures are and know their sources.
 
 * Participants know techniques for testing hardened systems, such as fault
   injection.
 
 
 [[LG-3-7]]
-==== LG 3-7: Approaches to fault prevention
+==== LG 3-7: Approaches to Fault Prevention
 
 Participants understand that suitable processes and methods for design,
 implementation, verification, and testing are crucial to prevent faults in the
@@ -158,30 +157,29 @@ recommendations for processes and methods.
 
 
 [[LG-3-8]]
-==== LG 3-8: Patterns for detecting errors and failures
+==== LG 3-8: Patterns for Detecting Errors and Failures
 
 Participants an select and apply patterns and techniques such as Checksum,
-Parameter Checking, Heartbeat, Leaky Bucket Counter, System Monitor, Watchdog,
-Plausibility Checks, Control Flow Monitoring.
+Parameter Checking, Heartbeat, Leaky-Bucket Counter, System Monitor, Watchdog,
+Plausibility Checks, Control-Flow Monitoring.
 
 Participants can select and apply detection patterns that are used with
-redundancy such as Voting, Lockstep.
+redundancy such as Voting and Lockstep.
 
 Participants understand the importance of timely error detection.
 
 
 [[LG-3-9]]
-==== LG 3-9: Patterns for error recovery
+==== LG 3-9: Patterns for Error Recovery
 
-Patterns can select and apply patterns for error recovery such as Data Reset,
+Participants can select and apply patterns for error recovery such as Data Reset,
 Error Handler, Failover, Retries, Limiting Retries, Quarantine, Deactivation,
 Restart, Return to Reference Point, Rollback, Roll-Forward.
 
 [[LG-3-10]]
-==== LG 3-10: Patterns for error mitigation
+==== LG 3-10: Patterns for Error Mitigation
 
-Participants can select and apply patterns for error mitigation such as Error
-Correcting Codes and Marked Data.
+Participants can select and apply patterns for error mitigation such as Error-Correcting Codes and Marked Data.
 
 
 // end::EN[]
