@@ -83,10 +83,10 @@ Participants know how models can be used to generate artifacts for the
 realization, and understand the trade-offs:
 
 * Different kinds of models and model elements can be used: structural models
-  (e.g., UML component models, AADL) and behavioral models (e.g., statecharts,
+  (e.g., UML component models, AADL) and behavioral models (e.g., state charts,
   activity diagrams).
 
-* Different kinds artifacts can be generated, e.g. implementation code, test
+* Different kinds of artifacts can be generated, e.g. implementation code, test
   cases, configurations, or analysis models.
 
 * Using a model-based approach can have the following benefits:
@@ -95,7 +95,7 @@ realization, and understand the trade-offs:
 
 ** Increased quality since manual errors can be eliminated.
 
-** Can support adaptibility in a resource-efficient way by resolving variability
+** Can support adaptability in a resource-efficient way by resolving variability
    during code generation.
 
 * Using a model-based approach has the following potential costs:
@@ -136,7 +136,7 @@ and know the limitations of these techniques:
 [[LG-2-7]]
 ==== LG 2-7: Design Paradigms
 
-Participants know design principles and paradigms for embdded software, such as
+Participants know design principles and paradigms for embedded software, such as
 design by contract, the robustness principle, or defensive programming.
 
 // end::EN[]

@@ -50,7 +50,7 @@ systems:
 * Map logical tasks to jobs.
 
 * Decide on technical solutions (e.g., RTOS tasks), and allocate jobs to the
-  the technical solution elements.
+  technical solution elements.
 
 * Implement the real-time architectural design.
 
@@ -76,8 +76,8 @@ Participants understand that real-time is a cross-cutting concern.
 ==== LG 4-3: Real-Time Requirements
 
 Participants are able to specify and model real-time requirements. They know
-different approaches to specifying real-time requirements (e.g., specifiying
-real-time requirements in UML, SysML, or AADL) and are able to select a suitable
+different approaches to specifying real-time requirements (e.g., specifying
+real-time requirements in UML, SysML, or AADL) and can select a suitable
 approach for a particular system.
 
 
@@ -138,7 +138,7 @@ RTOS-based event-triggered approach:
 * Participants can define the RTOS-tasks and their characteristics.
 
 * Participants can describe important timing properties of RTOSes and hardware
-  (i.e. interrupt latency, scheduling latency, dispatch latency)
+  (e.g., interrupt latency, scheduling latency, dispatch latency)
 
 Application-level interrupt handling:
 
@@ -175,7 +175,7 @@ elements which share the same software resources to the same RTOS task).
 
 Participants understand how deadlocks occur and how they can be avoided.
 
-Partipants understand priority inversion and know solution approaches (priority
+Participants understand priority inversion and know solution approaches (priority
 ceiling, priority inheritance).
 
 
@@ -255,8 +255,8 @@ Shared resource analysis:
 ==== LG 4-9: Tools for Real-Time Architectural Design and Analysis
 
 Participants understand that tools for specification, design and analysis of
-real-time systems are needed for complex embedded systems with a large number of
-external real-time requirements.
+real-time systems are needed for complex embedded systems with many external
+real-time requirements.
 
 Participants know application areas of tools for real-time architectural design
 and analysis, such as modeling the real-time architectural design, static WCET

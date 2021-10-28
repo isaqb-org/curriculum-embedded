@@ -18,7 +18,7 @@ Participants know possible binding times when variability can be resolved
 
 Participants know trade-offs and drawbacks of increased adaptability and
 variability as well as competing quality goals (e.g., testability, performance,
-safety, security and backwards compatibility) and complementing quality goals
+safety, security, and backwards compatibility) and complementing quality goals
 (e.g., maintainability, reusability).
 
 Participants know high level approaches to adaptability and variability such as
@@ -36,7 +36,7 @@ technical architectures can support adaptability and variability by allowing
 alternative technical architectures for the same functional architecture.
 
 Participants know how to model variation points in requirements, functional
-architectures and technical architectures.
+architectures, and technical architectures.
 
 [[LG-5-3]]
 ==== LG 5-3: Supporting Adaptability and Variability
@@ -67,7 +67,7 @@ Participants understand the trade-offs of using legacy code and how its usage
 can restrict adaptability and variability.
 
 Participants know how to maintain adaptability and deal with new adaptability
-requirements, e.g. by refactoring.
+requirements (e.g., by refactoring).
 
 Participants know approaches how to handle system and software updates, as well
 as trade-offs of updates.

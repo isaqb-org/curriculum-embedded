@@ -123,7 +123,7 @@ technical systems architecture:
 * Decide on the communication paradigm (e.g., time triggered vs. event triggered).
 
 * Decide on network topologies (e.g., bus vs. star) and network technologies,
-  both wired (e.g., ethernet, flexray, CAN), and wireless (e.g., Bluetooth,
+  both wired (e.g., Ethernet, FlexRay, CAN), and wireless (e.g., Bluetooth,
   WiFi, cellular).
 
 Participants understand the challenges of distributed systems regarding latency,
