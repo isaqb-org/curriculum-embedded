@@ -1,4 +1,4 @@
-= iSAQB Advanced Level curriculum for *EMBEDDED: Dependable Embedded Systems*
+= iSAQB Advanced Level curriculum for EMBEDDED – Dependable Embedded Systems
 
 :toc:
 :toc-placement!:
@@ -32,23 +32,10 @@ Create an issue, a merge- or pull-request
 
 == How to build the documents
 
-Prerequisite: You need a Java Runtime(tm) installed.
+Prerequisite: You need a Java Runtime(tm) (17 or higher) installed.
 
-You build the output documents with gradle.
-That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration.
-
-In case you want to change that, adjust the following part of `build.gradle`:
-
-[source,groovy]
-----
-task buildDocs {
-  group 'Documentation'
-  description 'Grouping task for generating all languages in several formats'
-  dependsOn "renderNoRemarksDE", "renderNoRemarksEN", "renderWithRemarksDE", "renderWithRemarksEN"
-}
-----
-
-In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output.
+You build the output documents via `./gradlew buildDocs`.
+That will produce both pdf and html output in English (EN).
 
 == Additional translations/languages
 include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
@@ -56,7 +43,7 @@ include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 == Maintainers
 
 This repository is currently maintained by Ulrich Becker.
-It was forked from https://github.com/isaqb-org/curriculum-template,
+It was forked from https://github.com/isaqb-org/advanced-template,
 so the contributors of that project basically contributed to this one, too.
 
 
