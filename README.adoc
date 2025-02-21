@@ -34,7 +34,7 @@ Create an issue, a merge- or pull-request
 
 Prerequisite: You need a Java Runtime(tm) (17 or higher) installed.
 
-You build the output documents via `./gradlew buildDocs`.
+You build the output documents via `./gradle-tools/gradlew buildDocs`.
 That will produce both pdf and html output in English (EN).
 
 == Additional translations/languages
